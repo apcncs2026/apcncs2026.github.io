@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>APSSCNCS 2026 - Asia-Pacific Summer School and Conference on Networks and Complex Systems</title>
+	<title>APCNCS 2026 - Asia-Pacific Summer School and Conference on Networks and Complex Systems</title>
 	<meta name="description" content="Asia-Pacific Summer School and Conference on Networks and Complex Systems - June 3-5, 2026 at Nanyang Technological University, Singapore">
 </svelte:head>
 
@@ -47,7 +47,7 @@
 			<h2 class="text-4xl font-bold text-center mb-12">About the Conference</h2>
 			<div class="prose prose-lg max-w-4xl mx-auto">
 				<!-- <p>
-					The Asia-Pacific Summer School and Conference on Networks and Complex Systems (APSSCNCS 2026) brings together researchers, practitioners, and students from around the world 
+					The Asia-Pacific Summer School and Conference on Networks and Complex Systems (APCNCS 2026) brings together researchers, practitioners, and students from around the world 
 					to share cutting-edge research, exchange ideas, and foster collaborations. This interdisciplinary conference 
 					focuses on networks and complex systems, featuring keynote presentations, workshops, and networking opportunities.
 				</p>

@@ -9,8 +9,8 @@
 </script>
 
 <svelte:head>
-	<title>Call for Abstracts - APSSCNCS 2026</title>
-	<meta name="description" content="Submit your research abstract to APSSCNCS 2026">
+	<title>Call for Abstracts - APCNCS 2026</title>
+	<meta name="description" content="Submit your research abstract to APCNCS 2026">
 </svelte:head>
 
 <div class="min-h-screen">

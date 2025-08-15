@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Organizers - APSSCNCS 2026</title>
+	<title>Organizers - APCNCS 2026</title>
 	<meta name="description" content="Meet the organizing committee of Asia-Pacific Summer School and Conference on Networks and Complex Systems">
 </svelte:head>
 

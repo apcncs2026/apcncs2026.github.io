@@ -1,6 +1,6 @@
 
 <svelte:head>
-	<title>Invited Speakers - APSSCNCS 2026</title>
+	<title>Invited Speakers - APCNCS 2026</title>
 	<meta name="description" content="Invited speakers for Asia-Pacific Summer School and Conference on Networks and Complex Systems">
 </svelte:head>
 
@@ -9,7 +9,7 @@
 		<div class="hero-content text-center">
 			<div class="max-w-4xl">
 				<h1 class="text-5xl font-bold hero-text mb-4">Invited Speakers</h1>
-				<p class="text-xl hero-text-secondary">APSSCNCS 2026 Speaker Information</p>
+				<p class="text-xl hero-text-secondary">APCNCS 2026 Speaker Information</p>
 			</div>
 		</div>
 	</section>
@@ -20,7 +20,7 @@
 			<div class="prose prose-lg max-w-4xl mx-auto">
 				<h3 class="text-2xl font-bold mb-6">To Be Announced</h3>
 				<p>Information about invited speakers will be updated soon.</p>
-				<p>Please check back later for the list of distinguished speakers who will be presenting at APSSCNCS 2026.</p>
+				<p>Please check back later for the list of distinguished speakers who will be presenting at APCNCS 2026.</p>
 			</div>
 		</div>
 	</section>

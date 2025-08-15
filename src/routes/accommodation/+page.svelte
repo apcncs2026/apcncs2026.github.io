@@ -3,8 +3,8 @@
 </script>
 
 <svelte:head>
-	<title>Accommodation and Attractions - APSSCNCS 2026</title>
-	<meta name="description" content="Hotel accommodations and local attractions for APSSCNCS 2026">
+	<title>Accommodation and Attractions - APCNCS 2026</title>
+	<meta name="description" content="Hotel accommodations and local attractions for APCNCS 2026">
 </svelte:head>
 
 <div class="min-h-screen">

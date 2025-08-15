@@ -3,8 +3,8 @@
 </script>
 
 <svelte:head>
-	<title>Programme - APSSCNCS 2026</title>
-	<meta name="description" content="Conference programme and schedule for APSSCNCS 2026">
+	<title>Programme - APCNCS 2026</title>
+	<meta name="description" content="Conference programme and schedule for APCNCS 2026">
 </svelte:head>
 
 <div class="min-h-screen">
