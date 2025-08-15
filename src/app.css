@@ -1,3 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Conference Theme Variables */
+:root {
+  /* Hero gradient colors */
+  --hero-from: #ffffff;
+  --hero-to: #fef3c7;
+  
+  /* Text colors for hero sections */
+  --hero-text-primary: #1f2937;
+  --hero-text-secondary: #374151;
+  
+  /* Conference brand colors */
+  --conf-primary: #94b4aa;
+  --conf-secondary: #0d9488;
+  --conf-accent: #f59e0b;
+  
+  /* Background colors */
+  --conf-bg-light: #f9fafb;
+  --conf-bg-medium: #f3f4f6;
+  
+  /* Override DaisyUI colors */
+  --p: 5 150 105;         /* primary (emerald-600 in HSL) */
+  --s: 13 148 136;        /* secondary (teal-600 in HSL) */
+  --a: 245 158 11;        /* accent (amber-500 in HSL) */
+  --n: 55 65 81;          /* neutral (gray-700 in HSL) */
+}
+
+/* Conference Utility Classes */
+@layer components {
+  .hero-gradient {
+    @apply bg-gradient-to-r from-hero-from to-hero-to;
+  }
+  
+  .hero-text {
+    @apply text-hero-text;
+  }
+  
+  .hero-text-secondary {
+    @apply text-hero-text-secondary;
+  }
+  
+  .navbar-light {
+    @apply bg-gradient-to-r from-slate-50 to-gray-100 text-gray-800 shadow-lg;
+  }
+  
+  .footer-light {
+    @apply bg-gradient-to-t from-gray-100 to-slate-50 text-gray-700;
+  }
+}

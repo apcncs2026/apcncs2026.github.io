@@ -1,23 +1,20 @@
 <script lang="ts">
 	import '../app.css';
-	import favicon from '$lib/assets/favicon.svg';
+	import Icon from '$lib/components/Icon.svelte';
 
 	let { children } = $props();
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
-	<title>Academic Conference 2025</title>
+	<title>APSCONS 2026</title>
 </svelte:head>
 
 <div class="min-h-screen bg-base-100" data-theme="light">
-	<header class="navbar bg-primary text-primary-content shadow-lg">
+	<header class="navbar navbar-light">
 		<div class="navbar-start">
 			<div class="dropdown lg:hidden">
 				<button tabindex="0" class="btn btn-ghost" aria-label="Toggle navigation menu">
-					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-					</svg>
+					<Icon name="menu" class_="h-5 w-5" />
 				</button>
 				<ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 text-base-content rounded-box w-52">
 					<li><a href="/">Home</a></li>
@@ -31,7 +28,7 @@
 					<li><a href="/contact">Contact Us</a></li>
 				</ul>
 			</div>
-			<a class="btn btn-ghost text-xl" href="/">Academic Conference 2025</a>
+			<a class="btn btn-ghost text-xl" href="/">APSCONS 2026</a>
 		</div>
 		<div class="navbar-center hidden lg:flex">
 			<ul class="menu menu-horizontal px-1">
@@ -53,12 +50,12 @@
 		{@render children?.()}
 	</main>
 
-	<footer class="footer p-10 bg-neutral text-neutral-content">
+	<footer class="footer p-10 footer-light">
 		<div class="max-w-7xl mx-auto w-full">
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 				<div>
-					<h3 class="text-lg font-bold mb-2">Academic Conference 2025</h3>
-					<p>Advancing knowledge through collaboration</p>
+					<h3 class="text-lg font-bold mb-2">APSCONS 2026</h3>
+					<p>Asia-Pacific Summer School and Conference on Networks and Complex Systems</p>
 				</div>
 				<div>
 					<h3 class="text-lg font-bold mb-2">Quick Links</h3>
@@ -70,12 +67,11 @@
 				</div>
 				<div>
 					<h3 class="text-lg font-bold mb-2">Contact</h3>
-					<p>Email: info@conference2025.edu</p>
-					<p>Phone: +1 (555) 123-4567</p>
+					<p>Contact information will be provided soon</p>
 				</div>
 			</div>
 			<div class="divider"></div>
-			<p class="text-center">&copy; 2025 Academic Conference. All rights reserved.</p>
+			<p class="text-center">&copy; 2026 APSCONS. All rights reserved.</p>
 		</div>
 	</footer>
 </div>

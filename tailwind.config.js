@@ -36,9 +36,31 @@ export default {
     'text-primary-content', 'text-secondary-content', 'text-accent-content', 'text-neutral-content',
     'text-info', 'text-info-content', 'text-success', 'text-success-content',
     'text-warning', 'text-warning-content', 'text-error', 'text-error-content',
+    
+    // Conference Custom Classes
+    'hero-gradient', 'hero-text', 'hero-text-secondary',
+    'navbar-light', 'footer-light',
+    'bg-conf-primary', 'bg-conf-secondary', 'bg-conf-accent', 'bg-conf-bg-light', 'bg-conf-bg-medium',
+    'text-conf-primary', 'text-conf-secondary', 'text-conf-accent',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'conf': {
+          'primary': 'var(--conf-primary)',
+          'secondary': 'var(--conf-secondary)',
+          'accent': 'var(--conf-accent)',
+          'bg-light': 'var(--conf-bg-light)',
+          'bg-medium': 'var(--conf-bg-medium)',
+        },
+        'hero': {
+          'from': 'var(--hero-from)',
+          'to': 'var(--hero-to)',
+          'text': 'var(--hero-text-primary)',
+          'text-secondary': 'var(--hero-text-secondary)',
+        }
+      }
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),
