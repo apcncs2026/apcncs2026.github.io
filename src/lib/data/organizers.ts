@@ -20,30 +20,30 @@ export interface CommitteeData {
 
 export const organizers: CommitteeData = {
 	conferenceChairs: [
-		{
-			name: "CHEONG Siew Ann",
-			title: "Prof.",
-			affiliation: "Nanyang Technological University",
-			role: "Committee Chair"
-		},
-		{
-			name: "CHEW Lock Yue",
-			title: "Prof.",
-			affiliation: "Nanyang Technological University",
-			role: "Committee Member"
-		},
-		{
-			name: "YONG Ee Hou",
-			title: "Prof.",
-			affiliation: "Nanyang Technological University",
-			role: "Committee Member"
-		},
-		{
-			name: "CHEONG Kang Hao",
-			title: "Prof.",
-			affiliation: "Nanyang Technological University",
-			role: "Committee Member"
-		}
+		// {
+		// 	name: "CHEONG Siew Ann",
+		// 	title: "Prof.",
+		// 	affiliation: "Nanyang Technological University",
+		// 	role: "Committee Chair"
+		// },
+		// {
+		// 	name: "CHEW Lock Yue",
+		// 	title: "Prof.",
+		// 	affiliation: "Nanyang Technological University",
+		// 	role: "Committee Member"
+		// },
+		// {
+		// 	name: "YONG Ee Hou",
+		// 	title: "Prof.",
+		// 	affiliation: "Nanyang Technological University",
+		// 	role: "Committee Member"
+		// },
+		// {
+		// 	name: "CHEONG Kang Hao",
+		// 	title: "Prof.",
+		// 	affiliation: "Nanyang Technological University",
+		// 	role: "Committee Member"
+		// }
 	],
 	
 	programmeChairs: [],
