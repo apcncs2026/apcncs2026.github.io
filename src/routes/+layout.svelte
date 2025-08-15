@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-	<title>APSCONS 2026</title>
+	<title>APSSCNCS 2026</title>
 </svelte:head>
 
 <div class="min-h-screen bg-base-100" data-theme="light">
@@ -28,7 +28,7 @@
 					<li><a href="/contact">Contact Us</a></li>
 				</ul>
 			</div>
-			<a class="btn btn-ghost text-xl" href="/">APSCONS 2026</a>
+			<a class="btn btn-ghost text-xl" href="/">APSSCNCS 2026</a>
 		</div>
 		<div class="navbar-center hidden lg:flex">
 			<ul class="menu menu-horizontal px-1">
@@ -54,7 +54,7 @@
 		<div class="max-w-7xl mx-auto w-full">
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 				<div>
-					<h3 class="text-lg font-bold mb-2">APSCONS 2026</h3>
+					<h3 class="text-lg font-bold mb-2">APSSCNCS 2026</h3>
 					<p>Asia-Pacific Summer School and Conference on Networks and Complex Systems</p>
 				</div>
 				<div>
@@ -71,7 +71,7 @@
 				</div>
 			</div>
 			<div class="divider"></div>
-			<p class="text-center">&copy; 2026 APSCONS. All rights reserved.</p>
+			<p class="text-center">&copy; 2026 APSSCNCS. All rights reserved.</p>
 		</div>
 	</footer>
 </div>

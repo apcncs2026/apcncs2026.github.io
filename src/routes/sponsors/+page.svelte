@@ -19,7 +19,7 @@
 </script>
 
 <svelte:head>
-	<title>Sponsors - APSCONS 2026</title>
+	<title>Sponsors - APSSCNCS 2026</title>
 	<meta name="description" content="Conference sponsors and partnership opportunities">
 </svelte:head>
 
