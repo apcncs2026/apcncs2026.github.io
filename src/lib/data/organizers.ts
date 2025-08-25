@@ -1,4 +1,5 @@
 export interface Person {
+	id: string;
 	name: string;
 	affiliation: string;
 	avatar?: string;
@@ -24,10 +25,12 @@ export interface CommitteeData {
 export const organizers: CommitteeData = {
 	advisoryCommittee: [
 		{
+			id: "peter-a-m-sloot",
 			name: "Peter A M Sloot",
 			affiliation: "Professor Emeritus, University of Amsterdam, former Co-Director of NTU Complexity Institute, former Director of University of Amsterdam Institute of Advanced Studies"
 		},
 		{
+			id: "stefan-thurner",
 			name: "Stefan Thurner",
 			affiliation: "Professor, Medical University of Vienna, President of Complexity Science Hub @ Vienna"
 		},
@@ -35,10 +38,12 @@ export const organizers: CommitteeData = {
 	
 	conferenceChairs: [
 		{
+			id: "siew-ann-cheong",
 			name: "Siew Ann Cheong",
 			affiliation: "Nanyang Technological University, Singapore"
 		},
 		{
+			id: "anirban-chakraborti",
 			name: "Anirban Chakraborti",
 			affiliation: "Jawaharlal Nehru University, India"
 		}
@@ -46,10 +51,12 @@ export const organizers: CommitteeData = {
 	
 	programmeChairs: [
 		{
+			id: "peter-yen",
 			name: "Peter Yen",
 			affiliation: "Nanyang Technological University, Singapore"
 		},
 		{
+			id: "soumyajyoti-biswas",
 			name: "Soumyajyoti Biswas",
 			affiliation: "SRM University, India"
 		}
@@ -57,10 +64,12 @@ export const organizers: CommitteeData = {
 	
 	focusSectionChairs: [
 		{
+			id: "ling-feng",
 			name: "Ling Feng",
 			affiliation: "A*Star Institute of High Performance Computing, Singapore"
 		},
 		{
+			id: "george-christopoulos",
 			name: "George Christopoulos",
 			affiliation: "Nanyang Technological University, Singapore"
 		}
@@ -68,10 +77,12 @@ export const organizers: CommitteeData = {
 	
 	summerSchoolChairs: [
 		{
+			id: "ee-hou-yong",
 			name: "Ee Hou Yong",
 			affiliation: "Nanyang Technological University, Singapore"
 		},
 		{
+			id: "bo-yang",
 			name: "Bo Yang",
 			affiliation: "Nanyang Technological University, Singapore"
 		}
@@ -79,10 +90,12 @@ export const organizers: CommitteeData = {
 	
 	sponsorshipChairs: [
 		{
+			id: "kang-hao-cheong",
 			name: "Kang Hao Cheong",
 			affiliation: "Nanyang Technological University, Singapore"
 		},
 		{
+			id: "hirdesh-kumar-pharasi",
 			name: "Hirdesh Kumar Pharasi",
 			affiliation: "BML Munjal University, India"
 		}
@@ -90,6 +103,7 @@ export const organizers: CommitteeData = {
 	
 	socialMediaChairs: [
 		{
+			id: "vahid-aryadoust",
 			name: "Vahid Aryadoust",
 			affiliation: "National Institute of Education, Singapore"
 		}
