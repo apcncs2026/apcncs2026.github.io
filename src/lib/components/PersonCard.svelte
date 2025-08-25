@@ -30,7 +30,7 @@
 		</div>
 	</figure>
 	<div class="card-body items-center text-center">
-		<h3 class="card-title text-primary">{person.title ? person.title + ' ' : ''}{person.name}</h3>
+		<h3 class="card-title text-primary">{person.name}</h3>
 		{#if isCommitteeChair(person) && person.role}
 			<p class="text-sm font-semibold text-accent">{person.role}</p>
 		{/if}

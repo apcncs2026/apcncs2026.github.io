@@ -1,6 +1,5 @@
 export interface Person {
 	name: string;
-	title?: string;
 	affiliation: string;
 	avatar?: string;
 	isPresident?: boolean;
@@ -26,12 +25,10 @@ export const organizers: CommitteeData = {
 	advisoryCommittee: [
 		{
 			name: "Peter A M Sloot",
-			title: "Prof.",
 			affiliation: "Professor Emeritus, University of Amsterdam, former Co-Director of NTU Complexity Institute, former Director of University of Amsterdam Institute of Advanced Studies"
 		},
 		{
 			name: "Stefan Thurner",
-			title: "Prof.",
 			affiliation: "Professor, Medical University of Vienna, President of Complexity Science Hub @ Vienna"
 		},
 	],
