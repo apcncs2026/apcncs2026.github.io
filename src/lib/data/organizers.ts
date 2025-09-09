@@ -25,8 +25,8 @@ export interface CommitteeData {
 export const organizers: CommitteeData = {
 	advisoryCommittee: [
 		{
-			id: "peter-a-m-sloot",
-			name: "Peter A M Sloot",
+			id: "peter-sloot",
+			name: "Peter Sloot",
 			affiliation: "Professor Emeritus, University of Amsterdam, former Co-Director of NTU Complexity Institute, former Director of University of Amsterdam Institute of Advanced Studies"
 		},
 		{
@@ -34,6 +34,26 @@ export const organizers: CommitteeData = {
 			name: "Stefan Thurner",
 			affiliation: "Professor, Medical University of Vienna, President of Complexity Science Hub @ Vienna"
 		},
+		{
+			id: "misako-takayasu",
+			name: "Misako Takayasu",
+			affiliation: "Professor, Institute of Science Tokyo, Japan"
+		},
+		{
+			id: "didier-sornette",
+			name: "Didier Sornette",
+			affiliation: "Professor, Southern University of Science and Technology, China"
+		},
+		{
+			id: "carlos-gershenson",
+			name: "Carlos Gershenson",
+			affiliation: "Professor, Binghamton University, USA"
+		},
+		{
+			id: "guido-caldarelli",
+			name: "Guido Caldarelli",
+			affiliation: "Professor, Ca' Foscari University of Venice, Italy"
+		}
 	],
 	
 	conferenceChairs: [
@@ -58,7 +78,22 @@ export const organizers: CommitteeData = {
 		{
 			id: "soumyajyoti-biswas",
 			name: "Soumyajyoti Biswas",
-			affiliation: "SRM University, India"
+			affiliation: "SRM University AP, India"
+		},
+		{
+			id: "muhammad-azfar-ramli",
+			name: "Muhammad Azfar Ramli",
+			affiliation: "A*STAR Institute of High Performance Computing, Singapore"
+		},
+		{
+			id: "cynthia-siew",
+			name: "Cynthia Siew",
+			affiliation: "National University of Singapore, Singapore"
+		},
+		{
+			id: "neil-huynh-hoai-nguyen",
+			name: "Neil Huynh Hoai Nguyen",
+			affiliation: "A*STAR Institute of High Performance Computing, Singapore"
 		}
 	],
 	
@@ -71,6 +106,11 @@ export const organizers: CommitteeData = {
 		{
 			id: "george-christopoulos",
 			name: "George Christopoulos",
+			affiliation: "Nanyang Technological University, Singapore"
+		},
+		{
+			id: "mile-gu",
+			name: "Mile Gu",
 			affiliation: "Nanyang Technological University, Singapore"
 		}
 	],
@@ -85,6 +125,11 @@ export const organizers: CommitteeData = {
 			id: "bo-yang",
 			name: "Bo Yang",
 			affiliation: "Nanyang Technological University, Singapore"
+		},
+		{
+			id: "duane-loh",
+			name: "Duane Loh",
+			affiliation: "National University of Singapore, Singapore"
 		}
 	],
 	
@@ -98,13 +143,28 @@ export const organizers: CommitteeData = {
 			id: "hirdesh-kumar-pharasi",
 			name: "Hirdesh Kumar Pharasi",
 			affiliation: "BML Munjal University, India"
+		},
+		{
+			id: "kelin-xia",
+			name: "Kelin Xia",
+			affiliation: "Nanyang Technological University, Singapore"
 		}
 	],
 	
 	socialMediaChairs: [
 		{
+			id: "kelin-xia",
+			name: "Kelin Xia",
+			affiliation: "Nanyang Technological University, Singapore"
+		},
+		{
 			id: "vahid-aryadoust",
 			name: "Vahid Aryadoust",
+			affiliation: "National Institute of Education, Singapore"
+		},
+		{
+			id: "sun-he",
+			name: "Sun He",
 			affiliation: "National Institute of Education, Singapore"
 		}
 	],
