@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Icon from '$lib/components/Icon.svelte';
+	import { getHeroBackgroundStyle } from '$lib/config/heroImages';
 
 	const importantDates = [
 		{ event: "Abstract Submission Opens", date: "TBD" },
@@ -14,8 +15,8 @@
 </svelte:head>
 
 <div class="min-h-screen">
-	<section class="hero hero-gradient py-20">
-		<div class="hero-content text-center">
+	<section class="hero hero-bg hero-page" style={getHeroBackgroundStyle('abstracts')}>
+		<div class="hero-content text-center hero-content-overlay">
 			<div class="max-w-4xl">
 				<h1 class="text-5xl font-bold hero-text mb-4">Call for Abstracts</h1>
 				<!-- <p class="text-xl hero-text-secondary">Share your research with the global academic community</p> -->

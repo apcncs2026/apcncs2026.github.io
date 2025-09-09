@@ -12,7 +12,12 @@
 <!-- {#if members.length > 0} -->
 	<section class="py-16 px-4 {sectionBgClass}">
 		<div class="max-w-6xl mx-auto">
-			<h2 class="text-4xl font-bold text-center mb-12">{title}</h2>
+			{#if title}
+				<h2 class="text-4xl font-bold text-center mb-12">{title}</h2>
+			{:else}
+				<!-- Zero spacing when no title is shown -->
+				<div class="mb-0"></div>
+			{/if}
 			<div class="grid {columnsClass} gap-8">
 				{#each members as member}
 					<PersonCard person={member} {cardBgClass} />

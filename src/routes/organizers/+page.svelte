@@ -2,6 +2,15 @@
 	import { organizers } from '$lib/data/organizers';
 	import CommitteeSection from '$lib/components/CommitteeSection.svelte';
 	import PersonCard from '$lib/components/PersonCard.svelte';
+	import { getHeroBackgroundStyle } from '$lib/config/heroImages';
+
+	// International Advisory Committee section (no title since it's in hero)
+	const advisorySection = {
+		title: '', // Empty title since hero section shows the title
+		members: organizers.advisoryCommittee,
+		sectionBgClass: '',
+		cardBgClass: 'bg-base-200'
+	};
 
 	const sections = [
 		{ 
@@ -30,8 +39,8 @@
 		}
 	].map((section, index) => ({
 		...section,
-		sectionBgClass: index % 2 === 0 ? '' : 'bg-base-200',
-		cardBgClass: index % 2 === 0 ? 'bg-base-200' : 'bg-white'
+		sectionBgClass: index % 2 === 0 ? 'bg-base-200' : '',
+		cardBgClass: index % 2 === 0 ? 'bg-white' : 'bg-base-200'
 	}));
 </script>
 
@@ -41,33 +50,33 @@
 </svelte:head>
 
 <div class="min-h-screen">
-	<!-- International Advisory Committee with custom layout -->
-	<section class="hero py-20">
-		<div class="hero-content text-center flex-col">
+	<!-- International Advisory Committee Hero -->
+	<section class="hero hero-bg hero-page" style={getHeroBackgroundStyle('international')}>
+		<div class="hero-content text-center hero-content-overlay">
 			<div class="max-w-4xl">
 				<h1 class="text-5xl font-bold hero-text mb-4">International Advisory Committee</h1>
 			</div>
-			{#if organizers.advisoryCommittee.length > 0}
-				<div class="max-w-6xl mx-auto px-4 mt-8">
-					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-						{#each organizers.advisoryCommittee as chair}
-							<PersonCard person={chair} cardBgClass="bg-base-200" />
-						{/each}
-					</div>
-				</div>
-			{/if}
 		</div>
 	</section>
 
-	<section class="hero hero-gradient py-20">
-		<div class="hero-content text-center">
+	<!-- International Advisory Committee Content -->
+	<CommitteeSection 
+		title={advisorySection.title} 
+		members={advisorySection.members}
+		sectionBgClass={advisorySection.sectionBgClass}
+		cardBgClass={advisorySection.cardBgClass}
+	/>
+
+	<!-- Organizers Hero -->
+	<section class="hero hero-bg hero-page" style={getHeroBackgroundStyle('organizers')}>
+		<div class="hero-content text-center hero-content-overlay">
 			<div class="max-w-4xl">
 				<h1 class="text-5xl font-bold hero-text mb-4">Organizers</h1>
 			</div>
 		</div>
 	</section>
 
-	<!-- Dynamic Committee Sections -->
+	<!-- Organizing Committee Sections -->
 	{#each sections as section}
 		<CommitteeSection 
 			title={section.title} 
