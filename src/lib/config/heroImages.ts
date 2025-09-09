@@ -8,16 +8,16 @@ export interface HeroImageConfig {
 export const heroImages: HeroImageConfig = {
   basePath: '/images/hero/',
   pages: {
-    home: 'home-ntu-arc.jpg',
-    international: 'international.jpg',
-    speakers: 'speakers-ntu-learning-hub.jpg',
-    organizers: 'organizers-ntu-spms.jpg',
-    programme: 'programme-ntu-spms-building.jpg',
-    registration: 'registration-ntu-campus.jpg',
-    contact: 'contact-ntu-campus.jpg',
-    accommodation: 'accommodation-singapore-skyline.jpg',
-    abstracts: 'call-for-abstracts-ntu-research.jpg',
-    sponsors: 'sponsor.jpg'
+    home: 'home-ntu-arc.webp',
+    international: 'international.webp',
+    speakers: 'speakers-ntu-learning-hub.webp',
+    organizers: 'organizers-ntu-spms.webp',
+    programme: 'programme-ntu-spms-building.webp',
+    registration: 'registration-ntu-campus.webp',
+    contact: 'contact-ntu-campus.webp',
+    accommodation: 'accommodation-singapore-skyline.webp',
+    abstracts: 'call-for-abstracts-ntu-research.webp',
+    sponsors: 'sponsor.webp'
   }
 };
 
