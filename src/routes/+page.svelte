@@ -1,11 +1,15 @@
+<script lang="ts">
+	import { getHeroBackgroundStyle } from '$lib/config/heroImages';
+</script>
+
 <svelte:head>
 	<title>APCNCS 2026 - Asia-Pacific Summer School and Conference on Networks and Complex Systems</title>
 	<meta name="description" content="Asia-Pacific Summer School and Conference on Networks and Complex Systems - June 3-5, 2026 at Nanyang Technological University, Singapore">
 </svelte:head>
 
 <div class="min-h-screen">
-	<section class="hero min-h-[60vh] hero-gradient">
-		<div class="hero-content text-center">
+	<section class="hero hero-bg hero-home" style={getHeroBackgroundStyle('home')}>
+		<div class="hero-content text-center hero-content-overlay">
 			<div class="max-w-5xl">
 				<h1 class="text-4xl md:text-5xl font-bold hero-text mb-6">Asia-Pacific Summer School and Conference on Networks and Complex Systems</h1>
 				<p class="text-xl md:text-2xl hero-text-secondary mb-8">3-5 June, 2026 | Nanyang Technological University, Singapore</p>

@@ -1,7 +1,8 @@
 
-<script>
+<script lang="ts">
 	import Icon from '$lib/components/Icon.svelte';
 	import Email from '$lib/components/Email.svelte';
+	import { getHeroBackgroundStyle } from '$lib/config/heroImages';
 </script>
 
 <svelte:head>
@@ -10,8 +11,8 @@
 </svelte:head>
 
 <div class="min-h-screen">
-	<section class="hero hero-gradient py-20">
-		<div class="hero-content text-center">
+	<section class="hero hero-bg hero-page" style={getHeroBackgroundStyle('contact')}>
+		<div class="hero-content text-center hero-content-overlay">
 			<div class="max-w-4xl">
 				<h1 class="text-5xl font-bold hero-text mb-4">Contact</h1>
 				<p class="text-xl hero-text-secondary">APCNCS 2026 Contact Information</p>

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Icon from '$lib/components/Icon.svelte';
+	import { getHeroBackgroundStyle } from '$lib/config/heroImages';
 </script>
 
 <svelte:head>
@@ -8,8 +9,8 @@
 </svelte:head>
 
 <div class="min-h-screen">
-	<section class="hero hero-gradient py-20">
-		<div class="hero-content text-center">
+	<section class="hero hero-bg hero-page" style={getHeroBackgroundStyle('accommodation')}>
+		<div class="hero-content text-center hero-content-overlay">
 			<div class="max-w-4xl">
 				<h1 class="text-5xl font-bold hero-text mb-4">Accommodation and Attractions</h1>
 				<!-- <p class="text-xl hero-text-secondary">Make the most of your conference experience</p> -->
