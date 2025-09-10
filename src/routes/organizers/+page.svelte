@@ -22,8 +22,8 @@
 			members: organizers.programmeChairs
 		},
 		{ 
-			title: 'Focused Sections Chairs', 
-			members: organizers.focusSectionChairs
+			title: 'Focused Session Chairs', 
+			members: organizers.focusSessionChairs
 		},
 		{ 
 			title: 'Summer School Chairs', 

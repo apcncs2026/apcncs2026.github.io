@@ -15,7 +15,7 @@ export interface CommitteeData {
 	conferenceChairs: CommitteeChair[];
 	programmeChairs: CommitteeChair[];
 	socialMediaChairs: CommitteeChair[];
-	focusSectionChairs: CommitteeChair[];
+	focusSessionChairs: CommitteeChair[];
 	summerSchoolChairs: CommitteeChair[];
 	sponsorshipChairs: CommitteeChair[];
 	steeringCommittee: Person[];
@@ -47,12 +47,12 @@ export const organizers: CommitteeData = {
 		{
 			id: "carlos-gershenson",
 			name: "Carlos Gershenson",
-			affiliation: "Professor, Binghamton University, USA"
+			affiliation: "Professor, Binghamton University, USA, President of Complex Systems Society"
 		},
 		{
 			id: "guido-caldarelli",
 			name: "Guido Caldarelli",
-			affiliation: "Professor, Ca' Foscari University of Venice, Italy"
+			affiliation: "Professor, Ca' Foscari University of Venice, Italy, former President of Complex Systems Society"
 		}
 	],
 	
@@ -97,7 +97,7 @@ export const organizers: CommitteeData = {
 		}
 	],
 	
-	focusSectionChairs: [
+	focusSessionChairs: [
 		{
 			id: "ling-feng",
 			name: "Ling Feng",
@@ -152,11 +152,6 @@ export const organizers: CommitteeData = {
 	],
 	
 	socialMediaChairs: [
-		{
-			id: "kelin-xia",
-			name: "Kelin Xia",
-			affiliation: "Nanyang Technological University, Singapore"
-		},
 		{
 			id: "vahid-aryadoust",
 			name: "Vahid Aryadoust",
