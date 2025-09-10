@@ -4,7 +4,7 @@
 
 <svelte:head>
 	<title>APCNCS 2026 - Asia-Pacific Summer School and Conference on Networks and Complex Systems</title>
-	<meta name="description" content="Asia-Pacific Summer School and Conference on Networks and Complex Systems - June 3-5, 2026 at Nanyang Technological University, Singapore">
+	<meta name="description" content="Asia-Pacific Summer School and Conference on Networks and Complex Systems - June 2-5, 2026 at Nanyang Technological University, Singapore">
 </svelte:head>
 
 <div class="min-h-screen">
@@ -12,7 +12,7 @@
 		<div class="hero-content text-center hero-content-overlay">
 			<div class="max-w-5xl">
 				<h1 class="text-4xl md:text-5xl font-bold hero-text mb-6">Asia-Pacific Summer School and Conference on Networks and Complex Systems</h1>
-				<p class="text-xl md:text-2xl hero-text-secondary mb-8">3-5 June, 2026 | Nanyang Technological University, Singapore</p>
+				<p class="text-xl md:text-2xl hero-text-secondary mb-8">2-5 June, 2026 | Nanyang Technological University, Singapore</p>
 			</div>
 		</div>
 	</section>
@@ -20,7 +20,7 @@
 	<section class="py-16 px-4">
 		<div class="max-w-6xl mx-auto">
 			<h2 class="text-4xl font-bold text-center mb-12">Key Dates</h2>
-			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 				<div class="card bg-base-200 shadow-xl">
 					<div class="card-body">
 						<h3 class="card-title text-primary">Abstract Submission Deadline</h3>
@@ -33,6 +33,13 @@
 						<h3 class="card-title text-primary">Early Bird Registration</h3>
 						<p class="text-2xl font-bold">TBA</p>
 						<!-- <p>Save on registration fees</p> -->
+					</div>
+				</div>
+				<div class="card bg-base-200 shadow-xl">
+					<div class="card-body">
+						<h3 class="card-title text-primary">Summer School</h3>
+						<p class="text-2xl font-bold">2 June, 2026</p>
+						<!-- <p>One day of intensive learning</p> -->
 					</div>
 				</div>
 				<div class="card bg-base-200 shadow-xl">
