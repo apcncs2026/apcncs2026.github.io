@@ -11,14 +11,16 @@
 	function getInitials(name: string): string {
 		return name.split(' ').map(n => n[0]).join('');
 	}
+
+	$: avatarUrl = person.avatar ? `/images/profile/${person.id}.webp` : null;
 </script>
 
 <div class="card {cardBgClass} shadow-xl">
 	<figure class="px-10 pt-10">
 		<div class="avatar">
-			{#if person.avatar}
+			{#if avatarUrl}
 				<div class="w-32 h-32 rounded-full">
-					<img src={person.avatar} alt={person.name} class="rounded-full w-full h-full object-cover" />
+					<img src={avatarUrl} alt={person.name} class="rounded-full w-full h-full object-cover" />
 				</div>
 			{:else}
 				<div class="placeholder">

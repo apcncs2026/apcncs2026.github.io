@@ -2,8 +2,8 @@ export interface Person {
 	id: string;
 	name: string;
 	affiliation: string;
-	avatar?: string;
 	isPresident?: boolean;
+	avatar?: boolean;
 }
 
 export interface CommitteeChair extends Person {
@@ -111,7 +111,8 @@ export const organizers: CommitteeData = {
 		{
 			id: "mile-gu",
 			name: "Mile Gu",
-			affiliation: "Nanyang Technological University, Singapore"
+			affiliation: "Nanyang Technological University, Singapore",
+			avatar: true
 		}
 	],
 	
@@ -119,7 +120,8 @@ export const organizers: CommitteeData = {
 		{
 			id: "ee-hou-yong",
 			name: "Ee Hou Yong",
-			affiliation: "Nanyang Technological University, Singapore"
+			affiliation: "Nanyang Technological University, Singapore",
+			avatar: true
 		},
 		{
 			id: "bo-yang",
