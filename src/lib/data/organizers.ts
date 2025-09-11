@@ -78,12 +78,14 @@ export const organizers: CommitteeData = {
 		{
 			id: "soumyajyoti-biswas",
 			name: "Soumyajyoti Biswas",
-			affiliation: "SRM University AP, India"
+			affiliation: "SRM University AP, India",
+			avatar: true
 		},
 		{
 			id: "muhammad-azfar-ramli",
 			name: "Muhammad Azfar Ramli",
-			affiliation: "A*STAR Institute of High Performance Computing, Singapore"
+			affiliation: "A*STAR Institute of High Performance Computing, Singapore",
+			avatar: true
 		},
 		{
 			id: "cynthia-siew",
@@ -157,7 +159,8 @@ export const organizers: CommitteeData = {
 		{
 			id: "vahid-aryadoust",
 			name: "Vahid Aryadoust",
-			affiliation: "National Institute of Education, Singapore"
+			affiliation: "National Institute of Education, Singapore",
+			avatar: true
 		},
 		{
 			id: "sun-he",
