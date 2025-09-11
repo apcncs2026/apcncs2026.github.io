@@ -1,5 +1,7 @@
 # APSSCNCS 2026
 
+[https://apcncs2026.github.io](https://apcncs2026.github.io)
+
 Official website for the Asia-Pacific Summer School and Conference on Networks and Complex Systems (APSSCNCS 2026).
 
 **Date**: June 3-5, 2026  
