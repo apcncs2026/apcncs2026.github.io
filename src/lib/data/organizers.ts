@@ -134,7 +134,8 @@ export const organizers: CommitteeData = {
 		{
 			id: "duane-loh",
 			name: "Duane Loh",
-			affiliation: "National University of Singapore, Singapore"
+			affiliation: "National University of Singapore, Singapore",
+			avatar: true
 		}
 	],
 	
