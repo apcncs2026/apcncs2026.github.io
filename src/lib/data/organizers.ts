@@ -73,7 +73,8 @@ export const organizers: CommitteeData = {
 		{
 			id: "peter-yen",
 			name: "Peter Yen",
-			affiliation: "Nanyang Technological University, Singapore"
+			affiliation: "Nanyang Technological University, Singapore",
+			avatar: true
 		},
 		{
 			id: "soumyajyoti-biswas",
