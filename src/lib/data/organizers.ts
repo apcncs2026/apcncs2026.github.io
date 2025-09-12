@@ -91,7 +91,8 @@ export const organizers: CommitteeData = {
 		{
 			id: "cynthia-siew",
 			name: "Cynthia Siew",
-			affiliation: "National University of Singapore, Singapore"
+			affiliation: "National University of Singapore, Singapore",
+			avatar: true
 		},
 		{
 			id: "neil-huynh-hoai-nguyen",
@@ -104,7 +105,8 @@ export const organizers: CommitteeData = {
 		{
 			id: "ling-feng",
 			name: "Ling Feng",
-			affiliation: "A*Star Institute of High Performance Computing, Singapore"
+			affiliation: "A*Star Institute of High Performance Computing, Singapore",
+			avatar: true
 		},
 		{
 			id: "george-christopoulos",
