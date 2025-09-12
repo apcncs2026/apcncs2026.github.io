@@ -60,7 +60,8 @@ export const organizers: CommitteeData = {
 		{
 			id: "siew-ann-cheong",
 			name: "Siew Ann Cheong",
-			affiliation: "Nanyang Technological University, Singapore"
+			affiliation: "Nanyang Technological University, Singapore",
+			avatar: true
 		},
 		{
 			id: "anirban-chakraborti",
