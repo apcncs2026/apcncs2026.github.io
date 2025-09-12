@@ -25,3 +25,7 @@ vite.config.ts.timestamp-*
 # Claude AI files
 CLAUDE.md
 .claude/
+
+# Profile images - ignore everything except .webp files
+static/images/profile/*
+!static/images/profile/*.webp
