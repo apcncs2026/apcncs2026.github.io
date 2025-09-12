@@ -108,7 +108,7 @@
 		<div class="max-w-4xl mx-auto text-center">
 			<h2 class="text-3xl font-bold mb-6">Interested in Sponsoring?</h2>
 			<p class="text-xl mb-8">
-				For any sponsorship options, please contact us at: <Email email="apcncs2026@ntu.edu.sg" class_="text-white underline" />
+				For any sponsorship options, please contact us at: <Email email="SPMS-APCNCS2026@ntu.edu.sg" class_="text-white underline" />
 			</p>
 		</div>
 	</section>

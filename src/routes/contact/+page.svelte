@@ -26,7 +26,7 @@
 			<div class="prose prose-lg max-w-4xl mx-auto">
 				<p>For inquiries about APCNCS 2026, please contact the organizing committee.</p>
 				<p>Further contact details will be provided soon.</p>
-				<p>Email: <Email email="apcncs2026@ntu.edu.sg" /></p>
+				<p>Email: <Email email="SPMS-APCNCS2026@ntu.edu.sg" /></p>
 			</div>
 		</div>
 	</section>
