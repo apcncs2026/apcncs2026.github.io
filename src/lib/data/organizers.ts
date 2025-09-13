@@ -66,7 +66,8 @@ export const organizers: CommitteeData = {
 		{
 			id: "anirban-chakraborti",
 			name: "Anirban Chakraborti",
-			affiliation: "Jawaharlal Nehru University, India"
+			affiliation: "Jawaharlal Nehru University, India",
+			avatar: true
 		}
 	],
 	
@@ -151,7 +152,8 @@ export const organizers: CommitteeData = {
 		{
 			id: "hirdesh-kumar-pharasi",
 			name: "Hirdesh Kumar Pharasi",
-			affiliation: "BML Munjal University, India"
+			affiliation: "BML Munjal University, India",
+			avatar: true
 		},
 		{
 			id: "kelin-xia",
