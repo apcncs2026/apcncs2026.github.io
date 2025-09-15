@@ -42,7 +42,8 @@ export const organizers: CommitteeData = {
 		{
 			id: "didier-sornette",
 			name: "Didier Sornette",
-			affiliation: "Professor, Southern University of Science and Technology, China"
+			affiliation: "Professor, Southern University of Science and Technology, China",
+			avatar: true
 		},
 		{
 			id: "carlos-gershenson",
@@ -52,7 +53,14 @@ export const organizers: CommitteeData = {
 		{
 			id: "guido-caldarelli",
 			name: "Guido Caldarelli",
-			affiliation: "Professor, Ca' Foscari University of Venice, Italy, former President of Complex Systems Society"
+			affiliation: "Professor, Ca' Foscari University of Venice, Italy, former President of Complex Systems Society",
+			avatar: true
+		},
+		{
+			id: "hawoong-jeong",
+			name: "Hawoong Jeong",
+			affiliation: "Professor, Korea Advanced Institute of Science and Technology, Korea",
+			avatar: true
 		}
 	],
 	
