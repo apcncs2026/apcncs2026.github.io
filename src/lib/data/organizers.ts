@@ -48,7 +48,8 @@ export const organizers: CommitteeData = {
 		{
 			id: "carlos-gershenson",
 			name: "Carlos Gershenson",
-			affiliation: "Professor, Binghamton University, USA, President of Complex Systems Society"
+			affiliation: "Professor, Binghamton University, USA, President of Complex Systems Society",
+			avatar: true
 		},
 		{
 			id: "guido-caldarelli",
