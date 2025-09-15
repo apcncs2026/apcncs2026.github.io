@@ -37,7 +37,8 @@ export const organizers: CommitteeData = {
 		{
 			id: "misako-takayasu",
 			name: "Misako Takayasu",
-			affiliation: "Professor, Institute of Science Tokyo, Japan"
+			affiliation: "Professor, Institute of Science Tokyo, Japan",
+			avatar: true
 		},
 		{
 			id: "didier-sornette",
