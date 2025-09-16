@@ -123,7 +123,8 @@ export const organizers: CommitteeData = {
 		{
 			id: "george-christopoulos",
 			name: "George Christopoulos",
-			affiliation: "Nanyang Technological University, Singapore"
+			affiliation: "Nanyang Technological University, Singapore",
+			avatar: true
 		},
 		{
 			id: "mile-gu",
