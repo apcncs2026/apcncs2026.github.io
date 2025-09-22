@@ -30,17 +30,15 @@
 				</div>
 				<div class="flex justify-center mb-16">
 					{#each institutionalSponsors as sponsor}
-						<div class="card bg-gradient-to-br from-gray-100 to-gray-200 shadow-xl border-2 border-gray-300">
-							<div class="card-body items-center text-center p-8">
-								{#if sponsor.url}
-									<a href={sponsor.url} target="_blank" rel="noopener noreferrer" class="block">
-										<img src={sponsor.logo} alt={sponsor.name} class="max-h-32 w-auto" />
-									</a>
-								{:else}
-									<img src={sponsor.logo} alt={sponsor.name} class="max-h-32 w-auto" />
-								{/if}
-								<h3 class="card-title text-2xl mt-4">{sponsor.name}</h3>
-							</div>
+						<div class="flex flex-col items-center text-center">
+							{#if sponsor.url}
+								<a href={sponsor.url} target="_blank" rel="noopener noreferrer" class="block hover:opacity-80 transition-opacity">
+									<img src={sponsor.logo} alt={sponsor.name} class="max-h-40 w-auto" />
+								</a>
+							{:else}
+								<img src={sponsor.logo} alt={sponsor.name} class="max-h-40 w-auto" />
+							{/if}
+							<h3 class="text-2xl font-semibold mt-6">{sponsor.name}</h3>
 						</div>
 					{/each}
 				</div>
@@ -51,19 +49,17 @@
 					<h2 class="text-4xl font-bold mb-4">Key Sponsors</h2>
 					<div class="divider max-w-xs mx-auto"></div>
 				</div>
-				<div class="flex justify-center gap-8 mb-16">
+				<div class="flex justify-center gap-12 mb-16">
 					{#each keySponsors as sponsor}
-						<div class="card bg-gradient-to-br from-gray-100 to-gray-200 shadow-xl border-2 border-gray-300">
-							<div class="card-body items-center text-center p-8">
-								{#if sponsor.url}
-									<a href={sponsor.url} target="_blank" rel="noopener noreferrer" class="block">
-										<img src={sponsor.logo} alt={sponsor.name} class="max-h-32 w-auto" />
-									</a>
-								{:else}
+						<div class="flex flex-col items-center text-center">
+							{#if sponsor.url}
+								<a href={sponsor.url} target="_blank" rel="noopener noreferrer" class="block hover:opacity-80 transition-opacity">
 									<img src={sponsor.logo} alt={sponsor.name} class="max-h-32 w-auto" />
-								{/if}
-								<h3 class="card-title text-2xl mt-4">{sponsor.name}</h3>
-							</div>
+								</a>
+							{:else}
+								<img src={sponsor.logo} alt={sponsor.name} class="max-h-32 w-auto" />
+							{/if}
+							<h3 class="text-xl font-semibold mt-4">{sponsor.name}</h3>
 						</div>
 					{/each}
 				</div>
@@ -74,19 +70,17 @@
 					<h2 class="text-4xl font-bold mb-4">Sponsors</h2>
 					<div class="divider max-w-xs mx-auto"></div>
 				</div>
-				<div class="grid grid-cols-2 md:grid-cols-3 gap-8 mb-16">
+				<div class="grid grid-cols-2 md:grid-cols-3 gap-12 mb-16">
 					{#each regularSponsors as sponsor}
-						<div class="card bg-base-200 shadow-lg">
-							<div class="card-body items-center text-center p-4">
-								{#if sponsor.url}
-									<a href={sponsor.url} target="_blank" rel="noopener noreferrer" class="block">
-										<img src={sponsor.logo} alt={sponsor.name} class="max-h-20 w-auto" />
-									</a>
-								{:else}
+						<div class="flex flex-col items-center text-center">
+							{#if sponsor.url}
+								<a href={sponsor.url} target="_blank" rel="noopener noreferrer" class="block hover:opacity-80 transition-opacity">
 									<img src={sponsor.logo} alt={sponsor.name} class="max-h-20 w-auto" />
-								{/if}
-								<h3 class="card-title text-lg mt-3">{sponsor.name}</h3>
-							</div>
+								</a>
+							{:else}
+								<img src={sponsor.logo} alt={sponsor.name} class="max-h-20 w-auto" />
+							{/if}
+							<h3 class="text-lg font-semibold mt-3">{sponsor.name}</h3>
 						</div>
 					{/each}
 				</div>
@@ -97,18 +91,17 @@
 					<h2 class="text-4xl font-bold mb-4">Technical Sponsors</h2>
 					<div class="divider max-w-xs mx-auto"></div>
 				</div>
-				<div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+				<div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
 					{#each technicalSponsors as sponsor}
-						<div class="card bg-base-200 shadow-lg">
-							<div class="card-body items-center text-center p-3">
-								{#if sponsor.url}
-									<a href={sponsor.url} target="_blank" rel="noopener noreferrer" class="block">
-										<img src={sponsor.logo} alt={sponsor.name} class="max-h-16 w-auto" />
-									</a>
-								{:else}
+						<div class="flex flex-col items-center text-center">
+							{#if sponsor.url}
+								<a href={sponsor.url} target="_blank" rel="noopener noreferrer" class="block hover:opacity-80 transition-opacity">
 									<img src={sponsor.logo} alt={sponsor.name} class="max-h-16 w-auto" />
-								{/if}
-							</div>
+								</a>
+							{:else}
+								<img src={sponsor.logo} alt={sponsor.name} class="max-h-16 w-auto" />
+							{/if}
+							<h3 class="text-sm font-semibold mt-2">{sponsor.name}</h3>
 						</div>
 					{/each}
 				</div>
