@@ -1,6 +1,8 @@
 
 <script lang="ts">
 	import { getHeroBackgroundStyle } from '$lib/config/heroImages';
+	import { invitedSpeakers } from '$lib/data/speakers';
+	import SpeakerCard from '$lib/components/SpeakerCard.svelte';
 </script>
 
 <svelte:head>
@@ -14,6 +16,17 @@
 			<div class="max-w-4xl">
 				<h1 class="text-5xl font-bold hero-text mb-4">Invited Speakers</h1>
 				<p class="text-xl hero-text-secondary">APCNCS 2026 Speaker Information</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="py-16 px-4 bg-base-200">
+		<div class="max-w-6xl mx-auto">
+			<h2 class="text-4xl font-bold text-center mb-12">Confirmed Speakers</h2>
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				{#each invitedSpeakers as speaker}
+					<SpeakerCard {speaker} cardBgClass="bg-white" />
+				{/each}
 			</div>
 		</div>
 	</section>

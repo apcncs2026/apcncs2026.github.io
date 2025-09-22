@@ -27,5 +27,7 @@ CLAUDE.md
 .claude/
 
 # Profile images - ignore everything except .webp files
-static/images/profile/*
-!static/images/profile/*.webp
+static/images/profile/organizer/*
+!static/images/profile/organizer/*.webp
+static/images/profile/speaker/*
+!static/images/profile/speaker/*.webp
