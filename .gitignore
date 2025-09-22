@@ -31,3 +31,8 @@ static/images/profile/organizer/*
 !static/images/profile/organizer/*.webp
 static/images/profile/speaker/*
 !static/images/profile/speaker/*.webp
+
+# Sponsor images - keep all image files
+# No exclusions needed as we want to track sponsor logos
+static/images/sponsor/*
+!static/images/sponsor/*.webp
