@@ -27,13 +27,13 @@ export const organizers: CommitteeData = {
 		{
 			id: "peter-sloot",
 			name: "Peter Sloot",
-			affiliation: "Professor Emeritus, University of Amsterdam, former Co-Director of NTU Complexity Institute, former Director of University of Amsterdam Institute of Advanced Studies",
+			affiliation: "Professor Emeritus, University of Amsterdam, the Netherlands, former Co-Director of NTU Complexity Institute, former Director of University of Amsterdam Institute of Advanced Studies",
 			avatar: true
 		},
 		{
 			id: "stefan-thurner",
 			name: "Stefan Thurner",
-			affiliation: "Professor, Medical University of Vienna, President of Complexity Science Hub @ Vienna",
+			affiliation: "Professor, Medical University of Vienna, Austria, President of Complexity Science Hub @ Vienna",
 			avatar: true
 		},
 		{
@@ -69,7 +69,7 @@ export const organizers: CommitteeData = {
 		{
 			id: "erika-fille-legara",
 			name: "Erika Fille Legara",
-			affiliation: "Aboitiz Chair in Data Science, Asian Institute of Management",
+			affiliation: "Aboitiz Chair in Data Science, Asian Institute of Management, the Philippines",
 			avatar: true
 		}
 	],
