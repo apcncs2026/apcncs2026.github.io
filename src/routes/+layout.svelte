@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import Icon from '$lib/components/Icon.svelte';
+	import Email from '$lib/components/Email.svelte';
 
 	let { children } = $props();
 </script>
@@ -67,7 +68,7 @@
 				</div>
 				<div>
 					<h3 class="text-lg font-bold mb-2">Contact</h3>
-					<p>Contact information will be provided soon</p>
+					<p>Email: <Email email="SPMS-APCNCS2026@ntu.edu.sg" /></p>
 				</div>
 			</div>
 			<div class="divider"></div>
