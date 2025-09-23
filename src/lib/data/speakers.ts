@@ -12,7 +12,7 @@ export const invitedSpeakers: Speaker[] = [
 		id: "lock-yue-chew",
 		name: "Lock Yue Chew",
 		affiliation: "Nanyang Technological University, Singapore",
-		avatar: false
+		avatar: true
 	},
 	{
 		id: "jose-fernando-mendes",
