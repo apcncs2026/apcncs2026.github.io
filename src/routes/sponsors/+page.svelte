@@ -13,28 +13,32 @@
 			sponsors: institutionalSponsors,
 			logoHeight: 'max-h-40',
 			gridCols: 'flex',
-			titleSize: 'text-2xl'
+			titleSize: 'text-2xl',
+			showNames: false // Logo has the name
 		},
 		{
 			title: 'Key Sponsors',
 			sponsors: keySponsors,
 			logoHeight: 'max-h-36',
 			gridCols: 'flex',
-			titleSize: 'text-2xl'
+			titleSize: 'text-2xl',
+			showNames: false // Logo has the name
 		},
 		{
 			title: 'Sponsors',
 			sponsors: regularSponsors,
 			logoHeight: 'max-h-20',
 			gridCols: 'grid-cols-2 md:grid-cols-3',
-			titleSize: 'text-lg'
+			titleSize: 'text-lg',
+			showNames: false
 		},
 		{
 			title: 'Technical Sponsors',
 			sponsors: technicalSponsors,
 			logoHeight: 'max-h-16',
 			gridCols: 'grid-cols-2 md:grid-cols-4',
-			titleSize: 'text-sm'
+			titleSize: 'text-sm',
+			showNames: false
 		}
 	].map((section, index) => ({
 		...section,
@@ -64,6 +68,7 @@
 			gridCols={section.gridCols}
 			titleSize={section.titleSize}
 			sectionBgClass={section.sectionBgClass}
+			showNames={section.showNames}
 		/>
 	{/each}
 

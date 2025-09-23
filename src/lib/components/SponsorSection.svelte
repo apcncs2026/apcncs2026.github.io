@@ -7,6 +7,7 @@
 	export let gridCols: string = 'grid-cols-2 md:grid-cols-3'; // Default grid
 	export let titleSize: string = 'text-lg'; // Default title size
 	export let sectionBgClass: string = ''; // Optional background class
+	export let showNames: boolean = true; // Option to show/hide sponsor names
 </script>
 
 {#if sponsors.length > 0}
@@ -29,7 +30,9 @@
 							{:else}
 								<img src={sponsor.logo} alt={sponsor.name} class="{logoHeight} w-auto" />
 							{/if}
-							<h3 class="{titleSize} font-semibold mt-4">{sponsor.name}</h3>
+							{#if showNames}
+								<h3 class="{titleSize} font-semibold mt-4">{sponsor.name}</h3>
+							{/if}
 						</div>
 					{/each}
 				</div>
@@ -45,7 +48,9 @@
 							{:else}
 								<img src={sponsor.logo} alt={sponsor.name} class="{logoHeight} w-auto" />
 							{/if}
-							<h3 class="{titleSize} font-semibold mt-3">{sponsor.name}</h3>
+							{#if showNames}
+								<h3 class="{titleSize} font-semibold mt-3">{sponsor.name}</h3>
+							{/if}
 						</div>
 					{/each}
 				</div>
