@@ -11,7 +11,7 @@
 		{
 			title: 'Institutional Sponsor',
 			sponsors: institutionalSponsors,
-			logoHeight: 'max-h-40',
+			logoHeight: 'max-h-36',
 			gridCols: 'flex',
 			titleSize: 'text-2xl',
 			showNames: false // Logo has the name
