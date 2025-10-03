@@ -4,7 +4,7 @@
 
 Official website for the Asia-Pacific Summer School and Conference on Networks and Complex Systems (APCNCS 2026).
 
-**Date**: June 3-5, 2026  
+**Date**: June 9-12, 2026  
 **Venue**: Nanyang Technological University, Singapore
 
 ## About
