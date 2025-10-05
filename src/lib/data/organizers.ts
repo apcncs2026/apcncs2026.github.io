@@ -152,7 +152,8 @@ export const organizers: CommitteeData = {
 		{
 			id: "bo-yang",
 			name: "Bo Yang",
-			affiliation: "Nanyang Technological University, Singapore"
+			affiliation: "Nanyang Technological University, Singapore",
+			avatar: true
 		},
 		{
 			id: "duane-loh",
@@ -166,7 +167,8 @@ export const organizers: CommitteeData = {
 		{
 			id: "kang-hao-cheong",
 			name: "Kang Hao Cheong",
-			affiliation: "Nanyang Technological University, Singapore"
+			affiliation: "Nanyang Technological University, Singapore",
+			avatar: true
 		},
 		{
 			id: "hirdesh-kumar-pharasi",
