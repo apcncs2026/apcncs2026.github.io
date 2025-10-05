@@ -179,7 +179,8 @@ export const organizers: CommitteeData = {
 		{
 			id: "kelin-xia",
 			name: "Kelin Xia",
-			affiliation: "Nanyang Technological University, Singapore"
+			affiliation: "Nanyang Technological University, Singapore",
+			avatar: true
 		}
 	],
 	
