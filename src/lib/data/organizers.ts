@@ -117,7 +117,8 @@ export const organizers: CommitteeData = {
 		{
 			id: "neil-huynh-hoai-nguyen",
 			name: "Neil Huynh Hoai Nguyen",
-			affiliation: "A*STAR Institute of High Performance Computing, Singapore"
+			affiliation: "A*STAR Institute of High Performance Computing, Singapore",
+			avatar: true
 		}
 	],
 	
