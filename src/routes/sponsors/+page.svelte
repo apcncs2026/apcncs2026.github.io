@@ -11,33 +11,33 @@
 		{
 			title: 'Institutional Sponsor',
 			sponsors: institutionalSponsors,
-			logoHeight: 'max-h-36',
+			logoHeight: 'max-h-28',
 			gridCols: 'flex',
-			titleSize: 'text-2xl',
+			titleSize: 'text-xl',
 			showNames: false // Logo has the name
 		},
 		{
 			title: 'Key Sponsors',
 			sponsors: keySponsors,
-			logoHeight: 'max-h-36',
+			logoHeight: 'max-h-28',
 			gridCols: 'flex',
-			titleSize: 'text-2xl',
+			titleSize: 'text-xl',
 			showNames: false // Logo has the name
 		},
 		{
 			title: 'Sponsors',
 			sponsors: regularSponsors,
-			logoHeight: 'max-h-20',
-			gridCols: 'grid-cols-2 md:grid-cols-3',
-			titleSize: 'text-lg',
+			logoHeight: 'max-h-28',
+			gridCols: 'flex',
+			titleSize: 'text-xl',
 			showNames: false
 		},
 		{
 			title: 'Technical Sponsors',
 			sponsors: technicalSponsors,
-			logoHeight: 'max-h-16',
-			gridCols: 'grid-cols-2 md:grid-cols-4',
-			titleSize: 'text-sm',
+			logoHeight: 'max-h-28',
+			gridCols: 'flex',
+			titleSize: 'text-xl',
 			showNames: false
 		}
 	].map((section, index) => ({
