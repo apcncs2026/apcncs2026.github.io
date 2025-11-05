@@ -71,6 +71,12 @@ export const organizers: CommitteeData = {
 			name: "Erika Fille Legara",
 			affiliation: "Aboitiz Chair in Data Science, Asian Institute of Management, the Philippines",
 			avatar: true
+		},
+		{
+			id: "tiziana-di-matteo",
+			name: "Tiziana Di Matteo",
+			affiliation: "Professor of Econophysics, King's College London, the United Kingdom",
+			avatar: true
 		}
 	],
 	
