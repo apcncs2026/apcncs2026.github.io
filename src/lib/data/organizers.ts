@@ -125,6 +125,12 @@ export const organizers: CommitteeData = {
 			name: "Neil Huynh Hoai Nguyen",
 			affiliation: "A*STAR Institute of High Performance Computing, Singapore",
 			avatar: true
+		},
+		{
+			id: "zheng-tien-kang",
+			name: "Zheng Tien Kang",
+			affiliation: "Nanyang Technological University, Singapore",
+			avatar: true
 		}
 	],
 	
@@ -166,6 +172,12 @@ export const organizers: CommitteeData = {
 			id: "duane-loh",
 			name: "Duane Loh",
 			affiliation: "National University of Singapore, Singapore",
+			avatar: true
+		},
+		{
+			id: "muhammad-abraar-abhirama",
+			name: " Muhammad Abraar Abhirama",
+			affiliation: "Nanyang Technological University, Singapore",
 			avatar: true
 		}
 	],
