@@ -21,9 +21,9 @@
 	</section>
 
 	<section class="py-16 px-4">
-		<div class="max-w-6xl mx-auto">
+		<div class="max-w-4xl mx-auto">
 			<h2 class="text-4xl font-bold text-center mb-12">Contact</h2>
-			<div class="prose prose-lg max-w-4xl mx-auto">
+			<div class="prose prose-lg max-w-none">
 				<p>For inquiries about APCNCS 2026, please contact the organizing committee.</p>
 				<p>Further contact details will be provided soon.</p>
 				<p>Email: <Email email="SPMS-APCNCS2026@ntu.edu.sg" /></p>

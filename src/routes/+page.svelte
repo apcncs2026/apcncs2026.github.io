@@ -31,24 +31,20 @@
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 				<div class="card bg-base-200 shadow-xl">
 					<div class="card-body">
-						<h3 class="card-title text-primary">Abstract Submission Deadline</h3>
-						<p class="text-xl font-bold">TBA</p>
-						<!-- <p>Submit your research abstracts for review</p> -->
+						<h3 class="card-title text-primary">Abstract Submission</h3>
+						<p class="text-xl font-bold">1 Dec 2025 - 28 Feb 2026</p>
+					</div>
+				</div>
+				<div class="card bg-base-200 shadow-xl">
+					<div class="card-body">
+						<h3 class="card-title text-primary">Acceptance Notification</h3>
+						<p class="text-xl font-bold">15 Mar 2026</p>
 					</div>
 				</div>
 				<div class="card bg-base-200 shadow-xl">
 					<div class="card-body">
 						<h3 class="card-title text-primary">Early Bird Registration</h3>
-						<p class="text-xl font-bold">TBA</p>
-						<!-- <p>Save on registration fees</p> -->
-					</div>
-				</div>
-				<div class="card bg-base-200 shadow-xl">
-					<div class="card-body">
-						<h3 class="card-title text-primary">Summer School</h3>
-						<p class="text-sm line-through opacity-60">2 June, 2026</p>
-						<p class="text-xl font-bold flex items-center gap-2">9 June, 2026 <span class="badge badge-error badge-md">NEW</span></p>
-						<!-- <p>One day of intensive learning</p> -->
+						<p class="text-xl font-bold">16 Mar - 30 Apr 2026</p>
 					</div>
 				</div>
 				<div class="card bg-base-200 shadow-xl">
@@ -56,7 +52,7 @@
 						<h3 class="card-title text-primary">Conference Dates</h3>
 						<p class="text-sm line-through opacity-60">3-5 June, 2026</p>
 						<p class="text-xl font-bold flex items-center gap-2">10-12 June, 2026 <span class="badge badge-error badge-md">NEW</span></p>
-						<!-- <p>Three days of learning and networking</p> -->
+						<p class="text-sm mt-2">Summer School: 9 June</p>
 					</div>
 				</div>
 			</div>
@@ -64,19 +60,18 @@
 	</section>
 
 	<section class="py-16 px-4">
-		<div class="max-w-6xl mx-auto">
+		<div class="max-w-4xl mx-auto">
 			<h2 class="text-4xl font-bold text-center mb-12">About the Conference</h2>
-			<div class="prose prose-lg max-w-4xl mx-auto">
-				<!-- <p>
-					The Asia-Pacific Summer School and Conference on Networks and Complex Systems (APCNCS 2026) brings together researchers, practitioners, and students from around the world 
-					to share cutting-edge research, exchange ideas, and foster collaborations. This interdisciplinary conference 
-					focuses on networks and complex systems, featuring keynote presentations, workshops, and networking opportunities.
+			<div class="prose prose-lg max-w-none">
+				<p>
+					The number of scientists working on networks and complex systems in the Asia-Pacific region is increasing, but high-level conferences in these areas remain limited to NetSci, NetSciX, the International Conference on Computational Science (ICCS), and Conference on Complex Systems (CCS). Asia-Pacific scientists, especially postdocs and PhD students in these areas therefore have limited opportunities to attend these conferences. This leads to a lack of exposure of Asia-Pacific scientists to good work done elsewhere in the world, and of scientists from other parts of the world to good work done in Asia-Pacific, and seriously hampers the academic growths of Asia-Pacific scientists. Recently, we have been encouraged by the strong turnout of Indian scientists at all levels at the NetSciX 2025 conference in Indore, India. We can sense that the younger scientists treasured this opportunity to share their work. Unfortunately, it is impossible to bring these flagship conferences to Asia-Pacific every year. At best, we can host one such conference in Asia once every three to four years.
 				</p>
 				<p>
-					Join us for three days of intellectual stimulation, professional development, and meaningful connections 
-					with peers in your field. Whether you're presenting your research, attending sessions, or participating 
-					in workshops, this conference offers valuable opportunities for academic and professional growth in the study of networks and complex systems.
-				</p> -->
+					This prompted us to start an Asia-Pacific Conference on Networks and Complex Systems beginning next year (2-5 Jun 2026 in Singapore) to cater to these unmet demands. With this conference, we would always have a platform to present our recent work and meet up with colleagues. While we will always invite the most exciting speakers from all around the world, our goal is to include more invited speakers from Asia-Pacific. We also aim to give as many participants as possible (including PhD students) a chance to give oral presentations. We will rotate this conference series around Asia-Pacific, where most venues are more affordable compared to Europe or North America. Hopefully, more Asian scientists would be able to attend, even if they have limited funding. This is especially true of PhD students and postdoctoral researchers, many of whom can only attend the local editions of the conference.
+				</p>
+				<p>
+					Finally, to ensure that the conference is relevant and high-level, we will be advised by an International Advisory Committee of eminent scientists in the fields of networks and complex systems. Additionally, to ensure that good organizational practices are shared after they are developed, besides local organizers the organizing team for a given year will also comprise core members from the organizing team for the next year.
+				</p>
 			</div>
 		</div>
 	</section>

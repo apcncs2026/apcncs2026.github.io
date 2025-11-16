@@ -18,8 +18,8 @@
 	</section>
 
 	<section class="py-16 px-4">
-		<div class="max-w-6xl mx-auto">
-			<div class="prose prose-lg max-w-4xl mx-auto">
+		<div class="max-w-4xl mx-auto">
+			<div class="prose prose-lg max-w-none">
 				<h2 class="text-3xl font-bold mb-8">To Be Announced</h2>
 			</div>
 		</div>
