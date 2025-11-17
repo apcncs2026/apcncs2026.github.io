@@ -75,7 +75,7 @@
 			<div class="alert alert-info mb-8">
 				<Icon name="info" class_="stroke-current shrink-0 h-6 w-6" />
 				<div>
-					<h3 class="font-bold">Abstract Submission Now Open</h3>
+					<h3 class="font-bold">Abstract Submission Opens 1 Dec 2025</h3>
 					<div class="text-sm">Deadline: 28 Feb 2026 | Submit to: <Email email="SPMS-APCNCS2026@ntu.edu.sg" /></div>
 				</div>
 			</div>
