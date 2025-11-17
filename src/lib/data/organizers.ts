@@ -215,6 +215,12 @@ export const organizers: CommitteeData = {
 			name: "Sun He",
 			affiliation: "National Institute of Education, Singapore",
 			avatar: true
+		},
+		{
+			id: "ho-yan-ian-ip",
+			name: "Ho Yan Ian Ip",
+			affiliation: "Nanyang Technological University, Singapore",
+			avatar: true
 		}
 	],
 	
