@@ -27,6 +27,12 @@ export const sponsors: SponsorData = {
 			name: "MDPI Entropy",
 			logo: "/images/sponsor/mdpi-entropy.webp",
 			url: "https://www.mdpi.com/journal/entropy"
+		},
+		{
+			id: "mdpi-complexities",
+			name: "MDPI Complexities",
+			logo: "/images/sponsor/mdpi-complexities.webp",
+			url: "https://www.mdpi.com/journal/complexities"
 		}
 	],
 	regularSponsors: [],
