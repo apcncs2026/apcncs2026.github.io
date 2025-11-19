@@ -17,11 +17,19 @@
 				<button tabindex="0" class="btn btn-ghost" aria-label="Toggle navigation menu">
 					<Icon name="menu" class_="h-5 w-5" />
 				</button>
-				<ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 text-base-content rounded-box w-52">
+				<ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 text-base-content rounded-box w-72">
 					<li><a href="/">Home</a></li>
 					<li><a href="/organizers">Organizers</a></li>
 					<li><a href="/speakers">Invited Speakers</a></li>
-					<li><a href="/call-for-abstracts">Call for Abstracts</a></li>
+					<li>
+						<details>
+							<summary>Conference</summary>
+							<ul class="w-64">
+								<li><a href="/call-for-abstracts">Call for Abstracts</a></li>
+								<li><a href="/focus-complexity-ai">Focus Session: Complexity of AI</a></li>
+							</ul>
+						</details>
+					</li>
 					<li><a href="/registration">Registration</a></li>
 					<li><a href="/programme">Programme</a></li>
 					<li><a href="/accommodation">Accommodation</a></li>
@@ -36,7 +44,15 @@
 				<li><a href="/">Home</a></li>
 				<li><a href="/organizers">Organizers</a></li>
 				<li><a href="/speakers">Invited Speakers</a></li>
-				<li><a href="/call-for-abstracts">Call for Abstracts</a></li>
+				<li>
+					<details>
+						<summary>Conference</summary>
+						<ul class="p-2 bg-base-100 rounded-t-none z-50 w-64">
+							<li><a href="/call-for-abstracts" class="whitespace-nowrap">Call for Abstracts</a></li>
+							<li><a href="/focus-complexity-ai" class="whitespace-nowrap">Focus Session: Complexity of AI</a></li>
+						</ul>
+					</details>
+				</li>
 				<li><a href="/registration">Registration</a></li>
 				<li><a href="/programme">Programme</a></li>
 				<li><a href="/accommodation">Accommodation</a></li>

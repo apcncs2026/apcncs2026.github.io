@@ -164,6 +164,9 @@
 							<p class="text-sm italic mt-2">
 								Participants will also be invited to contribute to a special issue of the same name, which is co-listed on <Link href="https://www.mdpi.com/journal/entropy/special_issues/AQO5Z1H353" text="MDPI Entropy" /> and <Link href="https://www.mdpi.com/journal/complexities/special_issues/477OQWUB64" text="MDPI Complexities" />.
 							</p>
+							<div class="card-actions justify-end mt-4">
+								<a href="/focus-complexity-ai" class="btn btn-primary btn-sm">View Focus Session Details</a>
+							</div>
 						</div>
 					</div>
 

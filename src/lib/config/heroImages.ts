@@ -1,4 +1,4 @@
-export type PageName = 'home' | 'international' | 'speakers' | 'organizers' | 'programme' | 'registration' | 'contact' | 'accommodation' | 'abstracts' | 'sponsors';
+export type PageName = 'home' | 'international' | 'speakers' | 'organizers' | 'programme' | 'registration' | 'contact' | 'accommodation' | 'abstracts' | 'sponsors' | 'focus';
 
 export interface HeroImageConfig {
   basePath: string;
@@ -17,7 +17,8 @@ export const heroImages: HeroImageConfig = {
     contact: 'contact-ntu-campus.webp',
     accommodation: 'accommodation-singapore-skyline.webp',
     abstracts: 'call-for-abstracts-ntu-research.webp',
-    sponsors: 'sponsor.webp'
+    sponsors: 'sponsor.webp',
+    focus: 'call-for-abstracts-ntu-research.webp'
   }
 };
 
