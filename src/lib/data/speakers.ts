@@ -20,5 +20,17 @@ export const invitedSpeakers: Speaker[] = [
 		affiliation: "University of Aveiro, Portugal",
 		specialNote: "MDPI Entropy Invited Speaker",
 		avatar: true
+	},
+	{
+		id: "hawoong-jeong",
+		name: "Hawoong Jeong",
+		affiliation: "Korea Advanced Institute of Science and Technology (KAIST), South Korea",
+		avatar: true
+	},
+	{
+		id: "misako-takayasu",
+		name: "Misako Takayasu",
+		affiliation: "Tokyo Institute of Technology, Japan",
+		avatar: true
 	}
 ];
