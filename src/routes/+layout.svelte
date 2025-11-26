@@ -2,8 +2,27 @@
 	import '../app.css';
 	import Icon from '$lib/components/Icon.svelte';
 	import Email from '$lib/components/Email.svelte';
+	import { onMount } from 'svelte';
 
 	let { children } = $props();
+	let desktopDropdown: HTMLDetailsElement | null = null;
+
+	onMount(() => {
+		const handleClickOutside = (event: MouseEvent) => {
+			if (desktopDropdown && desktopDropdown.open) {
+				const target = event.target as Node;
+				if (!desktopDropdown.contains(target)) {
+					desktopDropdown.open = false;
+				}
+			}
+		};
+
+		document.addEventListener('click', handleClickOutside);
+
+		return () => {
+			document.removeEventListener('click', handleClickOutside);
+		};
+	});
 </script>
 
 <svelte:head>
@@ -45,7 +64,7 @@
 				<li><a href="/organizers">Organizers</a></li>
 				<li><a href="/speakers">Invited Speakers</a></li>
 				<li>
-					<details>
+					<details bind:this={desktopDropdown}>
 						<summary>Conference</summary>
 						<ul class="p-2 bg-base-100 rounded-t-none z-50 w-64">
 							<li><a href="/call-for-abstracts" class="whitespace-nowrap">Call for Abstracts</a></li>
