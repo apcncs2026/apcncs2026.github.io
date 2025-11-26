@@ -32,5 +32,11 @@ export const invitedSpeakers: Speaker[] = [
 		name: "Misako Takayasu",
 		affiliation: "Tokyo Institute of Technology, Japan",
 		avatar: true
+	},
+	{
+		id: "hsuan-yi-chen",
+		name: "Hsuan-Yi Chen",
+		affiliation: "National Central University, Taiwan",
+		avatar: true
 	}
 ];
