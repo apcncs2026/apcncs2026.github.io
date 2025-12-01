@@ -98,6 +98,9 @@
 				<p>
 					The extended abstract must include a short list of references, but should also take advantage of the second page to include figures on the research questions, the methods, and the results, with appropriate cross referencing in the text. For studies involving humans and animals, we ask for an ethics statement to be included at the end of the abstract.
 				</p>
+				<p>
+					Please use the templates provided for <Link href="/templates/APCNCS2026_Word_template.zip" text="Word" download={true} target="_self" /> or <Link href="/templates/APCNCS2026_simple_Latex_template.zip" text="LaTeX" download={true} target="_self" />.
+				</p>
 			</div>
 
 			<div class="prose prose-lg max-w-none mb-12">
