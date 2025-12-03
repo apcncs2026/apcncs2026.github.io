@@ -38,5 +38,17 @@ export const invitedSpeakers: Speaker[] = [
 		name: "Hsuan-Yi Chen",
 		affiliation: "National Central University, Taiwan",
 		avatar: true
+	},
+	{
+		id: "fatimah-abdul-razak",
+		name: "Fatimah Abdul Razak",
+		affiliation: "Universiti Kebangsaan Malaysia (The National University of Malaysia), Malaysia",
+		avatar: true
+	},
+	{
+		id: "carlos-gershenson",
+		name: "Carlos Gershenson",
+		affiliation: "Binghamton University, USA",
+		avatar: true
 	}
 ];
