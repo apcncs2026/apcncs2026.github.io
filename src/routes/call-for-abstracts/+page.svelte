@@ -175,8 +175,19 @@
 
 					<div class="card bg-base-100 shadow-md">
 						<div class="card-body">
-							<h3 class="card-title text-primary text-lg">2. GAME</h3>
-							<p class="text-sm italic">Details to be announced. Special issue in MDPI Games.</p>
+							<h3 class="card-title text-primary text-lg">2. Games on Complex Systems</h3>
+							<p class="text-sm">
+								Modern game-theoretic systems—spanning economics, biology, AI, and engineered networks—are increasingly large, data-driven, and shaped by learning algorithms. As traditional equilibrium concepts become insufficient for such complex environments, ideas from complexity science offer powerful tools for understanding how large-scale behaviours such as cooperation, polarisation, self-organisation, or instability emerge from local strategic interactions. Recent advances in evolutionary and learning-based game dynamics, mean-field models for large populations, and algorithmic game theory have expanded our ability to analyse adaptation, coordination, and competition in both natural and artificial systems. At the same time, machine learning has pushed game theory to the forefront: multi-agent reinforcement learning, adversarial training, and emergent behaviours in large language models highlight the growing interplay between strategic reasoning and modern AI.
+							</p>
+							<p class="text-sm mt-2">
+								This focus session brings together researchers across these areas to share new theoretical, computational, and data-driven insights. We welcome interdisciplinary contributions that deepen our understanding of complex multi-agent interactions and their real-world applications.
+							</p>
+							<p class="text-sm italic mt-2">
+								Special issue in MDPI Games.
+							</p>
+							<div class="card-actions justify-end mt-4">
+								<a href="/focus-games" class="btn btn-primary btn-sm">View Focus Session Details</a>
+							</div>
 						</div>
 					</div>
 				</div>
