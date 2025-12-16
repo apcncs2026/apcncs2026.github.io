@@ -50,5 +50,11 @@ export const invitedSpeakers: Speaker[] = [
 		name: "Carlos Gershenson",
 		affiliation: "Binghamton University, USA",
 		avatar: true
+	},
+	{
+		id: "parongama-sen",
+		name: "Parongama Sen",
+		affiliation: "University of Calcutta, India",
+		avatar: true
 	}
 ];
