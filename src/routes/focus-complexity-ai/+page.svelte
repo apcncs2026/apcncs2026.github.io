@@ -11,20 +11,20 @@
 	];
 
 	const topics = [
-		"Complexity science",
-		"Artificial intelligence",
-		"Neural networks",
-		"Statistical physics",
-		"Phase transitions",
-		"Dynamical systems",
-		"Self-organization"
+		"Emergence and phase transitions in AI/ML models",
+		"Statistical mechanics of neural networks",
+		"Dynamics of neural networks training and inference",
+		"Power laws in AI/ML models",
+		"Self organization in neural networks",
+		"Energy based models and analysis",
+		"Reinforcement learning in multi-agent systems"
 	];
 
 	const organizers = [
 		{
 			name: "Feng Ling",
-			affiliation: "A*Star Institute of High Performance Computing, Singapore",
-			email: "felney@gmail.com"
+			affiliation: "Institute of High Performance Computing, Agency for Science, Technology and Research (A*STAR) Singapore",
+			email: "fengl@a-star.edu.sg"
 		},
 		{
 			name: "Chew Lock Yue",
@@ -146,7 +146,7 @@
 				</p>
 				<div class="ml-4 mt-4">
 					<p class="font-semibold">Feng Ling</p>
-					<Email email="felney@gmail.com" />
+					<Email email="fengl@a-star.edu.sg" />
 					<p class="mt-4 font-semibold">Chew Lock Yue (Prof)</p>
 					<Email email="lockyue@ntu.edu.sg" />
 				</div>
