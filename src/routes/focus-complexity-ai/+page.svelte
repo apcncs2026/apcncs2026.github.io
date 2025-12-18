@@ -17,7 +17,8 @@
 		"Power laws in AI/ML models",
 		"Self organization in neural networks",
 		"Energy based models and analysis",
-		"Reinforcement learning in multi-agent systems"
+		"Reinforcement learning in multi-agent systems",
+		"Adaptive and causal ML and AI"
 	];
 
 	const organizers = [
