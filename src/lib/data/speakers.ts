@@ -56,5 +56,17 @@ export const invitedSpeakers: Speaker[] = [
 		name: "Parongama Sen",
 		affiliation: "University of Calcutta, India",
 		avatar: true
+	},
+	{
+		id: "sarah-russell",
+		name: "Sarah Russell",
+		affiliation: "Peter MacCallum Cancer Centre & Swinburne University of Technology, Australia",
+		avatar: true
+	},
+	{
+		id: "ginestra-bianconi",
+		name: "Ginestra Bianconi",
+		affiliation: "Queen Mary University of London, UK",
+		avatar: true
 	}
 ];
