@@ -68,5 +68,12 @@ export const invitedSpeakers: Speaker[] = [
 		name: "Ginestra Bianconi",
 		affiliation: "Queen Mary University of London, UK",
 		avatar: true
+	},
+	{
+		id: "marton-karsai",
+		name: "Márton Karsai",
+		affiliation: "Central European University, Austria",
+		specialNote: "World Scientific Invited Speaker",
+		avatar: true
 	}
 ];
