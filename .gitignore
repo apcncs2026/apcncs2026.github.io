@@ -36,3 +36,5 @@ static/images/profile/speaker/*
 # No exclusions needed as we want to track sponsor logos
 static/images/sponsor/*
 !static/images/sponsor/*.webp
+
+design/
