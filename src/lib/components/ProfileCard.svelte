@@ -19,7 +19,7 @@
 	$: avatarUrl = person.avatar ? `/images/profile/${profileType}/${person.id}.webp` : null;
 </script>
 
-<div class="card {cardBgClass} shadow-xl">
+<div class="card {cardBgClass} shadow-xl h-full">
 	<figure class="px-10 pt-10">
 		<div class="avatar">
 			{#if avatarUrl}
