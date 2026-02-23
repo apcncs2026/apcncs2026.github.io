@@ -20,7 +20,7 @@
 			title: 'Key Sponsors',
 			sponsors: keySponsors,
 			logoHeight: 'max-h-28',
-			gridCols: 'flex',
+			gridCols: 'grid-cols-2',
 			titleSize: 'text-xl',
 			showNames: false // Logo has the name
 		},
@@ -28,7 +28,7 @@
 			title: 'Sponsors',
 			sponsors: regularSponsors,
 			logoHeight: 'max-h-28',
-			gridCols: 'flex',
+			gridCols: 'grid-cols-2',
 			titleSize: 'text-xl',
 			showNames: false
 		},
@@ -36,7 +36,7 @@
 			title: 'Technical Sponsors',
 			sponsors: technicalSponsors,
 			logoHeight: 'max-h-28',
-			gridCols: 'flex',
+			gridCols: 'grid-cols-2',
 			titleSize: 'text-xl',
 			showNames: false
 		}

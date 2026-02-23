@@ -39,6 +39,12 @@ export const sponsors: SponsorData = {
 			name: "World Scientific",
 			logo: "/images/sponsor/world-scientific.webp",
 			url: "https://www.worldscientific.com"
+		},
+		{
+			id: "mdpi-games",
+			name: "MDPI Games",
+			logo: "/images/sponsor/mdpi-games.webp",
+			url: "https://www.mdpi.com/journal/games"
 		}
 	],
 	regularSponsors: [],
