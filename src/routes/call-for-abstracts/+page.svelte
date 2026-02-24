@@ -6,7 +6,7 @@
 
 	const importantDates = [
 		{ event: "Abstract Submission Opens", date: "1 Dec 2025" },
-		{ event: "Abstract Submission Deadline", date: "28 Feb 2026" },
+		{ event: "Abstract Submission Deadline", date: "28 Feb 2026", newDate: "14 Mar 2026" },
 		{ event: "Notification of Acceptance", date: "15 Mar 2026" },
 		{ event: "Conference Registration Opens", date: "16 Mar 2026" },
 	];
@@ -76,7 +76,7 @@
 				<Icon name="info" class_="stroke-current shrink-0 h-6 w-6" />
 				<div>
 					<h3 class="font-bold">Abstract Submission Opens 1 Dec 2025</h3>
-					<div class="text-sm">Deadline: 28 Feb 2026 | Submit to: <Email email="SPMS-APCNCS2026@ntu.edu.sg" /></div>
+					<div class="text-sm">Deadline: <span class="line-through opacity-60">28 Feb 2026</span> <span class="badge badge-error badge-sm">NEW</span> <strong>14 Mar 2026</strong> | Submit to: <Email email="SPMS-APCNCS2026@ntu.edu.sg" /></div>
 				</div>
 			</div>
 
@@ -106,7 +106,7 @@
 			<div class="prose prose-lg max-w-none mb-12">
 				<h2 class="text-3xl font-bold mb-6">Submission Guidelines</h2>
 				<p>
-					Submission opens on <strong>1 Dec 2025</strong>, and will close on <strong>28 Feb 2026</strong>. The abstract should be written in English, using a suitable 12-point font, on an A4-size document with one-inch margins, and submitted through email to <Email email="SPMS-APCNCS2026@ntu.edu.sg" />.
+					Submission opens on <strong>1 Dec 2025</strong>, and will close on <span class="line-through opacity-60">28 Feb 2026</span> <span class="badge badge-error badge-sm">NEW</span> <strong>14 Mar 2026</strong>. The abstract should be written in English, using a suitable 12-point font, on an A4-size document with one-inch margins, and submitted through email to <Email email="SPMS-APCNCS2026@ntu.edu.sg" />.
 				</p>
 				<p>
 					The use of generative artificial intelligence (GenAI) for research, i.e., for statistical sampling from a probabilistic model is acceptable. How this is done should be mentioned in the approach and methodology paragraph. The use of GenAI for editorial support, i.e., check for grammatical errors or typographical errors, as well as for clarity in the writing is also acceptable. Contributing authors should exercise human oversight on the submitted version, to ensure that the GenAI suggested edits are aligned with their original intents.
@@ -210,7 +210,15 @@
 						{#each importantDates as item}
 							<tr>
 								<td class="font-semibold">{item.event}</td>
-								<td>{item.date}</td>
+								<td>
+									{#if item.newDate}
+										<span class="line-through opacity-60">{item.date}</span>
+										<span class="badge badge-error badge-sm">NEW</span>
+										<span class="font-bold">{item.newDate}</span>
+									{:else}
+										{item.date}
+									{/if}
+								</td>
 							</tr>
 						{/each}
 					</tbody>

@@ -32,7 +32,8 @@
 				<div class="card bg-base-200 shadow-xl">
 					<div class="card-body">
 						<h3 class="card-title text-primary">Abstract Submission</h3>
-						<p class="text-xl font-bold">1 Dec 2025 - 28 Feb 2026</p>
+						<p class="text-sm line-through opacity-60">1 Dec 2025 - 28 Feb 2026</p>
+						<p class="text-xl font-bold flex items-center gap-2">1 Dec 2025 - 14 Mar 2026 <span class="badge badge-error badge-md">NEW</span></p>
 					</div>
 				</div>
 				<div class="card bg-base-200 shadow-xl">
