@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { getHeroBackgroundStyle } from '$lib/config/heroImages';
-	import RegistrationForm from '$lib/components/RegistrationForm.svelte';
 </script>
 
 <svelte:head>
@@ -76,9 +75,8 @@
 	</section>
 
 	<section class="py-16 px-4 bg-base-200">
-		<div class="max-w-4xl mx-auto">
-			<h2 class="text-3xl font-bold text-center mb-8">Register Now</h2>
-			<RegistrationForm />
+		<div class="max-w-4xl mx-auto text-center">
+			<a href="/registration/form" class="btn btn-primary btn-lg">Register Now</a>
 		</div>
 	</section>
 

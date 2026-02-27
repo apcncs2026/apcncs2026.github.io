@@ -17,6 +17,9 @@
 	let conferenceDinner = $state(false);
 	let hallNights = $state(0);
 	let catering = $state('no_preference');
+	let dietaryNotes = $state('');
+
+	let showDietaryNotes = $derived(catering === 'allergy' || catering === 'other');
 
 	let submitting = $state(false);
 	let error = $state('');
@@ -39,7 +42,8 @@
 					summer_school: summerSchool,
 					conference_dinner: conferenceDinner,
 					hall_nights: hallNights,
-					catering
+					catering,
+					dietary_notes: dietaryNotes
 				})
 			});
 
@@ -151,16 +155,11 @@
 					<div class="label">
 						<span class="label-text">Hall Accommodation (S$80/night)</span>
 					</div>
-					<input
-						type="number"
-						bind:value={hallNights}
-						min="0"
-						max={MAX_HALL_NIGHTS}
-						class="input input-bordered w-full"
-					/>
-					<div class="label">
-						<span class="label-text-alt">Maximum {MAX_HALL_NIGHTS} nights</span>
-					</div>
+					<select bind:value={hallNights} class="select select-bordered w-full">
+						{#each Array.from({ length: MAX_HALL_NIGHTS + 1 }, (_, i) => i) as n}
+							<option value={n}>{n === 0 ? 'None' : `${n} night${n > 1 ? 's' : ''}`}</option>
+						{/each}
+					</select>
 				</label>
 
 				<label class="form-control w-full">
@@ -172,6 +171,22 @@
 					</select>
 				</label>
 			</div>
+
+			{#if showDietaryNotes}
+				<label class="form-control w-full">
+					<div class="label"><span class="label-text">Please specify your dietary requirements / allergies</span></div>
+					<textarea
+						bind:value={dietaryNotes}
+						maxlength="500"
+						rows="2"
+						class="textarea textarea-bordered w-full"
+						placeholder="e.g. allergic to prawns and beef"
+					></textarea>
+					<div class="label">
+						<span class="label-text-alt">{dietaryNotes.length}/500 characters</span>
+					</div>
+				</label>
+			{/if}
 		</div>
 	</div>
 

@@ -21,6 +21,7 @@ export const CATERING_OPTIONS = [
 	{ value: 'halal', label: 'Halal' },
 	{ value: 'kosher', label: 'Kosher' },
 	{ value: 'gluten_free', label: 'Gluten-Free' },
+	{ value: 'allergy', label: 'Allergy' },
 	{ value: 'other', label: 'Other' }
 ] as const;
 
@@ -39,7 +40,11 @@ export const MAX_HALL_NIGHTS = 5;
 
 /** Determine current tier from today's date (for display estimate only). */
 export function getCurrentTier(): string {
-	const today = new Date();
+	// Use Singapore time (UTC+8) for tier calculation
+	const now = new Date();
+	const sgtString = now.toLocaleDateString('en-CA', { timeZone: 'Asia/Singapore' });
+	const today = new Date(sgtString);
+
 	const earlyBirdEnd = new Date('2026-04-30');
 	const regularEnd = new Date('2026-05-31');
 
