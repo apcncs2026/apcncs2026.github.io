@@ -90,5 +90,12 @@ export const invitedSpeakers: Speaker[] = [
 		affiliation: "University of Calcutta, India",
 		avatar: true,
 		tier: 3
+	},
+	{
+		id: "thiparat-chotibut",
+		name: "Thiparat Chotibut",
+		affiliation: "Chulalongkorn University, Thailand",
+		avatar: true,
+		tier: 3
 	}
 ];
