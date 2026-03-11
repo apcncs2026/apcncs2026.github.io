@@ -14,8 +14,6 @@
 				<h1 class="text-4xl md:text-5xl font-bold hero-text mb-6">Asia-Pacific Summer School and Conference on Networks and Complex Systems</h1>
 				<p class="text-xl md:text-2xl hero-text-secondary mb-8 flex items-center justify-center gap-2 flex-wrap">
 					<span class="whitespace-nowrap flex items-center gap-2">
-						<span class="line-through opacity-60">2-5 June, 2026</span>
-						<span class="badge badge-error badge-md">NEW</span>
 						<span class="font-bold">9-12 June, 2026</span>
 						<span>|</span>
 					</span>
@@ -51,8 +49,7 @@
 				<div class="card bg-base-200 shadow-xl">
 					<div class="card-body">
 						<h3 class="card-title text-primary">Conference Dates</h3>
-						<p class="text-sm line-through opacity-60">3-5 June, 2026</p>
-						<p class="text-xl font-bold flex items-center gap-2">10-12 June, 2026 <span class="badge badge-error badge-md">NEW</span></p>
+						<p class="text-xl font-bold">10-12 June, 2026</p>
 						<p class="text-sm mt-2">Summer School: 9 June</p>
 					</div>
 				</div>
