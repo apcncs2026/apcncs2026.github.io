@@ -9,4 +9,10 @@
 	$: displayText = text || href;
 </script>
 
-<a {href} {target} {rel} {download} class={class_}>{displayText}</a>
+{#if download === true}
+<a {href} {target} {rel} download class={class_}>{displayText}</a>
+{:else if download}
+<a {href} {target} {rel} download={download} class={class_}>{displayText}</a>
+{:else}
+<a {href} {target} {rel} class={class_}>{displayText}</a>
+{/if}

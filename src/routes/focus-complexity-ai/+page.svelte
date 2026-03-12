@@ -111,6 +111,14 @@
 					</div>
 				{/each}
 			</div>
+
+			<div class="prose prose-lg max-w-none">
+				<h3 class="text-2xl font-bold mb-4">Abstract Format</h3>
+				<p>
+					The abstract format for this focus session follows the same format as the main conference.
+					Please use the templates provided for <Link href="/templates/APCNCS2026_CoAI_Word_template.zip" text="Word" download={true} target="_self" /> or <Link href="/templates/APCNCS2026_CoAI_Latex_template.zip" text="LaTeX" download={true} target="_self" />.
+				</p>
+			</div>
 		</div>
 	</section>
 
