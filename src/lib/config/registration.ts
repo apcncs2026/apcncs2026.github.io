@@ -34,9 +34,11 @@ export const ADDON_SUMMER_SCHOOL = 5000; // S$50
 export const ADDON_CONFERENCE_DINNER = 5000; // S$50
 
 export const ROOM_TYPES = [
-	{ value: 'none', label: 'No accommodation needed' },
-	{ value: 'single', label: 'Single Room' },
-	{ value: 'double', label: 'Double Room (Twin Sharing)' }
+	{ value: 'none', label: 'No accommodation needed', price: '' },
+	{ value: 'single_no_aircon', label: 'Single (Non-Aircon)', price: '$60/day' },
+	{ value: 'single_aircon', label: 'Single (Aircon)', price: '$75/day' },
+	{ value: 'twin_no_aircon', label: 'Twin Sharing (Non-Aircon)', price: '$40/day' },
+	{ value: 'twin_aircon', label: 'Twin Sharing (Aircon)', price: '$55/day' }
 ] as const;
 
 export const GENDER_OPTIONS = [
