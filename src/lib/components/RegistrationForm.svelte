@@ -24,7 +24,8 @@
 
 	let showDietaryNotes = $derived(catering === 'allergy' || catering === 'other');
 	let needsHall = $derived(roomType !== 'none');
-	let isDouble = $derived(roomType === 'double');
+	let isTwinSharing = $derived(roomType === 'twin_no_aircon' || roomType === 'twin_aircon');
+	let isStudentCategory = $derived(category === 'student');
 
 	let submitting = $state(false);
 	let error = $state('');
@@ -46,9 +47,9 @@
 					abstract_title: abstractTitle,
 					summer_school: summerSchool,
 					conference_dinner: conferenceDinner,
-					room_type: roomType,
-					gender: needsHall ? gender : '',
-					roommate: isDouble ? roommate : '',
+					room_type: isStudentCategory ? roomType : 'none',
+					gender: isStudentCategory && needsHall ? gender : '',
+					roommate: isStudentCategory && isTwinSharing ? roommate : '',
 					catering,
 					dietary_notes: dietaryNotes
 				})
@@ -187,25 +188,25 @@
 	</div>
 
 	<!-- Hall Accommodation -->
-	<div>
-		<h3 class="text-2xl font-bold mb-4">Hall Accommodation</h3>
-		<div class="alert alert-info mb-4">
-			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-			<span>Hall accommodation fees are to be paid by cash upon arrival. This section is for room arrangement purposes only.</span>
-		</div>
-		<div class="space-y-4">
-			<label class="form-control w-full">
-				<div class="label"><span class="label-text">Room Type</span></div>
-				<select bind:value={roomType} class="select select-bordered w-full">
-					{#each ROOM_TYPES as rt}
-						<option value={rt.value}>{rt.label}</option>
-					{/each}
-				</select>
-			</label>
+	{#if isStudentCategory}
+		<div>
+			<h3 class="text-2xl font-bold mb-4">Hall Accommodation</h3>
+			<div class="alert alert-info mb-4">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+				<span>Hall accommodation is specially arranged for PhD/UG students. This section is for room arrangement purposes only. Fees are to be paid upon arrival at the conference.</span>
+			</div>
+			<div class="space-y-4">
+				<label class="form-control w-full">
+					<div class="label"><span class="label-text">Room Type</span></div>
+					<select bind:value={roomType} class="select select-bordered w-full">
+						{#each ROOM_TYPES as rt}
+							<option value={rt.value}>{rt.label}{rt.price ? ` — ${rt.price}` : ''}</option>
+						{/each}
+					</select>
+				</label>
 
-			{#if needsHall}
-				<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-					<label class="form-control w-full">
+				{#if needsHall}
+					<div class="form-control w-full">
 						<div class="label"><span class="label-text">Gender *</span></div>
 						<select bind:value={gender} required class="select select-bordered w-full">
 							<option value="" disabled>Select gender</option>
@@ -213,24 +214,31 @@
 								<option value={g.value}>{g.label}</option>
 							{/each}
 						</select>
-					</label>
+						<div class="label">
+							<span class="label-text-alt">Required for room arrangement purposes.</span>
+						</div>
+					</div>
 
-					{#if isDouble}
-						<label class="form-control w-full">
-							<div class="label"><span class="label-text">Preferred Roommate</span></div>
+					{#if isTwinSharing}
+						<div class="form-control w-full">
+							<div class="label"><span class="label-text">Name of Other Occupant *</span></div>
 							<input
 								type="text"
 								bind:value={roommate}
+								required
 								maxlength="200"
 								class="input input-bordered w-full"
-								placeholder="Name of preferred roommate (if any)"
+								placeholder="Full name of the other occupant"
 							/>
-						</label>
+							<div class="label">
+								<span class="label-text-alt">Both occupants must register separately and must be of the same gender. We will verify that both registrations match.</span>
+							</div>
+						</div>
 					{/if}
-				</div>
-			{/if}
+				{/if}
+			</div>
 		</div>
-	</div>
+	{/if}
 
 	<!-- Price Summary -->
 	<PriceSummary {category} {summerSchool} {conferenceDinner} />
