@@ -19,6 +19,8 @@
 	let roomType = $state('none');
 	let gender = $state('');
 	let roommate = $state('');
+	let arrivalDate = $state('');
+	let departureDate = $state('');
 	let catering = $state('no_preference');
 	let dietaryNotes = $state('');
 
@@ -26,6 +28,9 @@
 	let needsHall = $derived(roomType !== 'none');
 	let isTwinSharing = $derived(roomType === 'twin_no_aircon' || roomType === 'twin_aircon');
 	let isStudentCategory = $derived(category === 'student');
+	let departureDateInvalid = $derived(
+		arrivalDate && departureDate && departureDate < arrivalDate
+	);
 
 	let submitting = $state(false);
 	let error = $state('');
@@ -33,6 +38,12 @@
 	async function handleSubmit(e: SubmitEvent) {
 		e.preventDefault();
 		error = '';
+
+		if (isStudentCategory && needsHall && departureDateInvalid) {
+			error = 'Departure date cannot be earlier than arrival date.';
+			return;
+		}
+
 		submitting = true;
 
 		try {
@@ -50,6 +61,8 @@
 					room_type: isStudentCategory ? roomType : 'none',
 					gender: isStudentCategory && needsHall ? gender : '',
 					roommate: isStudentCategory && isTwinSharing ? roommate : '',
+					arrival_date: isStudentCategory && needsHall ? arrivalDate : '',
+					departure_date: isStudentCategory && needsHall ? departureDate : '',
 					catering,
 					dietary_notes: dietaryNotes
 				})
@@ -235,13 +248,44 @@
 							</div>
 						</div>
 					{/if}
+
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+						<div class="form-control w-full">
+							<div class="label"><span class="label-text">Date of Arrival *</span></div>
+							<input
+								type="date"
+								bind:value={arrivalDate}
+								required
+								min="2026-06-08"
+								max="2026-06-12"
+								class="input input-bordered w-full"
+							/>
+						</div>
+
+						<div class="form-control w-full">
+							<div class="label"><span class="label-text">Date of Departure *</span></div>
+							<input
+								type="date"
+								bind:value={departureDate}
+								required
+								min={arrivalDate || '2026-06-08'}
+								max="2026-06-13"
+								class="input input-bordered w-full"
+							/>
+							{#if departureDateInvalid}
+								<div class="label">
+									<span class="label-text-alt text-error">Departure date cannot be earlier than arrival date.</span>
+								</div>
+							{/if}
+						</div>
+					</div>
 				{/if}
 			</div>
 		</div>
 	{/if}
 
 	<!-- Price Summary -->
-	<PriceSummary {category} {summerSchool} {conferenceDinner} />
+	<PriceSummary {category} {summerSchool} {conferenceDinner} roomType={isStudentCategory ? roomType : 'none'} {arrivalDate} {departureDate} />
 
 	<!-- Error message -->
 	{#if error}

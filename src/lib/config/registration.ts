@@ -34,12 +34,21 @@ export const ADDON_SUMMER_SCHOOL = 5000; // S$50
 export const ADDON_CONFERENCE_DINNER = 5000; // S$50
 
 export const ROOM_TYPES = [
-	{ value: 'none', label: 'No accommodation needed', price: '' },
-	{ value: 'single_no_aircon', label: 'Single (Non-Aircon)', price: '$60/day' },
-	{ value: 'single_aircon', label: 'Single (Aircon)', price: '$75/day' },
-	{ value: 'twin_no_aircon', label: 'Twin Sharing (Non-Aircon)', price: '$40/day' },
-	{ value: 'twin_aircon', label: 'Twin Sharing (Aircon)', price: '$55/day' }
+	{ value: 'none', label: 'No accommodation needed', price: '', dailyCents: 0 },
+	{ value: 'single_no_aircon', label: 'Single (Non-Aircon)', price: '$60/day', dailyCents: 6000 },
+	{ value: 'single_aircon', label: 'Single (Aircon)', price: '$75/day', dailyCents: 7500 },
+	{ value: 'twin_no_aircon', label: 'Twin Sharing (Non-Aircon)', price: '$40/day', dailyCents: 4000 },
+	{ value: 'twin_aircon', label: 'Twin Sharing (Aircon)', price: '$55/day', dailyCents: 5500 }
 ] as const;
+
+/** Calculate number of nights between two date strings (YYYY-MM-DD). */
+export function calculateNights(arrival: string, departure: string): number {
+	if (!arrival || !departure) return 0;
+	const a = new Date(arrival);
+	const d = new Date(departure);
+	const diff = Math.round((d.getTime() - a.getTime()) / (1000 * 60 * 60 * 24));
+	return Math.max(0, diff);
+}
 
 export const GENDER_OPTIONS = [
 	{ value: 'male', label: 'Male' },
