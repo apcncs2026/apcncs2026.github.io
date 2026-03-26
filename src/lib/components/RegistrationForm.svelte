@@ -27,7 +27,7 @@
 	let showDietaryNotes = $derived(catering === 'allergy' || catering === 'other');
 	let needsHall = $derived(roomType !== 'none');
 	let isTwinSharing = $derived(roomType === 'twin_no_aircon' || roomType === 'twin_aircon');
-	let isStudentCategory = $derived(category === 'student');
+	let isHallEligible = $derived(category === 'student' || category === 'postdoc');
 	let departureDateInvalid = $derived(
 		arrivalDate && departureDate && departureDate < arrivalDate
 	);
@@ -39,7 +39,7 @@
 		e.preventDefault();
 		error = '';
 
-		if (isStudentCategory && needsHall && departureDateInvalid) {
+		if (isHallEligible && needsHall && departureDateInvalid) {
 			error = 'Departure date cannot be earlier than arrival date.';
 			return;
 		}
@@ -58,11 +58,11 @@
 					abstract_title: abstractTitle,
 					summer_school: summerSchool,
 					conference_dinner: conferenceDinner,
-					room_type: isStudentCategory ? roomType : 'none',
-					gender: isStudentCategory && needsHall ? gender : '',
-					roommate: isStudentCategory && isTwinSharing ? roommate : '',
-					arrival_date: isStudentCategory && needsHall ? arrivalDate : '',
-					departure_date: isStudentCategory && needsHall ? departureDate : '',
+					room_type: isHallEligible ? roomType : 'none',
+					gender: isHallEligible && needsHall ? gender : '',
+					roommate: isHallEligible && isTwinSharing ? roommate : '',
+					arrival_date: isHallEligible && needsHall ? arrivalDate : '',
+					departure_date: isHallEligible && needsHall ? departureDate : '',
 					catering,
 					dietary_notes: dietaryNotes
 				})
@@ -201,12 +201,12 @@
 	</div>
 
 	<!-- Hall Accommodation -->
-	{#if isStudentCategory}
+	{#if isHallEligible}
 		<div>
 			<h3 class="text-2xl font-bold mb-4">Hall Accommodation</h3>
 			<div class="alert alert-info mb-4">
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-				<span>Hall accommodation is specially arranged for PhD/UG students. This section is for room arrangement purposes only. Fees are to be paid upon arrival at the conference.</span>
+				<span>Hall accommodation is specially arranged for PhD/UG students and postdocs. This section is for room arrangement purposes only. Fees are to be paid upon arrival at the conference.</span>
 			</div>
 			<div class="space-y-4">
 				<label class="form-control w-full">
@@ -285,7 +285,7 @@
 	{/if}
 
 	<!-- Price Summary -->
-	<PriceSummary {category} {summerSchool} {conferenceDinner} roomType={isStudentCategory ? roomType : 'none'} {arrivalDate} {departureDate} />
+	<PriceSummary {category} {summerSchool} {conferenceDinner} roomType={isHallEligible ? roomType : 'none'} {arrivalDate} {departureDate} />
 
 	<!-- Error message -->
 	{#if error}
