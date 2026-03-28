@@ -30,15 +30,15 @@ export const BASE_FEES: Record<string, Record<string, number>> = {
 	industry: { early_bird: 50000, regular: 70000, on_site: 100000 }
 };
 
-export const ADDON_SUMMER_SCHOOL = 5000; // S$50
-export const ADDON_CONFERENCE_DINNER = 5000; // S$50
+export const ADDON_SUMMER_SCHOOL = 5000; // SGD$50
+export const ADDON_CONFERENCE_DINNER = 5000; // SGD$50
 
 export const ROOM_TYPES = [
 	{ value: 'none', label: 'No accommodation needed', price: '', dailyCents: 0 },
-	{ value: 'single_no_aircon', label: 'Single (Non-Aircon)', price: '$60/day', dailyCents: 6000 },
-	{ value: 'single_aircon', label: 'Single (Aircon)', price: '$75/day', dailyCents: 7500 },
-	{ value: 'twin_no_aircon', label: 'Twin Sharing (Non-Aircon)', price: '$40/day', dailyCents: 4000 },
-	{ value: 'twin_aircon', label: 'Twin Sharing (Aircon)', price: '$55/day', dailyCents: 5500 }
+	{ value: 'single_no_aircon', label: 'Single (Non-Aircon)', price: 'SGD$60/day', dailyCents: 6000 },
+	{ value: 'single_aircon', label: 'Single (Aircon)', price: 'SGD$75/day', dailyCents: 7500 },
+	{ value: 'twin_no_aircon', label: 'Twin Sharing (Non-Aircon)', price: 'SGD$40/day', dailyCents: 4000 },
+	{ value: 'twin_aircon', label: 'Twin Sharing (Aircon)', price: 'SGD$55/day', dailyCents: 5500 }
 ] as const;
 
 /** Calculate number of nights between two date strings (YYYY-MM-DD). */
@@ -72,5 +72,5 @@ export function getCurrentTier(): string {
 
 /** Format cents as SGD display string. */
 export function formatPrice(cents: number): string {
-	return `S$${(cents / 100).toFixed(0)}`;
+	return `SGD$${(cents / 100).toFixed(0)}`;
 }

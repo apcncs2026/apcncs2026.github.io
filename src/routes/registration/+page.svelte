@@ -25,7 +25,7 @@
 					Online registration for the conference will open on <strong>16 Mar 2026</strong>, and close on <strong>31 May 2026</strong>.
 					On-site registration will be possible during the summer school (9 Jun 2026) and the conference proper (10-12 Jun 2026).
 				</p>
-				<p>We offer the following affordable rates for the following categories of participants:</p>
+				<p>We offer the following affordable rates for the following categories of participants. All rates are in <strong>Singapore Dollars (SGD)</strong>.</p>
 			</div>
 
 			<div class="overflow-x-auto mb-12">
@@ -42,24 +42,24 @@
 					<tbody>
 						<tr>
 							<td class="font-semibold">Early Bird<br/><span class="text-sm font-normal">(16 Mar–30 Apr 2026)</span></td>
-							<td class="text-center">S$150</td>
-							<td class="text-center">S$200</td>
-							<td class="text-center">S$300</td>
-							<td class="text-center">S$500</td>
+							<td class="text-center">SGD$150</td>
+							<td class="text-center">SGD$200</td>
+							<td class="text-center">SGD$300</td>
+							<td class="text-center">SGD$500</td>
 						</tr>
 						<tr>
 							<td class="font-semibold">Regular<br/><span class="text-sm font-normal">(1–31 May 2026)</span></td>
-							<td class="text-center">S$200</td>
-							<td class="text-center">S$300</td>
-							<td class="text-center">S$500</td>
-							<td class="text-center">S$700</td>
+							<td class="text-center">SGD$200</td>
+							<td class="text-center">SGD$300</td>
+							<td class="text-center">SGD$500</td>
+							<td class="text-center">SGD$700</td>
 						</tr>
 						<tr>
 							<td class="font-semibold">On-Site</td>
-							<td class="text-center">S$300</td>
-							<td class="text-center">S$500</td>
-							<td class="text-center">S$800</td>
-							<td class="text-center">S$1000</td>
+							<td class="text-center">SGD$300</td>
+							<td class="text-center">SGD$500</td>
+							<td class="text-center">SGD$800</td>
+							<td class="text-center">SGD$1000</td>
 						</tr>
 					</tbody>
 				</table>
@@ -68,7 +68,7 @@
 			<div class="prose prose-lg max-w-none">
 				<div class="alert alert-info">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-					<span>There will be an additional fee of <strong>S$50 per participant</strong> for the summer school, to cover coffee breaks and lunches.</span>
+					<span>There will be an additional fee of <strong>SGD$50 per participant</strong> for the summer school, to cover coffee breaks and lunches.</span>
 				</div>
 			</div>
 		</div>

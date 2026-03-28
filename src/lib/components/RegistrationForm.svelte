@@ -154,7 +154,7 @@
 					<input type="checkbox" bind:checked={summerSchool} class="checkbox checkbox-primary" />
 					<div>
 						<span class="label-text font-medium">Summer School Attendance</span>
-						<p class="text-xs text-base-content/60">+S$50 (covers coffee breaks and lunches)</p>
+						<p class="text-xs text-base-content/60">+SGD$50 (covers coffee breaks and lunches)</p>
 					</div>
 				</label>
 
@@ -166,7 +166,7 @@
 					/>
 					<div>
 						<span class="label-text font-medium">Conference Dinner</span>
-						<p class="text-xs text-base-content/60">+S$50</p>
+						<p class="text-xs text-base-content/60">+SGD$50</p>
 					</div>
 				</label>
 			</div>
