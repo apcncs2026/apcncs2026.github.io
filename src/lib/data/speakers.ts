@@ -97,5 +97,12 @@ export const invitedSpeakers: Speaker[] = [
 		affiliation: "Chulalongkorn University, Thailand",
 		avatar: true,
 		tier: 3
+	},
+	{
+		id: "leihan-tang",
+		name: "Leihan Tang",
+		affiliation: "Westlake University, China",
+		avatar: true,
+		tier: 3
 	}
 ];
