@@ -28,9 +28,9 @@
 		return (realToVirtual(s.endMin) - realToVirtual(s.startMin)) * SCALE - GAP * 2;
 	}
 
-	async function handleDownloadPDF() {
-		const { generateProgrammePDF } = await import('$lib/utils/programmePdf');
-		generateProgrammePDF();
+	async function handleDownloadPDF(portrait = false) {
+		const mod = await import('$lib/utils/programmePdf');
+		portrait ? mod.generateProgrammePDFPortrait() : mod.generateProgrammePDF();
 	}
 </script>
 
@@ -65,9 +65,13 @@
 	<section class="py-5 px-4 bg-base-200">
 		<div class="max-w-7xl mx-auto">
 			<div class="flex flex-wrap gap-x-4 gap-y-2 justify-center">
-				<button onclick={handleDownloadPDF} class="btn btn-outline btn-lg gap-2 shrink-0">
+				<button onclick={() => handleDownloadPDF(false)} class="btn btn-outline btn-lg gap-2 shrink-0">
 					<Icon name="file-down" class_="w-4 h-4" />
-					Download PDF
+					PDF (Landscape)
+				</button>
+				<button onclick={() => handleDownloadPDF(true)} class="btn btn-outline btn-lg gap-2 shrink-0">
+					<Icon name="file-down" class_="w-4 h-4" />
+					PDF (Portrait)
 				</button>
 			</div>
 		</div>
@@ -139,7 +143,7 @@
 											<div class="font-mono leading-tight opacity-50">{session.timeLabel}</div>
 											<div class="font-semibold leading-tight">{session.title}</div>
 											{#if session.subtitle}
-												<div class="leading-tight opacity-60 line-clamp-{h >= 110 ? 3 : h >= 60 ? 2 : 1}">{session.subtitle}</div>
+												<div class="leading-snug opacity-70 line-clamp-{h >= 110 ? 3 : h >= 60 ? 2 : 1}" style="font-size: {h < 30 ? '9px' : h < 50 ? '10px' : '12px'}">{session.subtitle}</div>
 											{/if}
 										</div>
 									</div>

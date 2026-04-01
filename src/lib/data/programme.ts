@@ -99,7 +99,7 @@ export const days: DayData[] = [
 			{ startMin: 210, endMin: 270, title: 'Misako Takayasu', subtitle: 'Money-flow network among about 1 million business firms in Japan', type: 'lecture', timeLabel: '11:30 – 12:30' },
 			{ startMin: 270, endMin: 360, title: 'Lunch Break', type: 'break', timeLabel: '12:30 – 14:00' },
 			{ startMin: 360, endMin: 420, title: 'Anirban Chakraborti', subtitle: 'Complex Systems Studies using Machine Learning', type: 'lecture', timeLabel: '14:00 – 15:00' },
-			{ startMin: 420, endMin: 480, title: 'Writing, Publishing Strategies, Peer Review Insights', subtitle: 'Lecture 5', type: 'lecture', timeLabel: '15:00 – 16:00' },
+			{ startMin: 420, endMin: 480, title: 'Lecture 5', subtitle: 'Writing, Publishing Strategies, Peer Review Insights', type: 'lecture', timeLabel: '15:00 – 16:00' },
 			{ startMin: 480, endMin: 500, title: 'Coffee Break', type: 'break', timeLabel: '16:00 – 16:20' },
 			{ startMin: 500, endMin: 560, title: 'Jose Fernando Mendes', subtitle: 'Lecture 6', type: 'lecture', timeLabel: '16:20 – 17:20' },
 			{ startMin: 560, endMin: 585, title: 'Research Directions, Careers, and Interdisciplinary Work', subtitle: 'Panel Discussion + Closing Remarks', type: 'panel', timeLabel: '17:20 – 17:45' }
