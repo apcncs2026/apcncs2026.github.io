@@ -22,7 +22,8 @@
 		Book,
 		MessageCircle,
 		Grid3X3,
-		ShoppingBag
+		ShoppingBag,
+		FileDown
 	} from 'lucide-svelte';
 
 	export let name: string;
@@ -51,7 +52,8 @@
 		'book': Book,
 		'message-circle': MessageCircle,
 		'grid': Grid3X3,
-		'shopping-bag': ShoppingBag
+		'shopping-bag': ShoppingBag,
+		'file-down': FileDown
 	};
 
 	$: IconComponent = icons[name];

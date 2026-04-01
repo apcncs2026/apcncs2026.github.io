@@ -15,8 +15,47 @@ export interface DayData {
 	date: string;
 	subtitle: string;
 	gridSessions: GridSession[];
-	eveningEvent?: { title: string; subtitle?: string; timeLabel: string; type: SessionType };
 }
+
+/** Time zone: a range of real minutes with a compression ratio */
+export interface TimeZone {
+	start: number; // real minutes from 08:00
+	end: number;   // real minutes from 08:00
+	ratio: number; // compression ratio (1 = full scale, 4 = 4x compressed)
+}
+
+export const timeZones: TimeZone[] = [
+	{ start: 0,   end: 600, ratio: 1 }, // 08:00–18:00: normal
+	{ start: 600, end: 660, ratio: 4 }, // 18:00–19:00: squeezed gap
+	{ start: 660, end: 790, ratio: 4 }, // 19:00–21:10: evening (moderate)
+];
+
+// Precompute virtual offset at each zone boundary
+const zoneOffsets: number[] = [];
+{
+	let offset = 0;
+	for (const zone of timeZones) {
+		zoneOffsets.push(offset);
+		offset += (zone.end - zone.start) / zone.ratio;
+	}
+}
+
+/** Convert real minutes (from 08:00) to virtual position units */
+export function realToVirtual(min: number): number {
+	for (let i = 0; i < timeZones.length; i++) {
+		const zone = timeZones[i];
+		if (min <= zone.end) {
+			return zoneOffsets[i] + (min - zone.start) / zone.ratio;
+		}
+	}
+	// Past all zones: extend last zone's ratio
+	const last = timeZones.length - 1;
+	return zoneOffsets[last] + (min - timeZones[last].start) / timeZones[last].ratio;
+}
+
+/** Total virtual units for the grid (derived from last zone end) */
+export const GRID_VIRTUAL_END = realToVirtual(timeZones[timeZones.length - 1].end);
+
 
 interface SessionTypeConfig {
 	border: string;
@@ -106,9 +145,9 @@ export const days: DayData[] = [
 			{ startMin: 390, endMin: 420, title: 'Invited Speaker 10', type: 'talk', timeLabel: '14:30 – 15:00' },
 			{ startMin: 420, endMin: 450, title: 'Jose Fernando Mendes', subtitle: 'MDPI Entropy / Complexities', type: 'editor', timeLabel: '15:00 – 15:30' },
 			{ startMin: 450, endMin: 480, title: 'Coffee Break', type: 'break', timeLabel: '15:30 – 16:00' },
-			{ startMin: 480, endMin: 570, title: 'Parallel Session 4', type: 'parallel', timeLabel: '16:00 – 17:30' }
-		],
-		eveningEvent: { title: 'Conference Dinner', subtitle: 'Nanyang Lake Pavilion', timeLabel: '19:00', type: 'social' }
+			{ startMin: 480, endMin: 570, title: 'Parallel Session 4', type: 'parallel', timeLabel: '16:00 – 17:30' },
+			{ startMin: 660, endMin: 780, title: 'Conference Dinner', subtitle: 'Nanyang Lake Pavilion', type: 'social', timeLabel: '19:00 – 21:30' }
+		]
 	},
 	{
 		label: 'Friday',

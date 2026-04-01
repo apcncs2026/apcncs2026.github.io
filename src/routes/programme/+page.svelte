@@ -1,12 +1,19 @@
 <script lang="ts">
 	import { getHeroBackgroundStyle } from '$lib/config/heroImages';
-	import { days, allSessionTypes, sessionTypeConfig, typeClasses, type GridSession } from '$lib/data/programme';
+	import Icon from '$lib/components/Icon.svelte';
+	import { days, allSessionTypes, sessionTypeConfig, typeClasses, realToVirtual, GRID_VIRTUAL_END, type GridSession } from '$lib/data/programme';
 
-	const SCALE = 4; // px per minute
-	const GRID_END = 610; // 08:00–18:10 (buffer past 18:00)
-	const GRID_HEIGHT = GRID_END * SCALE;
-	const gridHours = ['08:00', '09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00'];
-	const gridHalfHours = ['08:30', '09:30', '10:30', '11:30', '12:30', '13:30', '14:30', '15:30', '16:30', '17:30'];
+	const SCALE = 4; // px per virtual unit
+	const GRID_HEIGHT = GRID_VIRTUAL_END * SCALE;
+
+	// Hours: 08:00–18:00 at normal positions, 19:00 at compressed position
+	const gridHours: { label: string; virtualMin: number }[] = [
+		...Array.from({ length: 11 }, (_, i) => ({ label: `${String(8 + i).padStart(2, '0')}:00`, virtualMin: i * 60 })),
+		{ label: '19:00', virtualMin: realToVirtual(660) },
+		{ label: '21:00', virtualMin: realToVirtual(780) }
+	];
+	const gridHalfHours: { label: string; virtualMin: number }[] =
+		Array.from({ length: 10 }, (_, i) => ({ label: `${String(8 + i).padStart(2, '0')}:30`, virtualMin: i * 60 + 30 }));
 
 	let activeDay = $state(0);
 
@@ -14,11 +21,16 @@
 	const LINE = 2; // px grid line thickness
 
 	function sessionTop(s: GridSession): number {
-		return s.startMin * SCALE + GAP;
+		return realToVirtual(s.startMin) * SCALE + GAP;
 	}
 
 	function sessionHeight(s: GridSession): number {
-		return (s.endMin - s.startMin) * SCALE - GAP * 2;
+		return (realToVirtual(s.endMin) - realToVirtual(s.startMin)) * SCALE - GAP * 2;
+	}
+
+	async function handleDownloadPDF() {
+		const { generateProgrammePDF } = await import('$lib/utils/programmePdf');
+		generateProgrammePDF();
 	}
 </script>
 
@@ -50,6 +62,16 @@
 			</div>
 		</div>
 	</section>
+	<section class="py-5 px-4 bg-base-200">
+		<div class="max-w-7xl mx-auto">
+			<div class="flex flex-wrap gap-x-4 gap-y-2 justify-center">
+				<button onclick={handleDownloadPDF} class="btn btn-outline btn-lg gap-2 shrink-0">
+					<Icon name="file-down" class_="w-4 h-4" />
+					Download PDF
+				</button>
+			</div>
+		</div>
+	</section>
 
 	<!-- ==================== DESKTOP: Proportional Grid ==================== -->
 	<section class="hidden lg:block py-8 px-4">
@@ -71,35 +93,35 @@
 			<div class="flex">
 				<!-- Time Axis -->
 				<div class="w-[60px] shrink-0 relative" style="height: {GRID_HEIGHT}px">
-					{#each gridHours as hour, i}
+					{#each gridHours as hour}
 						<span
 							class="absolute right-3 text-xs font-mono text-base-content/60 font-bold -translate-y-1/2"
-							style="top: {i * 60 * SCALE}px"
-						>{hour}</span>
+							style="top: {hour.virtualMin * SCALE}px"
+						>{hour.label}</span>
 					{/each}
-					{#each gridHalfHours as half, i}
+					{#each gridHalfHours as half}
 						<span
 							class="absolute right-3 text-[10px] font-mono text-base-content/30 -translate-y-1/2"
-							style="top: {(i * 60 + 30) * SCALE}px"
-						>{half}</span>
+							style="top: {half.virtualMin * SCALE}px"
+						>{half.label}</span>
 					{/each}
 				</div>
 
 				<!-- Session Grid -->
 				<div class="flex-1 relative" style="height: {GRID_HEIGHT}px">
 					<!-- Hour Grid Lines -->
-					{#each gridHours as _, i}
+					{#each gridHours as hour}
 						<div
 							class="absolute left-0 right-0 border-base-content/50"
-							style="top: {i * 60 * SCALE - LINE / 2}px; height: {LINE}px; border-top-width: {LINE}px"
+							style="top: {hour.virtualMin * SCALE - LINE / 2}px; height: {LINE}px; border-top-width: {LINE}px"
 						></div>
 					{/each}
 
 					<!-- Half-hour Lines -->
-					{#each gridHalfHours as _, i}
+					{#each gridHalfHours as half}
 						<div
 							class="absolute left-0 right-0 border-dashed border-base-content/50"
-							style="top: {(i * 60 + 30) * SCALE - LINE / 2}px; height: {LINE}px; border-top-width: {LINE}px"
+							style="top: {half.virtualMin * SCALE - LINE / 2}px; height: {LINE}px; border-top-width: {LINE}px"
 						></div>
 					{/each}
 
@@ -128,31 +150,9 @@
 				</div>
 			</div>
 
-			<!-- Evening Events -->
-			{#if days.some(d => d.eveningEvent)}
-				<div class="flex mt-4">
-					<div class="w-[60px] shrink-0"></div>
-					<div class="flex-1 grid grid-cols-4 gap-3">
-						{#each days as day}
-							<div>
-								{#if day.eveningEvent}
-									<div class="border-l-4 rounded-r p-3 {typeClasses(day.eveningEvent.type)}">
-										<div class="font-mono text-[10px] opacity-50">{day.eveningEvent.timeLabel}</div>
-										<div class="font-semibold text-sm">{day.eveningEvent.title}</div>
-										{#if day.eveningEvent.subtitle}
-											<div class="text-xs opacity-60 mt-0.5">{day.eveningEvent.subtitle}</div>
-										{/if}
-									</div>
-								{/if}
-							</div>
-						{/each}
-					</div>
-				</div>
-			{/if}
-
-			<!-- Info -->
-			<div class="mt-8">
-				<div class="alert alert-info">
+			<!-- Actions -->
+			<div class="mt-8 flex flex-wrap gap-4 items-start">
+				<div class="alert alert-info flex-1">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
 					<div>
 						<p class="font-semibold">Programme is subject to change.</p>
@@ -199,15 +199,6 @@
 								</div>
 							{/each}
 
-							{#if day.eveningEvent}
-								<div class="border-l-4 rounded-r-lg px-4 py-3 mt-2 {typeClasses(day.eveningEvent.type)}">
-									<div class="font-mono text-xs opacity-60">{day.eveningEvent.timeLabel}</div>
-									<div class="font-semibold leading-tight mt-0.5">{day.eveningEvent.title}</div>
-									{#if day.eveningEvent.subtitle}
-										<p class="text-sm opacity-75 mt-1">{day.eveningEvent.subtitle}</p>
-									{/if}
-								</div>
-							{/if}
 						</div>
 
 						<div class="mt-6">

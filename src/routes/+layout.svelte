@@ -5,7 +5,7 @@
 	import { onMount } from 'svelte';
 
 	let { children } = $props();
-	let desktopDropdown: HTMLDetailsElement | null = null;
+	let desktopDropdown: HTMLDetailsElement | null = $state(null);
 
 	onMount(() => {
 		const handleClickOutside = (event: MouseEvent) => {
