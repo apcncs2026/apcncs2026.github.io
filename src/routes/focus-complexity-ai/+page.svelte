@@ -181,25 +181,37 @@
 				<p>
 					Participants of this focus session will be invited to contribute to a joint special issue on "Complexity of AI" published in:
 				</p>
-				<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-					<div class="card bg-base-100 shadow-md">
-						<div class="card-body">
-							<h3 class="card-title text-primary">MDPI Entropy</h3>
-							<p class="text-sm">Special Issue on Complexity of AI</p>
-							<div class="card-actions justify-end">
-								<Link href="https://www.mdpi.com/journal/entropy/special_issues/AQO5Z1H353" text="View Issue →" />
-							</div>
-						</div>
-					</div>
-					<div class="card bg-base-100 shadow-md">
-						<div class="card-body">
-							<h3 class="card-title text-primary">MDPI Complexities</h3>
-							<p class="text-sm">Special Issue on Complexity of AI</p>
-							<div class="card-actions justify-end">
-								<Link href="https://www.mdpi.com/journal/complexities/special_issues/477OQWUB64" text="View Issue →" />
-							</div>
-						</div>
-					</div>
+				<div class="not-prose grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+					<a
+						href="https://www.mdpi.com/journal/entropy/special_issues/AQO5Z1H353"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="block overflow-hidden rounded-lg shadow-md transition-transform hover:scale-[1.02]"
+					>
+						<img
+							src="/images/focus/complexity-ai-entropy.webp"
+							alt="Special Issue on Complexity of AI in MDPI Entropy"
+							class="w-full h-auto"
+							width="1200"
+							height="630"
+							loading="lazy"
+						/>
+					</a>
+					<a
+						href="https://www.mdpi.com/journal/complexities/special_issues/477OQWUB64"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="block overflow-hidden rounded-lg shadow-md transition-transform hover:scale-[1.02]"
+					>
+						<img
+							src="/images/focus/complexity-ai-complexities.webp"
+							alt="Special Issue on Complexity of AI in MDPI Complexities"
+							class="w-full h-auto"
+							width="1200"
+							height="630"
+							loading="lazy"
+						/>
+					</a>
 				</div>
 			</div>
 		</div>

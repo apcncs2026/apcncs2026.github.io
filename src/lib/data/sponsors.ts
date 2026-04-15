@@ -23,28 +23,16 @@ export const sponsors: SponsorData = {
 	],
 	keySponsors: [
 		{
-			id: "mdpi-entropy",
-			name: "MDPI Entropy",
-			logo: "/images/sponsor/mdpi-entropy.webp",
-			url: "https://www.mdpi.com/journal/entropy"
-		},
-		{
-			id: "mdpi-complexities",
-			name: "MDPI Complexities",
-			logo: "/images/sponsor/mdpi-complexities.webp",
-			url: "https://www.mdpi.com/journal/complexities"
+			id: "mdpi",
+			name: "MDPI",
+			logo: "/images/sponsor/mdpi.webp",
+			url: "https://www.mdpi.com"
 		},
 		{
 			id: "world-scientific",
 			name: "World Scientific",
 			logo: "/images/sponsor/world-scientific.webp",
 			url: "https://www.worldscientific.com"
-		},
-		{
-			id: "mdpi-games",
-			name: "MDPI Games",
-			logo: "/images/sponsor/mdpi-games.webp",
-			url: "https://www.mdpi.com/journal/games"
 		}
 	],
 	regularSponsors: [],
