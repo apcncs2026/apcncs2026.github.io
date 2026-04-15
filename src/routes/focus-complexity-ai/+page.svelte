@@ -179,9 +179,9 @@
 			<div class="prose prose-lg max-w-none">
 				<h2 class="text-3xl font-bold mb-6">Special Issue Publication</h2>
 				<p>
-					Participants of this focus session will be invited to contribute to a joint special issue on "Complexity of AI" published in:
+					Participants of this focus session will be invited to contribute to a joint special issue on "Complexity of AI" published in <Link href="https://www.mdpi.com/journal/entropy/special_issues/AQO5Z1H353" text="MDPI Entropy" /> and <Link href="https://www.mdpi.com/journal/complexities/special_issues/477OQWUB64" text="MDPI Complexities" />:
 				</p>
-				<div class="not-prose grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+				<div class="not-prose grid grid-cols-1 gap-6 mt-8 max-w-2xl mx-auto">
 					<a
 						href="https://www.mdpi.com/journal/entropy/special_issues/AQO5Z1H353"
 						target="_blank"
