@@ -168,6 +168,9 @@
 					<p class="mt-4">and CC to <Email email="SPMS-APCNCS2026@ntu.edu.sg" /></p>
 				</div>
 				<p class="mt-6">
+					Submissions will be reviewed on a rolling basis, and notifications of acceptance will be sent starting from <strong>1 May 2026</strong>. Early submissions are encouraged.
+				</p>
+				<p class="mt-6">
 					The programme for the focus session will be posted, and contributors notified, on <strong>22 May 2026 (Fri)</strong>. All contributors must be registered for APCNCS 2026 to participate in the focus session.
 				</p>
 			</div>
