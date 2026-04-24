@@ -51,6 +51,7 @@
 						<h3 class="card-title text-primary">Conference Dates</h3>
 						<p class="text-xl font-bold">10-12 June, 2026</p>
 						<p class="text-sm mt-2">Summer School: 9 June</p>
+						<p class="text-xs mt-1 italic opacity-80">Theme: Decoding Complexity: Networks, Data Science, and AI</p>
 					</div>
 				</div>
 			</div>

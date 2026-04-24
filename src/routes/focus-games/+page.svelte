@@ -1,6 +1,14 @@
 <script lang="ts">
 	import { getHeroBackgroundStyle } from '$lib/config/heroImages';
 	import Icon from '$lib/components/Icon.svelte';
+	import Email from '$lib/components/Email.svelte';
+	import Link from '$lib/components/Link.svelte';
+
+	const keyDates = [
+		{ event: "Abstract Submission Deadline", date: "17 May 2026 (Sunday)" },
+		{ event: "Notification of Acceptance", date: "Submissions will be reviewed on a rolling basis, and notifications of acceptance will be sent starting from 1 May 2026." },
+		{ event: "Focus Session", date: "9-12 Jun 2026" },
+	];
 
 	const topics = [
 		"Evolutionary games and learning dynamics in social and biological systems",
@@ -8,6 +16,19 @@
 		"Mean-field games and other models for large populations",
 		"Game-theoretic machine learning, including reinforcement learning and large language models",
 		"Security and adversarial interactions, such as Stackelberg and security games"
+	];
+
+	const organizers = [
+		{
+			name: "Cheong Kang Hao",
+			affiliation: "Nanyang Technological University, Singapore",
+			email: "kanghao.cheong@ntu.edu.sg"
+		},
+		{
+			name: "Yong Ee Hou",
+			affiliation: "Nanyang Technological University, Singapore",
+			email: "eehou@ntu.edu.sg"
+		}
 	];
 </script>
 
@@ -31,8 +52,13 @@
 			<div class="alert alert-info mb-8">
 				<Icon name="info" class_="stroke-current shrink-0 h-6 w-6" />
 				<div>
-					<h3 class="font-bold">Focus Session</h3>
-					<div class="text-sm">Submission details and key dates to be announced</div>
+					<h3 class="font-bold">Abstract Submission</h3>
+					<div class="text-sm">
+						<div>Deadline: 17 May 2026 (Sunday)</div>
+						<div>Submission: Submit to organizers</div>
+						<div>Requirement: Conference registration is required for accepted speakers.</div>
+						<div class="mt-2">Submissions will be reviewed on a rolling basis, and notifications of acceptance will be sent starting from 1 May 2026. Early submissions are encouraged.</div>
+					</div>
 				</div>
 			</div>
 
@@ -56,10 +82,29 @@
 
 	<section class="py-16 px-4 bg-base-200">
 		<div class="max-w-4xl mx-auto">
+			<h2 class="text-3xl font-bold mb-8">Session Organizers</h2>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+				{#each organizers as organizer}
+					<div class="card bg-base-100 shadow-md">
+						<div class="card-body">
+							<h3 class="card-title text-primary">{organizer.name}</h3>
+							<p class="text-sm">{organizer.affiliation}</p>
+							<div class="mt-2">
+								<Email email={organizer.email} />
+							</div>
+						</div>
+					</div>
+				{/each}
+			</div>
+		</div>
+	</section>
+
+	<section class="py-16 px-4">
+		<div class="max-w-4xl mx-auto">
 			<div class="prose prose-lg max-w-none mb-12">
-				<h2 class="text-3xl font-bold mb-6">Topics of Interest</h2>
+				<h2 class="text-3xl font-bold mb-6">Call for Abstracts</h2>
 				<p>
-					Topics of interest include (but are not limited to):
+					We welcome abstracts for contributed talks on original research exploring the games on complex systems from diverse perspectives, including methods, theories, applications, and empirical studies on the following topics related to (but not limited to):
 				</p>
 			</div>
 
@@ -71,6 +116,38 @@
 					</div>
 				{/each}
 			</div>
+
+			<div class="prose prose-lg max-w-none">
+				<h3 class="text-2xl font-bold mb-4">Abstract Format</h3>
+				<p>
+					The abstract format for this focus session follows the same format as the main conference.
+					Please use the templates provided for <Link href="/templates/APCNCS2026_Games_Word_template.zip" text="Word" download={true} target="_self" /> or <Link href="/templates/APCNCS2026_Games_Latex_template.zip" text="LaTeX" download={true} target="_self" />.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="py-16 px-4 bg-base-200">
+		<div class="max-w-4xl mx-auto">
+			<h2 class="text-3xl font-bold mb-8">Important Dates</h2>
+			<div class="overflow-x-auto">
+				<table class="table table-zebra w-full">
+					<thead>
+						<tr>
+							<th>Event</th>
+							<th>Date</th>
+						</tr>
+					</thead>
+					<tbody>
+						{#each keyDates as item}
+							<tr>
+								<td class="font-semibold">{item.event}</td>
+								<td>{item.date}</td>
+							</tr>
+						{/each}
+					</tbody>
+				</table>
+			</div>
 		</div>
 	</section>
 
@@ -79,7 +156,19 @@
 			<div class="prose prose-lg max-w-none mb-12">
 				<h2 class="text-3xl font-bold mb-6">Submission and Registration</h2>
 				<p>
-					All contributors must be registered for APCNCS 2026 to participate in the focus session. Submission details, key dates, and organizer information will be announced soon.
+					Participants already registered for APCNCS 2026 have up till <strong>17 May 2026 (Sunday)</strong> to submit abstracts to:
+				</p>
+				<div class="ml-4 mt-4">
+					<p class="font-semibold">Cheong Kang Hao</p>
+					<p class="text-sm">Nanyang Technological University, Singapore</p>
+					<Email email="kanghao.cheong@ntu.edu.sg" />
+					<p class="mt-4 font-semibold">Yong Ee Hou</p>
+					<p class="text-sm">Nanyang Technological University, Singapore</p>
+					<Email email="eehou@ntu.edu.sg" />
+					<p class="mt-4">and CC to <Email email="SPMS-APCNCS2026@ntu.edu.sg" /></p>
+				</div>
+				<p class="mt-6">
+					The programme for the focus session will be posted, and contributors notified, on <strong>22 May 2026 (Fri)</strong>. All contributors must be registered for APCNCS 2026 to participate in the focus session.
 				</p>
 			</div>
 
@@ -98,17 +187,27 @@
 			<div class="prose prose-lg max-w-none">
 				<h2 class="text-3xl font-bold mb-6">Special Issue Publication</h2>
 				<p>
-					Participants of this focus session will be invited to contribute to a special issue in MDPI Games.
+					Participants of this focus session will be invited to contribute to a special issue in MDPI Games on "Games on Complex Systems".
 				</p>
+				<div class="not-prose grid grid-cols-1 gap-6 mt-8 max-w-2xl mx-auto">
+					<div class="block overflow-hidden rounded-lg shadow-md">
+						<img
+							src="/images/focus/games-complex-systems-games.webp"
+							alt="Special Issue on Games on Complex Systems in MDPI Games"
+							class="w-full h-auto"
+							loading="lazy"
+						/>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 
 	<section class="py-16 px-4 bg-conf-primary text-white">
 		<div class="max-w-4xl mx-auto text-center">
-			<h2 class="text-3xl font-bold mb-6">Interested in Participating?</h2>
+			<h2 class="text-3xl font-bold mb-6">Ready to Submit?</h2>
 			<p class="text-xl mb-8">
-				Register for APCNCS 2026 and stay tuned for submission details
+				Submit your abstract by 17 May 2026 to participate in this focus session
 			</p>
 			<div class="space-x-4">
 				<a href="/registration" class="btn btn-accent">Register for APCNCS 2026</a>
