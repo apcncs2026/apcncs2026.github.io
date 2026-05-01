@@ -2,6 +2,7 @@
 	import { getHeroBackgroundStyle } from '$lib/config/heroImages';
 	import Icon from '$lib/components/Icon.svelte';
 	import { days, allSessionTypes, sessionTypeConfig, typeClasses, realToVirtual, GRID_VIRTUAL_END, type GridSession } from '$lib/data/programme';
+	import { dayDetails } from '$lib/data/programmeDetail';
 
 	const SCALE = 4; // px per virtual unit
 	const GRID_HEIGHT = GRID_VIRTUAL_END * SCALE;
@@ -49,19 +50,24 @@
 		</div>
 	</section>
 
-	<!-- Legend -->
-	<section class="py-5 px-4 bg-base-200">
-		<div class="max-w-7xl mx-auto">
-			<div class="flex flex-wrap gap-x-4 gap-y-2 justify-center">
-				{#each allSessionTypes as type}
-					<div class="flex items-center gap-1.5">
-						<span class="w-3 h-3 rounded-sm shrink-0 {sessionTypeConfig[type].badge}"></span>
-						<span class="text-sm text-base-content/70">{sessionTypeConfig[type].label}</span>
-					</div>
-				{/each}
-			</div>
+	<!-- Programme navigation strip -->
+	<section class="py-4 px-4 bg-base-200 sticky top-0 z-30 shadow-sm">
+		<div class="max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-2">
+			<a href="/programme" class="btn btn-sm btn-primary gap-1">
+				<Icon name="grid" class_="w-4 h-4" />
+				At a glance
+			</a>
+			<span class="text-base-content/40">|</span>
+			{#each dayDetails as d}
+				<a href="/programme/{d.slug}" class="btn btn-sm btn-ghost bg-base-100 gap-1.5">
+					<Icon name="calendar" class_="w-4 h-4" />
+					{d.shortLabel} {d.date.replace(' 2026', '')}
+				</a>
+			{/each}
 		</div>
 	</section>
+
+	<!-- PDF downloads -->
 	<section class="py-5 px-4 bg-base-200">
 		<div class="max-w-7xl mx-auto">
 			<div class="flex flex-wrap gap-x-4 gap-y-2 justify-center">
@@ -73,6 +79,20 @@
 					<Icon name="file-down" class_="w-4 h-4" />
 					PDF (Portrait)
 				</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- Legend -->
+	<section class="py-5 px-4 bg-base-200">
+		<div class="max-w-7xl mx-auto">
+			<div class="flex flex-wrap gap-x-4 gap-y-2 justify-center">
+				{#each allSessionTypes as type}
+					<div class="flex items-center gap-1.5">
+						<span class="w-3 h-3 rounded-sm shrink-0 {sessionTypeConfig[type].badge}"></span>
+						<span class="text-sm text-base-content/70">{sessionTypeConfig[type].label}</span>
+					</div>
+				{/each}
 			</div>
 		</div>
 	</section>
