@@ -53,6 +53,7 @@
 					<li><a href="/registration">Registration</a></li>
 					<li><a href="/programme">Programme</a></li>
 					<li><a href="/accommodation">Accommodation</a></li>
+					<li><a href="/travel">Travel</a></li>
 					<li><a href="/sponsors">Sponsors</a></li>
 					<li><a href="/contact">Contact Us</a></li>
 				</ul>
@@ -77,6 +78,7 @@
 				<li><a href="/registration">Registration</a></li>
 				<li><a href="/programme">Programme</a></li>
 				<li><a href="/accommodation">Accommodation</a></li>
+				<li><a href="/travel">Travel</a></li>
 				<li><a href="/sponsors">Sponsors</a></li>
 				<li><a href="/contact">Contact Us</a></li>
 			</ul>
