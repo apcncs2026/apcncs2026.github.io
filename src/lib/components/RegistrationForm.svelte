@@ -23,6 +23,7 @@
 	let departureDate = $state('');
 	let catering = $state('no_preference');
 	let dietaryNotes = $state('');
+	let registrationCode = $state('');
 
 	let showDietaryNotes = $derived(catering === 'allergy' || catering === 'other');
 	let needsHall = $derived(roomType !== 'none');
@@ -64,7 +65,8 @@
 					arrival_date: isHallEligible && needsHall ? arrivalDate : '',
 					departure_date: isHallEligible && needsHall ? departureDate : '',
 					catering,
-					dietary_notes: dietaryNotes
+					dietary_notes: dietaryNotes,
+					registration_code: registrationCode.trim().toUpperCase()
 				})
 			});
 
@@ -283,6 +285,26 @@
 			</div>
 		</div>
 	{/if}
+
+	<!-- Registration Code -->
+	<div>
+		<h3 class="text-2xl font-bold mb-4">Registration Code (Optional)</h3>
+		<label class="form-control w-full">
+			<div class="label">
+				<span class="label-text">If you have been issued a registration code, enter it here.</span>
+			</div>
+			<input
+				type="text"
+				bind:value={registrationCode}
+				maxlength="50"
+				class="input input-bordered w-full uppercase"
+				placeholder="Leave blank if none"
+			/>
+			<div class="label">
+				<span class="label-text-alt">The code is verified at checkout.</span>
+			</div>
+		</label>
+	</div>
 
 	<!-- Price Summary -->
 	<PriceSummary {category} {summerSchool} {conferenceDinner} roomType={isHallEligible ? roomType : 'none'} {arrivalDate} {departureDate} />
