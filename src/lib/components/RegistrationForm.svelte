@@ -24,6 +24,12 @@
 	let catering = $state('no_preference');
 	let dietaryNotes = $state('');
 	let registrationCode = $state('');
+	let appliedCode = $state('');
+	let codeApplying = $state(false);
+	let codeError = $state('');
+
+	let normalizedCode = $derived(registrationCode.trim().toUpperCase());
+	let codeApplied = $derived(appliedCode !== '' && normalizedCode === appliedCode);
 
 	let showDietaryNotes = $derived(catering === 'allergy' || catering === 'other');
 	let needsHall = $derived(roomType !== 'none');
@@ -35,6 +41,36 @@
 
 	let submitting = $state(false);
 	let error = $state('');
+
+	async function applyCode() {
+		const code = normalizedCode;
+		codeError = '';
+		if (!code) return;
+
+		codeApplying = true;
+		try {
+			const res = await fetch(`${API_BASE_URL}/api/validate-code`, {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({ registration_code: code })
+			});
+			if (!res.ok) {
+				const data = await res.json().catch(() => null);
+				codeError = data?.detail ?? 'Could not verify code. Please try again.';
+				return;
+			}
+			appliedCode = code;
+		} catch {
+			codeError = 'Network error. Please try again.';
+		} finally {
+			codeApplying = false;
+		}
+	}
+
+	function removeCode() {
+		appliedCode = '';
+		codeError = '';
+	}
 
 	async function handleSubmit(e: SubmitEvent) {
 		e.preventDefault();
@@ -66,7 +102,7 @@
 					departure_date: isHallEligible && needsHall ? departureDate : '',
 					catering,
 					dietary_notes: dietaryNotes,
-					registration_code: registrationCode.trim().toUpperCase()
+					registration_code: codeApplied ? appliedCode : ''
 				})
 			});
 
@@ -289,25 +325,50 @@
 	<!-- Registration Code -->
 	<div>
 		<h3 class="text-2xl font-bold mb-4">Registration Code (Optional)</h3>
-		<label class="form-control w-full">
+		<div class="form-control w-full">
 			<div class="label">
-				<span class="label-text">If you have been issued a registration code, enter it here.</span>
+				<span class="label-text">If you have been issued a registration code, enter it here and click Apply.</span>
 			</div>
-			<input
-				type="text"
-				bind:value={registrationCode}
-				maxlength="50"
-				class="input input-bordered w-full uppercase"
-				placeholder="Leave blank if none"
-			/>
-			<div class="label">
-				<span class="label-text-alt">The code is verified at checkout.</span>
+			<div class="flex gap-2">
+				<input
+					type="text"
+					bind:value={registrationCode}
+					maxlength="50"
+					readonly={codeApplied}
+					class="input input-bordered w-full uppercase"
+					placeholder="Leave blank if none"
+				/>
+				{#if codeApplied}
+					<button type="button" class="btn btn-outline" onclick={removeCode}>Remove</button>
+				{:else}
+					<button
+						type="button"
+						class="btn btn-primary"
+						onclick={applyCode}
+						disabled={codeApplying || !normalizedCode}
+					>
+						{#if codeApplying}
+							<span class="loading loading-spinner loading-sm"></span>
+						{:else}
+							Apply
+						{/if}
+					</button>
+				{/if}
 			</div>
-		</label>
+			{#if codeApplied}
+				<div class="label">
+					<span class="label-text-alt text-success">Code applied.</span>
+				</div>
+			{:else if codeError}
+				<div class="label">
+					<span class="label-text-alt text-error">{codeError}</span>
+				</div>
+			{/if}
+		</div>
 	</div>
 
 	<!-- Price Summary -->
-	<PriceSummary {category} {summerSchool} {conferenceDinner} roomType={isHallEligible ? roomType : 'none'} {arrivalDate} {departureDate} />
+	<PriceSummary {category} {summerSchool} {conferenceDinner} roomType={isHallEligible ? roomType : 'none'} {arrivalDate} {departureDate} {codeApplied} />
 
 	<!-- Error message -->
 	{#if error}

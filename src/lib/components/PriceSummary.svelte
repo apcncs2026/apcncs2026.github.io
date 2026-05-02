@@ -16,7 +16,8 @@
 		conferenceDinner,
 		roomType = 'none',
 		arrivalDate = '',
-		departureDate = ''
+		departureDate = '',
+		codeApplied = false
 	}: {
 		category: string;
 		summerSchool: boolean;
@@ -24,9 +25,10 @@
 		roomType?: string;
 		arrivalDate?: string;
 		departureDate?: string;
+		codeApplied?: boolean;
 	} = $props();
 
-	let tier = $derived(getCurrentTier());
+	let tier = $derived(codeApplied ? 'early_bird' : getCurrentTier());
 
 	let categoryLabel = $derived(
 		CATEGORIES.find((c) => c.value === category)?.label ?? 'Select category'
