@@ -154,7 +154,7 @@ export const dayDetails: DayDetail[] = [
 				location: 'SPMS-LT1',
 				talks: [
 					{ time: '13:30 – 14:00', speaker: 'Lock Yue Chew (NTU, Singapore)', title: 'TBC' },
-					{ time: '14:00 – 14:30', speaker: 'Sarah Russell (Peter MacCallum Cancer Centre & Swinburne University of Technology, Australia)', title: 'TBC' },
+					{ time: '14:00 – 14:30', speaker: 'Sarah Russell (Peter MacCallum Cancer Centre & Swinburne University of Technology, Australia)', title: 'T cell development: Coordinated self-organisation at the level of the cell, the organ and the body' },
 					{ time: '14:30 – 15:00', speaker: 'Thiparat Chotibut (Chulalongkorn University, Thailand)', title: 'Robust Sequence Recognition in Random Neuronal Networks' },
 					{
 						time: '15:00 – 15:30',
