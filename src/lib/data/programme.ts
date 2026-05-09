@@ -120,7 +120,7 @@ export const days: DayData[] = [
 			{ startMin: 180, endMin: 270, title: 'Parallel Session 1', type: 'parallel', timeLabel: '11:00 – 12:30' },
 			{ startMin: 270, endMin: 330, title: 'Lunch', type: 'break', timeLabel: '12:30 – 13:30' },
 			{ startMin: 330, endMin: 360, title: 'Lock Yue Chew', type: 'talk', timeLabel: '13:30 – 14:00' },
-			{ startMin: 360, endMin: 390, title: 'Sarah Russell', type: 'talk', timeLabel: '14:00 – 14:30' },
+			{ startMin: 360, endMin: 390, title: 'Sarah Russell', subtitle: 'T cell development: Coordinated self-organisation at the level of the cell, the organ and the body', type: 'talk', timeLabel: '14:00 – 14:30' },
 			{ startMin: 390, endMin: 420, title: 'Thiparat Chotibut', subtitle: 'Robust Sequence Recognition in Random Neuronal Networks', type: 'talk', timeLabel: '14:30 – 15:00' },
 			{ startMin: 420, endMin: 450, title: 'Marton Karsai', subtitle: 'EiC, Advances in Complex Systems', type: 'editor', timeLabel: '15:00 – 15:30' },
 			{ startMin: 450, endMin: 480, title: 'Coffee Break', type: 'break', timeLabel: '15:30 – 16:00' },
