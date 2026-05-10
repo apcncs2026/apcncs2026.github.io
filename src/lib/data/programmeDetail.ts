@@ -83,7 +83,7 @@ export const dayDetails: DayDetail[] = [
 						speaker: 'Marton Karsai (Central European University, Austria)',
 						title: 'Socioeconomic Networks, Segregation Patterns and Their Dynamics'
 					},
-					{ time: '09:20 – 10:05', speaker: 'Misako Takayasu (Institute of Science Tokyo, Japan)', title: 'TBC' },
+					{ time: '09:20 – 10:05', speaker: 'Misako Takayasu (Institute of Science Tokyo, Japan)', title: 'Modeling the Gut Microbiome Ecosystem Based on a Random Multiplicative Process' },
 					{
 						time: '10:05 – 10:30',
 						prefix: 'Panel Discussion 1',
@@ -376,7 +376,7 @@ export const dayDetails: DayDetail[] = [
 						speaker: 'Jose Fernando Mendes (University of Aveiro, Portugal)',
 						title: 'TBC'
 					},
-					{ time: '10:00 – 10:30', speaker: 'Leihan Tang (Westlake University, China)', title: 'TBC' }
+					{ time: '10:00 – 10:30', speaker: 'Leihan Tang (Westlake University, China)', title: 'Solving Spin Glass Problems Through Physics, Mathematics, and Computation: Spectral Condensation, Domain-Wall Cascades, and the Architecture of Complex States' }
 				]
 			},
 			{ kind: 'break', time: '10:30 – 11:00', title: 'Coffee Break', location: 'MAS Atrium' },
