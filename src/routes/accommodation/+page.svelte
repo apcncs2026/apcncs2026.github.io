@@ -46,6 +46,52 @@
 					<Icon name="info" class_="stroke-current shrink-0 h-6 w-6" />
 					<span>We will provide more updates as information becomes available.</span>
 				</div>
+
+				<h2 class="text-3xl font-bold mb-8 mt-12">Other Hotels Near NTU</h2>
+
+				<p class="mb-8">
+					Participants are also welcome to explore other hotels near to NTU. These are:
+				</p>
+
+				<div class="card bg-base-200 mb-6">
+					<div class="card-body">
+						<h3 class="card-title text-primary">Four Points by Sheraton Jurong (formerly Genting Hotel Jurong)</h3>
+						<p class="text-sm opacity-80"><strong>Distance from NTU:</strong> ~6.5 km (15 mins by taxi / 30 mins by public transport)</p>
+						<p>
+							Conveniently located near the Jurong East MRT interchange and major shopping malls (JEM, Westgate, and IMM), offering a wide variety of dining and retail options.
+						</p>
+					</div>
+				</div>
+
+				<div class="card bg-base-200 mb-6">
+					<div class="card-body">
+						<h3 class="card-title text-primary">Park Avenue Rochester</h3>
+						<p class="text-sm opacity-80"><strong>Distance from NTU:</strong> ~12.5 km (20 mins by taxi / 45 mins by MRT)</p>
+						<p>
+							Surrounded by the beautiful Rochester Park and the Star Vista mall. This area is known for its excellent selection of restaurants and cafes set in colonial bungalows.
+						</p>
+					</div>
+				</div>
+
+				<div class="card bg-base-200 mb-6">
+					<div class="card-body">
+						<h3 class="card-title text-primary">Citadines Connect Rochester Singapore</h3>
+						<p class="text-sm opacity-80"><strong>Distance from NTU:</strong> ~12.5 km (20 mins by taxi / 45 mins by MRT)</p>
+						<p>
+							Offers "Recharge" rooms for early arrivals or late departures. It is highly integrated with the surrounding dining scene in the Buona Vista tech-corridor.
+						</p>
+					</div>
+				</div>
+
+				<div class="card bg-base-200 mb-6">
+					<div class="card-body">
+						<h3 class="card-title text-primary">The Quay Hotel West Coast</h3>
+						<p class="text-sm opacity-80"><strong>Distance from NTU:</strong> ~11 km (15 mins by taxi / 40 mins by bus)</p>
+						<p>
+							Located near West Coast Park and the National University of Singapore (NUS). It is a quieter option for those looking for a more residential feel while remaining relatively close to NTU.
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
