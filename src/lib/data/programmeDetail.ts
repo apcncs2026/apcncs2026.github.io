@@ -229,7 +229,7 @@ export const dayDetails: DayDetail[] = [
 				chair: 'Anirban Chakraborti (Jawaharlal Nehru University, India)',
 				talks: [
 					{ time: '08:45 – 09:20', speaker: 'Ginestra Bianconi (Queen Mary University of London, UK)', title: 'TBC' },
-					{ time: '09:20 – 10:05', speaker: 'Hawoong Jeong (KAIST, Korea)', title: 'TBC' },
+					{ time: '09:20 – 10:05', speaker: 'Hawoong Jeong (KAIST, Korea)', title: 'Understanding Complex Systems via Network, Data, AI' },
 					{
 						time: '10:05 – 10:30',
 						prefix: 'Panel Discussion 2',
