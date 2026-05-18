@@ -135,7 +135,7 @@ export const days: DayData[] = [
 		gridSessions: [
 			{ startMin: 0, endMin: 45, title: 'Registration', type: 'registration', timeLabel: '08:00 – 08:45' },
 			{ startMin: 45, endMin: 80, title: 'Ginestra Bianconi', type: 'talk', timeLabel: '08:45 – 09:20' },
-			{ startMin: 80, endMin: 125, title: 'Hawoong Jeong', type: 'talk', timeLabel: '09:20 – 10:05' },
+			{ startMin: 80, endMin: 125, title: 'Hawoong Jeong', subtitle: 'Understanding Complex Systems via Network, Data, AI', type: 'talk', timeLabel: '09:20 – 10:05' },
 			{ startMin: 125, endMin: 150, title: 'Forging International Collaborations', subtitle: 'Panel Discussion', type: 'panel', timeLabel: '10:05 – 10:30' },
 			{ startMin: 150, endMin: 180, title: 'Coffee Break', type: 'break', timeLabel: '10:30 – 11:00' },
 			{ startMin: 180, endMin: 270, title: 'Parallel Session 3', type: 'parallel', timeLabel: '11:00 – 12:30' },
