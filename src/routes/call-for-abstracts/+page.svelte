@@ -147,8 +147,25 @@
 			<div class="prose prose-lg max-w-none mb-12">
 				<h2 class="text-3xl font-bold mb-6">Special Issue</h2>
 				<p>
-					In partnership with World Scientific, we will edit a special issue in <em>Advances in Complex Systems</em> in conjunction with the conference. Invited speakers will be requested to submit mini-reviews based on their talks, while selected participants will be invited to submit full papers based on their contributed talks. The opening and closing dates of this special issue will be made known when more information is available.
+					In partnership with World Scientific, we will edit a special issue in <Link href="https://www.worldscientific.com/page/acs/apcncs2026" text="Advances in Complex Systems" /> in conjunction with the conference. Invited speakers will be requested to submit mini-reviews based on their talks, while selected participants will be invited to submit full papers based on their contributed talks. The opening and closing dates of this special issue will be made known when more information is available.
 				</p>
+				<div class="not-prose mt-8 max-w-2xl mx-auto">
+					<a
+						href="https://www.worldscientific.com/page/acs/apcncs2026"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="block overflow-hidden rounded-lg shadow-md transition-transform hover:scale-[1.02]"
+					>
+						<img
+							src="/images/special-issue/acs-apcncs2026.png"
+							alt="Special Issue on APCNCS 2026 in Advances in Complex Systems"
+							class="w-full h-auto"
+							width="800"
+							height="200"
+							loading="lazy"
+						/>
+					</a>
+				</div>
 			</div>
 
 			<div class="prose prose-lg max-w-none mb-12">
