@@ -297,7 +297,7 @@ export const dayDetails: DayDetail[] = [
 						]
 					},
 					{
-						name: 'Focus Session on Evolutionary Games',
+						name: 'Focus Session on Games on Complex Systems',
 						location: 'MAS Executive Classroom 1',
 						tba: true,
 						talks: []
@@ -361,7 +361,7 @@ export const dayDetails: DayDetail[] = [
 						]
 					},
 					{
-						name: 'Focus Session on Evolutionary Games',
+						name: 'Focus Session on Games on Complex Systems',
 						location: 'MAS Executive Classroom 1',
 						tba: true,
 						talks: []

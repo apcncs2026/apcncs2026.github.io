@@ -38,7 +38,7 @@
 					<div class="card-body">
 						<h3 class="card-title text-primary">Dormitory Accommodation for Students and Postdocs</h3>
 						<p>
-							Because the conference falls within our university's summer vacation, we have also arranged for up to 150 student and postdoc participants to be hosted in single and twin-sharing rooms across multiple dormitories on campus. We hope the affordable daily rates within this arrangement will encourage more students and postdocs to participate in the conference.
+							Because the conference falls within our university's summer vacation, we have also arranged for up to 150 student and postdoc participants to be hosted in single and twin-sharing rooms at <strong>Hall 10</strong> and <strong>Hall 11</strong> on campus. We hope the affordable daily rates within this arrangement will encourage more students and postdocs to participate in the conference.
 						</p>
 					</div>
 				</div>
