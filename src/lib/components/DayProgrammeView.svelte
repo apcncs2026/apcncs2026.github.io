@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { getHeroBackgroundStyle } from '$lib/config/heroImages';
 	import Icon from '$lib/components/Icon.svelte';
-	import { dayDetails, type DayDetail, type DayItem, type Talk } from '$lib/data/programmeDetail';
+	import { dayDetails, abstractUrl, type DayDetail, type DayItem, type Talk } from '$lib/data/programmeDetail';
 
 	interface Props {
 		day: DayDetail;
@@ -27,6 +27,19 @@
 	<title>Detailed Programme — {day.label}, {day.date} | APCNCS 2026</title>
 	<meta name="description" content="Detailed conference programme for {day.label}, {day.date}." />
 </svelte:head>
+
+{#snippet abstractLink(t: Talk)}
+	{#if t.abstract}
+		<a
+			href={abstractUrl(t.abstract)}
+			download
+			class="inline-flex items-center gap-1 mt-1 text-sm text-primary hover:underline"
+		>
+			<Icon name="file-text" class_="w-4 h-4" />
+			Download abstract
+		</a>
+	{/if}
+{/snippet}
 
 <div class="min-h-screen">
 	<section class="hero hero-bg hero-page" style={getHeroBackgroundStyle('programme')}>
@@ -123,6 +136,7 @@
 											{#if t.title}
 												<div class="text-base-content/80">{t.title}</div>
 											{/if}
+											{@render abstractLink(t)}
 										{/if}
 									</div>
 								{/each}
@@ -167,6 +181,7 @@
 														{#if t.title}
 															<div class="text-base-content/80 leading-snug">{t.title}</div>
 														{/if}
+														{@render abstractLink(t)}
 													</li>
 												{/each}
 											</ul>
