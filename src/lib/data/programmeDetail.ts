@@ -6,11 +6,25 @@ export interface Panelist {
 	note?: string; // e.g. "TBC"
 }
 
+// Where an abstract file lives. `type` maps to the static/abstract/<type>/ subfolder,
+// so this extends from invited talks to contributed presentations without changing the schema.
+export type AbstractType = 'invited' | 'presentation';
+
+export interface AbstractRef {
+	type: AbstractType;
+	file: string; // filename within static/abstract/<type>/, e.g. "leihan-tang.docx"
+}
+
+export function abstractUrl(ref: AbstractRef): string {
+	return `/abstract/${ref.type}/${ref.file}`;
+}
+
 export interface Talk {
 	time: string;
 	prefix?: string; // "Opening Address", "Advances in Complex Systems Invited Lecture", etc.
 	speaker?: string; // "Marton Karsai (Central European University, Austria)"
 	title?: string; // talk title; "TBC" allowed
+	abstract?: AbstractRef; // downloadable abstract, e.g. { type: 'invited', file: 'leihan-tang.docx' }
 	// Panel-discussion fields (optional)
 	panelTitle?: string;
 	panelists?: Panelist[];
@@ -81,9 +95,10 @@ export const dayDetails: DayDetail[] = [
 						time: '08:45 – 09:20',
 						prefix: 'Advances in Complex Systems Invited Lecture',
 						speaker: 'Marton Karsai (Central European University, Austria)',
-						title: 'Socioeconomic Networks, Segregation Patterns and Their Dynamics'
+						title: 'Socioeconomic Networks, Segregation Patterns and Their Dynamics',
+						abstract: { type: 'invited', file: 'marton-karsai.docx' }
 					},
-					{ time: '09:20 – 10:05', speaker: 'Misako Takayasu (Institute of Science Tokyo, Japan)', title: 'Modeling the Gut Microbiome Ecosystem Based on a Random Multiplicative Process' },
+					{ time: '09:20 – 10:05', speaker: 'Misako Takayasu (Institute of Science Tokyo, Japan)', title: 'Modeling the Gut Microbiome Ecosystem Based on a Random Multiplicative Process', abstract: { type: 'invited', file: 'misako-takayasu.docx' } },
 					{
 						time: '10:05 – 10:30',
 						prefix: 'Panel Discussion 1',
@@ -159,9 +174,9 @@ export const dayDetails: DayDetail[] = [
 				time: '13:30 – 15:30',
 				location: 'SPMS-LT1',
 				talks: [
-					{ time: '13:30 – 14:00', speaker: 'Lock Yue Chew (NTU, Singapore)', title: 'Dynamical scheduling and statistical physics of city-scale bus network with reinforcement learning' },
-					{ time: '14:00 – 14:30', speaker: 'Sarah Russell (Peter MacCallum Cancer Centre & Swinburne University of Technology, Australia)', title: 'T cell development: Coordinated self-organisation at the level of the cell, the organ and the body' },
-					{ time: '14:30 – 15:00', speaker: 'Thiparat Chotibut (Chulalongkorn University, Thailand)', title: 'Robust Sequence Recognition in Random Neuronal Networks' },
+					{ time: '13:30 – 14:00', speaker: 'Lock Yue Chew (NTU, Singapore)', title: 'Dynamical scheduling and statistical physics of city-scale bus network with reinforcement learning', abstract: { type: 'invited', file: 'lock-yue-chew.docx' } },
+					{ time: '14:00 – 14:30', speaker: 'Sarah Russell (Peter MacCallum Cancer Centre & Swinburne University of Technology, Australia)', title: 'T cell development: Coordinated self-organisation at the level of the cell, the organ and the body', abstract: { type: 'invited', file: 'sarah-russell.docx' } },
+					{ time: '14:30 – 15:00', speaker: 'Thiparat Chotibut (Chulalongkorn University, Thailand)', title: 'Robust Sequence Recognition in Random Neuronal Networks', abstract: { type: 'invited', file: 'thiparat-chotibut.pdf' } },
 					{
 						time: '15:00 – 15:30',
 						prefix: 'Meet the Editor Session',
@@ -242,8 +257,8 @@ export const dayDetails: DayDetail[] = [
 				location: 'SPMS-LT1',
 				chair: 'Anirban Chakraborti (Jawaharlal Nehru University, India)',
 				talks: [
-					{ time: '08:45 – 09:20', speaker: 'Ginestra Bianconi (Queen Mary University of London, UK)', title: 'TBC' },
-					{ time: '09:20 – 10:05', speaker: 'Hawoong Jeong (KAIST, Korea)', title: 'Understanding Complex Systems via Network, Data, AI' },
+					{ time: '08:45 – 09:20', speaker: 'Ginestra Bianconi (Queen Mary University of London, UK)', title: 'Learning the Topology of Higher-Order Networks from Their Dynamics', abstract: { type: 'invited', file: 'ginestra-bianconi.docx' } },
+					{ time: '09:20 – 10:05', speaker: 'Hawoong Jeong (KAIST, Korea)', title: 'Understanding Complex Systems via Network, Data, AI', abstract: { type: 'invited', file: 'hawoong-jeong.docx' } },
 					{
 						time: '10:05 – 10:30',
 						prefix: 'Panel Discussion 2',
@@ -311,8 +326,8 @@ export const dayDetails: DayDetail[] = [
 				time: '13:30 – 15:30',
 				location: 'SPMS-LT1',
 				talks: [
-					{ time: '13:30 – 14:00', speaker: 'Parongama Sen (University of Calcutta, India)', title: 'Nonlinear Biased q-Voter Models: Steady States and Persistence Behavior' },
-					{ time: '14:00 – 14:30', speaker: 'Fatimah Abdul Razak (Universiti Kebangsaan Malaysia, Malaysia)', title: 'The Social Architecture of Stories: Mapping Connectivity as a Blueprint for Malaysian Resilience' },
+					{ time: '13:30 – 14:00', speaker: 'Parongama Sen (University of Calcutta, India)', title: 'Nonlinear Biased q-Voter Models: Steady States and Persistence Behavior', abstract: { type: 'invited', file: 'parongama-sen.docx' } },
+					{ time: '14:00 – 14:30', speaker: 'Fatimah Abdul Razak (Universiti Kebangsaan Malaysia, Malaysia)', title: 'The Social Architecture of Stories: Mapping Connectivity as a Blueprint for Malaysian Resilience', abstract: { type: 'invited', file: 'fatimah-abdul-razak.docx' } },
 					{ time: '14:30 – 15:00', speaker: 'Hsuan-Yi Chen (National Central University, Taiwan)', title: 'The Statistical Mechanics of Weak Signals in Complex Systems' },
 					{
 						time: '15:00 – 15:30',
@@ -385,14 +400,14 @@ export const dayDetails: DayDetail[] = [
 				time: '08:40 – 10:30',
 				location: 'SPMS-LT1',
 				talks: [
-					{ time: '08:40 – 09:20', speaker: 'Carlos Gershenson (Binghamton University, USA)', title: 'On the Limits of the Scientific Study of Complex Systems' },
+					{ time: '08:40 – 09:20', speaker: 'Carlos Gershenson (Binghamton University, USA)', title: 'On the Limits of the Scientific Study of Complex Systems', abstract: { type: 'invited', file: 'carlos-gershenson.docx' } },
 					{
 						time: '09:20 – 10:00',
 						prefix: 'MDPI Entropy Invited Lecture',
 						speaker: 'Jose Fernando Mendes (University of Aveiro, Portugal)',
 						title: 'TBC'
 					},
-					{ time: '10:00 – 10:30', speaker: 'Leihan Tang (Westlake University, China)', title: 'Solving Spin Glass Problems Through Physics, Mathematics, and Computation: Spectral Condensation, Domain-Wall Cascades, and the Architecture of Complex States' }
+					{ time: '10:00 – 10:30', speaker: 'Leihan Tang (Westlake University, China)', title: 'Solving Spin Glass Problems Through Physics, Mathematics, and Computation: Spectral Condensation, Domain-Wall Cascades, and the Architecture of Complex States', abstract: { type: 'invited', file: 'leihan-tang.docx' } }
 				]
 			},
 			{ kind: 'break', time: '10:30 – 11:00', title: 'Coffee Break', location: 'MAS Atrium' },
