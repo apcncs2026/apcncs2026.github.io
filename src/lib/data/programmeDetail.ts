@@ -122,35 +122,35 @@ export const dayDetails: DayDetail[] = [
 						name: 'Economic and Financial Complexity I',
 						location: 'SPMS-LT1',
 						talks: [
-							{ time: '11:00 – 11:15', speaker: 'Marta Zava (Bocconi University, Italy)', title: 'Network Motifs and the Rise of Entrepreneurial Ecosystems' },
-							{ time: '11:15 – 11:30', speaker: 'Galvin Ng (CSH Vienna, Austria), Damien Bertrand (EPFL, Switzerland), Luca Mungo (University of Oxford, UK), and François Lafond (University of Oxford, UK)', title: 'Synthetic Supply Networks' },
-							{ time: '11:30 – 11:45', speaker: 'Imran Ansari, Shashi Jain, Srikant Iyer (IISc Bangalore, India)', title: 'Network-Based Portfolio Optimization from Denoised Financial Correlation Matrices' },
-							{ time: '11:45 – 12:00', speaker: 'Pawanesh (OP Jindal Global University, India), Charu Sharma and Niteesh Sahni (Shiv Nadar Institute of Eminence, India)', title: 'Communicability Reveals Crisis-Specific Structural Reorganization in Financial Networks' },
-							{ time: '12:00 – 12:15', speaker: 'Wei Ting Lim and Siew Ann Cheong (NTU, Singapore)', title: 'The Geometry of Panic: Multiscale Functional Analysis of Stock Market Dynamics' },
-							{ time: '12:15 – 12:30', speaker: 'Haoting Xie and Siew Ann Cheong (NTU, Singapore)', title: 'Information Dynamics and Structural Transitions in Nikkei 225 Correlation Networks' }
+							{ time: '11:00 – 11:15', speaker: 'Marta Zava (Bocconi University, Italy)', title: 'Network Motifs and the Rise of Entrepreneurial Ecosystems', abstract: { type: 'presentation', file: 'marta-zava.pdf' } },
+							{ time: '11:15 – 11:30', speaker: 'Galvin Ng (CSH Vienna, Austria), Damien Bertrand (EPFL, Switzerland), Luca Mungo (University of Oxford, UK), and François Lafond (University of Oxford, UK)', title: 'Synthetic Supply Networks', abstract: { type: 'presentation', file: 'galvin-ng.pdf' } },
+							{ time: '11:30 – 11:45', speaker: 'Imran Ansari, Shashi Jain, Srikant Iyer (IISc Bangalore, India)', title: 'Network-Based Portfolio Optimization from Denoised Financial Correlation Matrices', abstract: { type: 'presentation', file: 'imran-ansari.pdf' } },
+							{ time: '11:45 – 12:00', speaker: 'Pawanesh (OP Jindal Global University, India), Charu Sharma and Niteesh Sahni (Shiv Nadar Institute of Eminence, India)', title: 'Communicability Reveals Crisis-Specific Structural Reorganization in Financial Networks', abstract: { type: 'presentation', file: 'pawanesh.pdf' } },
+							{ time: '12:00 – 12:15', speaker: 'Wei Ting Lim and Siew Ann Cheong (NTU, Singapore)', title: 'The Geometry of Panic: Multiscale Functional Analysis of Stock Market Dynamics', abstract: { type: 'presentation', file: 'wei-ting-lim.pdf' } },
+							{ time: '12:15 – 12:30', speaker: 'Haoting Xie and Siew Ann Cheong (NTU, Singapore)', title: 'Information Dynamics and Structural Transitions in Nikkei 225 Correlation Networks', abstract: { type: 'presentation', file: 'haoting-xie.pdf' } }
 						]
 					},
 					{
 						name: 'Biological and Ecological Complexity I',
 						location: 'SPMS-LT2',
 						talks: [
-							{ time: '11:00 – 11:15', speaker: 'Mi Jin Lee (Pusan National University, Korea) and Deok-Sun Lee (KIAS, Korea)', title: 'Heterogeneous Popularity of Metabolic Reactions from Evolution' },
-							{ time: '11:15 – 11:30', speaker: 'Felix V. Kohane, Guocheng Huang, Ihuan Gunawan, Daniel P. Neumann, John G. Lock (UNSW Sydney, Australia), Christine Chaffer (Garvan Institute for Medical Research, Australia)', title: 'Cell Molecular Signalling Dynamics, Including Noise, are Pre-Tuned by Cell Phenotypic State' },
-							{ time: '11:30 – 11:45', speaker: 'Rahul Verma (Amity University, India)', title: 'Co-Mutation Based Genetic Networks to Infer Temporal Mutation Dynamics in Ancient Human Mitochondrial Genomes' },
-							{ time: '11:45 – 12:00', speaker: 'Hon Lin Too, Farisan Dary, Isaac Si Yuan Ling, Dustin Erhard Theofilus, Ee Hou Yong (NTU, Singapore), Haiyi Liang (USTC, China)', title: 'Emergence of Hexanematic Order in a Growing Confluent Cell Monolayer' },
-							{ time: '12:00 – 12:15', speaker: 'Antai Tao (USTC, China)', title: 'Bacterial Strategies for Navigating Surface Constraints' }
+							{ time: '11:00 – 11:15', speaker: 'Mi Jin Lee (Pusan National University, Korea) and Deok-Sun Lee (KIAS, Korea)', title: 'Heterogeneous Popularity of Metabolic Reactions from Evolution', abstract: { type: 'presentation', file: 'mi-jin-lee.pdf' } },
+							{ time: '11:15 – 11:30', speaker: 'Felix V. Kohane, Guocheng Huang, Ihuan Gunawan, Daniel P. Neumann, John G. Lock (UNSW Sydney, Australia), Christine Chaffer (Garvan Institute for Medical Research, Australia)', title: 'Cell Molecular Signalling Dynamics, Including Noise, are Pre-Tuned by Cell Phenotypic State', abstract: { type: 'presentation', file: 'john-lock.pdf' } },
+							{ time: '11:30 – 11:45', speaker: 'Rahul Verma (Amity University, India)', title: 'Co-Mutation Based Genetic Networks to Infer Temporal Mutation Dynamics in Ancient Human Mitochondrial Genomes', abstract: { type: 'presentation', file: 'rahul-verma.pdf' } },
+							{ time: '11:45 – 12:00', speaker: 'Hon Lin Too, Farisan Dary, Isaac Si Yuan Ling, Dustin Erhard Theofilus, Ee Hou Yong (NTU, Singapore), Haiyi Liang (USTC, China)', title: 'Emergence of Hexanematic Order in a Growing Confluent Cell Monolayer', abstract: { type: 'presentation', file: 'hon-lin-too.pdf' } },
+							{ time: '12:00 – 12:15', speaker: 'Antai Tao (USTC, China)', title: 'Bacterial Strategies for Navigating Surface Constraints', abstract: { type: 'presentation', file: 'antai-tao.pdf' } }
 						]
 					},
 					{
 						name: 'Dynamics on and of Complex Networks',
 						location: 'SPMS-LT3',
 						talks: [
-							{ time: '11:00 – 11:15', speaker: 'Atiyab Zafar, Sanjay Jain (University of Delhi, India)', title: 'Rising Inequality and a ‘Power Shift’ from the Core to a Parasitic Periphery are Precursors of Collapse' },
-							{ time: '11:15 – 11:30', speaker: 'Suwannachad Suwannajitt (Chulalongkorn University, Thailand)', title: 'Universal Stagnation Dynamics in Quantum Imaginary-Time Evolution' },
-							{ time: '11:30 – 11:45', speaker: 'Eugene Tan (University of Western Australia, Australia)', title: 'Dimensions of Hypergraphs using Spreading Processes' },
-							{ time: '11:45 – 12:00', speaker: 'Liyana Truna, Fatimah Abdul Razak, Roslinda Nazar (Universiti Kebangsaan Malaysia, Malaysia)', title: 'Network-Based Characterization of Laminar Flow Using Complex Network Theory: A Data-Driven Analysis of Skin Friction and Heat Transfer' },
-							{ time: '12:00 – 12:15', speaker: 'Charli Chinmayee Pal and Prasanta Kumar Mahapatra (Siksha ‘O’ Anusandhan, India)', title: 'Exact Prime Density Reproduced Through Resonant Tunneling across a Double Barrier System' },
-							{ time: '12:15 – 12:30', speaker: 'Ram Pravesh Yadav, R.K. Brojen Singh, Anirban Chakraborti (Jawaharlal Nehru University, India), Hirdesh K. Pharasi (BML Munjal University, India)', title: 'Complex Dynamics of the Hindmarsh-Rose Neuron Model with Blue-Sky Catastrophe under a Magnetic Field and Noise' }
+							{ time: '11:00 – 11:15', speaker: 'Atiyab Zafar, Sanjay Jain (University of Delhi, India)', title: 'Rising Inequality and a ‘Power Shift’ from the Core to a Parasitic Periphery are Precursors of Collapse', abstract: { type: 'presentation', file: 'atiyab-zafar.pdf' } },
+							{ time: '11:15 – 11:30', speaker: 'Suwannachad Suwannajitt (Chulalongkorn University, Thailand)', title: 'Universal Stagnation Dynamics in Quantum Imaginary-Time Evolution', abstract: { type: 'presentation', file: 'suwannachad-suwannajitt.pdf' } },
+							{ time: '11:30 – 11:45', speaker: 'Eugene Tan (University of Western Australia, Australia)', title: 'Dimensions of Hypergraphs using Spreading Processes', abstract: { type: 'presentation', file: 'eugene-tan.pdf' } },
+							{ time: '11:45 – 12:00', speaker: 'Liyana Truna, Fatimah Abdul Razak, Roslinda Nazar (Universiti Kebangsaan Malaysia, Malaysia)', title: 'Network-Based Characterization of Laminar Flow Using Complex Network Theory: A Data-Driven Analysis of Skin Friction and Heat Transfer', abstract: { type: 'presentation', file: 'liyana-truna.pdf' } },
+							{ time: '12:00 – 12:15', speaker: 'Charli Chinmayee Pal and Prasanta Kumar Mahapatra (Siksha ‘O’ Anusandhan, India)', title: 'Exact Prime Density Reproduced Through Resonant Tunneling across a Double Barrier System', abstract: { type: 'presentation', file: 'charli-chinmayee-pal.pdf' } },
+							{ time: '12:15 – 12:30', speaker: 'Ram Pravesh Yadav, R.K. Brojen Singh, Anirban Chakraborti (Jawaharlal Nehru University, India), Hirdesh K. Pharasi (BML Munjal University, India)', title: 'Complex Dynamics of the Hindmarsh-Rose Neuron Model with Blue-Sky Catastrophe under a Magnetic Field and Noise', abstract: { type: 'presentation', file: 'ram-pravesh-yadav.pdf' } }
 						]
 					},
 					{
@@ -160,8 +160,8 @@ export const dayDetails: DayDetail[] = [
 						talks: [
 							{ time: '11:00 – 11:30', speaker: 'Justin Dauwels (TU Delft, Netherlands)', title: 'When AI Becomes a Complex System: Agents, Emergence, and Real-World Applications (Invited)' },
 							{ time: '11:30 – 12:00', speaker: 'Thiparat Chotibut (Chulalongkorn University, Thailand)', title: 'Reinforcement Learning in Population Games: From Microscopic Chaos to Macroscopic Equilibrium (Invited)' },
-							{ time: '12:00 – 12:15', speaker: 'Jaroonrak Omsap, Andri Pradana, Yew Soon Ong, and Lock Yue Chew (NTU, Singapore)', title: 'Deep Reinforcement Learning for Passenger Transfer Synchronization in a Bus Network' },
-							{ time: '12:15 – 12:30', speaker: 'Zheng Tien Kang, Peter Tsung-Wen Yen, Kelin Xia, Siew Ann Cheong (NTU, Singapore)', title: 'Building a Time Series Vision Transformer with Small, High-Resolution Datasets' },
+							{ time: '12:00 – 12:15', speaker: 'Jaroonrak Omsap, Andri Pradana, Yew Soon Ong, and Lock Yue Chew (NTU, Singapore)', title: 'Deep Reinforcement Learning for Passenger Transfer Synchronization in a Bus Network', abstract: { type: 'presentation', file: 'jaroonrak-omsap.pdf' } },
+							{ time: '12:15 – 12:30', speaker: 'Zheng Tien Kang, Peter Tsung-Wen Yen, Kelin Xia, Siew Ann Cheong (NTU, Singapore)', title: 'Building a Time Series Vision Transformer with Small, High-Resolution Datasets', abstract: { type: 'presentation', file: 'kang-zheng-tien.pdf' } },
 							{ time: '12:30 – 12:45', speaker: 'Andri Pradana, Lock Yue Chew, and Bo Yang (NTU, Singapore)', title: 'Discovery of Bus Control Strategies with Reinforcement Learning to Optimize Commuter-Centric Objective' }
 						]
 					}
@@ -195,34 +195,34 @@ export const dayDetails: DayDetail[] = [
 						name: 'Economic and Financial Complexity II',
 						location: 'SPMS-LT1',
 						talks: [
-							{ time: '16:00 – 16:15', speaker: 'Ardian Maulana, Hokky Situngkir (ITB, Indonesia)', title: 'Cascade Regimes and Corridor Backbones in Indonesia’s Production Network' },
-							{ time: '16:15 – 16:30', speaker: 'Pradeep Moturi and Siew Ann Cheong (NTU, Singapore)', title: 'Spatio-Temporal Topological Data Analysis of Ethereum’s Transaction Data' },
-							{ time: '16:30 – 16:45', speaker: 'Sudip Sarkar and Soumyajyoti Biswas (SRM University, India)', title: 'Large Earthquakes Follow Highly Unequal Ones' },
-							{ time: '16:45 – 17:00', speaker: 'Einar C. Kjenstad (UiT The Arctic University of Norway, Norway), Peter Tsung-Wen Yen, Siew Ann Cheong (NTU, Singapore)', title: 'Estimating Parameter Heterogeneity in Decision Programs by Spatial Quasi-Differentiation (SQD)' },
-							{ time: '17:00 – 17:15', speaker: 'Mahdi Sayyadi (Åbo Akademi University, Finland)', title: 'Generative AI as a Complex Adaptive System: Adoption Dynamics and Emergent Entrepreneurial Practices in Finland' },
-							{ time: '17:15 – 17:30', speaker: 'Martin F. Diaz, Josep Perello, Miquel Montero (University of Barcelona, Spain)', title: 'Quantifying Adaptive Strategies in Regulated and Unregulated Simulated Housing Markets' }
+							{ time: '16:00 – 16:15', speaker: 'Ardian Maulana, Hokky Situngkir (ITB, Indonesia)', title: 'Cascade Regimes and Corridor Backbones in Indonesia’s Production Network', abstract: { type: 'presentation', file: 'ardian-maulana.pdf' } },
+							{ time: '16:15 – 16:30', speaker: 'Pradeep Moturi and Siew Ann Cheong (NTU, Singapore)', title: 'Spatio-Temporal Topological Data Analysis of Ethereum’s Transaction Data', abstract: { type: 'presentation', file: 'pradeep-moturi.pdf' } },
+							{ time: '16:30 – 16:45', speaker: 'Sudip Sarkar and Soumyajyoti Biswas (SRM University, India)', title: 'Large Earthquakes Follow Highly Unequal Ones', abstract: { type: 'presentation', file: 'sudip-sarkar.pdf' } },
+							{ time: '16:45 – 17:00', speaker: 'Einar C. Kjenstad (UiT The Arctic University of Norway, Norway), Peter Tsung-Wen Yen, Siew Ann Cheong (NTU, Singapore)', title: 'Estimating Parameter Heterogeneity in Decision Programs by Spatial Quasi-Differentiation (SQD)', abstract: { type: 'presentation', file: 'einar-kjenstad.pdf' } },
+							{ time: '17:00 – 17:15', speaker: 'Mahdi Sayyadi (Åbo Akademi University, Finland)', title: 'Generative AI as a Complex Adaptive System: Adoption Dynamics and Emergent Entrepreneurial Practices in Finland', abstract: { type: 'presentation', file: 'mahdi-sayyadi.pdf' } },
+							{ time: '17:15 – 17:30', speaker: 'Martin F. Diaz, Josep Perello, Miquel Montero (University of Barcelona, Spain)', title: 'Quantifying Adaptive Strategies in Regulated and Unregulated Simulated Housing Markets', abstract: { type: 'presentation', file: 'martin-diaz.pdf' } }
 						]
 					},
 					{
 						name: 'Biological and Ecological Complexity II',
 						location: 'SPMS-LT2',
 						talks: [
-							{ time: '16:00 – 16:15', speaker: 'Manya Khanna, Sudeep Shukla (Institute for Interdisciplinary Research, India), Abbinav Sankar Kailasam (University College London, UK), Ashok Kumar, Priya Gupta, Anirban Chakraborti (Jawaharlal Nehru University, India), Rajiba Lochan Sahoo, Amiya Ranjan Bhowmick (Institute of Chemical Technology, India), Sourish Das (Chennai Mathematical Institute, India)', title: 'Complex Dynamical Study of ESG Factors and Crop Price Volatility in India' },
-							{ time: '16:15 – 16:30', speaker: 'Athokpam Langlen Chanu, Youngjai Park, Jong-Min Park (POSTECH, Korea), Jaesung Choi (KIAS, Korea), Younghwa Cha, Joon-Young Moon (Sungkyunkwan University, Korea), UnCheol Lee (University of Michigan Ann Arbor, USA)', title: 'Human Brain State Classification via Permutation Entropy of EEG Phase Dynamics' },
-							{ time: '16:30 – 16:45', speaker: 'Soorya PP and Biswambhar Rakshit (Amrita School of Physical Sciences, India)', title: 'Emergence of Metastability in Spatially Embedded Neuronal Networks with Higher-Order Interactions' },
-							{ time: '16:45 – 17:00', speaker: 'Mengna Liu, Antai Tao, Rongjing Zhang, Junhua Yuan (USTC, China)', title: 'Shear-Induced Oscillations and Hydrodynamic Buffering Stabilize Sperm Surface Navigation' },
-							{ time: '17:00 – 17:15', speaker: 'Yasharth Yadav, Kelin Xia (NTU, Singapore)', title: 'Periodic Topological Deep Learning for Polymer Design and Discovery' }
+							{ time: '16:00 – 16:15', speaker: 'Manya Khanna, Sudeep Shukla (Institute for Interdisciplinary Research, India), Abbinav Sankar Kailasam (University College London, UK), Ashok Kumar, Priya Gupta, Anirban Chakraborti (Jawaharlal Nehru University, India), Rajiba Lochan Sahoo, Amiya Ranjan Bhowmick (Institute of Chemical Technology, India), Sourish Das (Chennai Mathematical Institute, India)', title: 'Complex Dynamical Study of ESG Factors and Crop Price Volatility in India', abstract: { type: 'presentation', file: 'manya-khanna.pdf' } },
+							{ time: '16:15 – 16:30', speaker: 'Athokpam Langlen Chanu, Youngjai Park, Jong-Min Park (POSTECH, Korea), Jaesung Choi (KIAS, Korea), Younghwa Cha, Joon-Young Moon (Sungkyunkwan University, Korea), UnCheol Lee (University of Michigan Ann Arbor, USA)', title: 'Human Brain State Classification via Permutation Entropy of EEG Phase Dynamics', abstract: { type: 'presentation', file: 'athokpam-langlen-chanu.pdf' } },
+							{ time: '16:30 – 16:45', speaker: 'Soorya PP and Biswambhar Rakshit (Amrita School of Physical Sciences, India)', title: 'Emergence of Metastability in Spatially Embedded Neuronal Networks with Higher-Order Interactions', abstract: { type: 'presentation', file: 'soorya-pp.pdf' } },
+							{ time: '16:45 – 17:00', speaker: 'Mengna Liu, Antai Tao, Rongjing Zhang, Junhua Yuan (USTC, China)', title: 'Shear-Induced Oscillations and Hydrodynamic Buffering Stabilize Sperm Surface Navigation', abstract: { type: 'presentation', file: 'mengna-liu.pdf' } },
+							{ time: '17:00 – 17:15', speaker: 'Yasharth Yadav, Kelin Xia (NTU, Singapore)', title: 'Periodic Topological Deep Learning for Polymer Design and Discovery', abstract: { type: 'presentation', file: 'yasharth-yadav.docx' } }
 						]
 					},
 					{
 						name: 'Health System Complexity',
 						location: 'SPMS-LT3',
 						talks: [
-							{ time: '16:00 – 16:15', speaker: 'Siti Najiha Md Asari, Fatimah Abdul Razak, Nazarudin Safian (Universiti Kebangsaan Malaysia, Malaysia), Mohd Rahim Sulong, Wan Ming Keong (Ministry of Health, Malaysia)', title: 'Comparing Dengue Transmission Network Complexity Between High-Density and Low-Density Districts in Malaysia' },
-							{ time: '16:15 – 16:30', speaker: 'Saif Nasr, Inho Hong (Chonnam National University, Korea), Hyung Doo Kim (Hanyang University Churi Hospital, Korea)', title: 'Mapping the Network of Environmental Exposure Using Mixed Graphical Models' },
-							{ time: '16:30 – 16:45', speaker: 'Adithi Kalyanaraman and R. K. Kapilavani (Sri Venkateswara College of Engineering, India)', title: 'Higher-Order Drug Interaction Hypergraphs with Hybrid Quantum Optimization for Parkinson’s Disease' },
-							{ time: '16:45 – 17:00', speaker: 'Muhamad Aiman Hakim (Universiti Kebangsaan Malaysia, Malaysia)', title: 'Early Warning Signals and Sentinel Nodes in Network Epidemics' },
-							{ time: '17:00 – 17:15', speaker: 'Jesus Felix B. Valenzuela, Erika Fille T. Legara, Christopher P. Monterola (Asian Institute of Management, Philippines), Paula Joy Martinez (Center for AI Research, Philippines)', title: 'Emergence of Consensus Proceeds in Phases: Tracking Themes Across the Negotiations of the WHO Pandemic Agreement' }
+							{ time: '16:00 – 16:15', speaker: 'Siti Najiha Md Asari, Fatimah Abdul Razak, Nazarudin Safian (Universiti Kebangsaan Malaysia, Malaysia), Mohd Rahim Sulong, Wan Ming Keong (Ministry of Health, Malaysia)', title: 'Comparing Dengue Transmission Network Complexity Between High-Density and Low-Density Districts in Malaysia', abstract: { type: 'presentation', file: 'siti-najiha-md-asari.pdf' } },
+							{ time: '16:15 – 16:30', speaker: 'Saif Nasr, Inho Hong (Chonnam National University, Korea), Hyung Doo Kim (Hanyang University Churi Hospital, Korea)', title: 'Mapping the Network of Environmental Exposure Using Mixed Graphical Models', abstract: { type: 'presentation', file: 'saif-nasr.pdf' } },
+							{ time: '16:30 – 16:45', speaker: 'Adithi Kalyanaraman and R. K. Kapilavani (Sri Venkateswara College of Engineering, India)', title: 'Higher-Order Drug Interaction Hypergraphs with Hybrid Quantum Optimization for Parkinson’s Disease', abstract: { type: 'presentation', file: 'adithi-kalyanaraman.pdf' } },
+							{ time: '16:45 – 17:00', speaker: 'Muhamad Aiman Hakim (Universiti Kebangsaan Malaysia, Malaysia)', title: 'Early Warning Signals and Sentinel Nodes in Network Epidemics', abstract: { type: 'presentation', file: 'muhamad-aiman-hakim.pdf' } },
+							{ time: '17:00 – 17:15', speaker: 'Jesus Felix B. Valenzuela, Erika Fille T. Legara, Christopher P. Monterola (Asian Institute of Management, Philippines), Paula Joy Martinez (Center for AI Research, Philippines)', title: 'Emergence of Consensus Proceeds in Phases: Tracking Themes Across the Negotiations of the WHO Pandemic Agreement', abstract: { type: 'presentation', file: 'jesus-felix-valenzuela.pdf' } }
 						]
 					},
 					{
@@ -232,7 +232,7 @@ export const dayDetails: DayDetail[] = [
 						talks: [
 							{ time: '16:00 – 16:30', speaker: 'Carlo Vittorio Cannistraci (Tsinghua University, China)', title: 'Brain-Inspired Sparse Network Science for Next Generation Efficient and Sustainable AI (Invited)' },
 							{ time: '16:30 – 17:00', speaker: 'Florian Rossmannek (NTU, Singapore)', title: 'State-Space Systems for Learning from Temporal Data (Invited)' },
-							{ time: '17:00 – 17:15', speaker: 'Dishant Sisodia and Sarika Jalan (Indian Institute of Technology Indore, India)', title: 'Dynamical Analysis of a Reservoir Computer' },
+							{ time: '17:00 – 17:15', speaker: 'Dishant Sisodia and Sarika Jalan (Indian Institute of Technology Indore, India)', title: 'Dynamical Analysis of a Reservoir Computer', abstract: { type: 'presentation', file: 'dishant-sisodia.pdf' } },
 							{ time: '17:15 – 17:30', speaker: 'Feixiang Ren and Ling Feng (National University of Singapore, Singapore)', title: 'Towards Critical Branching Mechanism in Recurrent Neural Networks' },
 							{ time: '17:30 – 17:45', speaker: 'Derek D. C. Chang, Graeme D. Berk, and Mile Gu (NTU, Singapore)', title: 'Complexity in Quantum Processes & Reservoir Computing' }
 						]
@@ -282,33 +282,33 @@ export const dayDetails: DayDetail[] = [
 						name: 'Social, Cultural & Technological Complexity I',
 						location: 'SPMS-LT1',
 						talks: [
-							{ time: '11:00 – 11:15', speaker: 'H. C. W. Price and T. S. Evans (Imperial College London, UK)', title: 'Understanding Main Path Analysis' },
-							{ time: '11:15 – 11:30', speaker: 'Gaurav Kottari (Shiv Nadar University, India)', title: 'Structural Pathways and Directional Spillovers: A Network Framework for SDG Prioritisation' },
-							{ time: '11:30 – 11:45', speaker: 'Monica Dhyani (Shiv Nadar Institute of Eminence, India)', title: 'User Taxonomy and Positional Dynamics in Online Innovation Networks: Evidence from Stack Overflow' },
-							{ time: '11:45 – 12:00', speaker: 'Peter Yen, Yifei Li, Siew Ann Cheong (NTU, Singapore)', title: 'Applying Transformers and Transfer Learning for Training and Predicting Topological Features of AI Citation Networks' },
-							{ time: '12:00 – 12:15', speaker: 'Yuxuan Zhang and Ling Feng (National University of Singapore, Singapore)', title: 'Disassortative Mixing in Decentralized Social Network Due to Reciprocal Links' },
-							{ time: '12:15 – 12:30', speaker: 'Nishu and Atul Mishra (BML Munjal University, India)', title: 'Predictive to Prescriptive Analytics for Employee Attrition in Complex Workplace Systems' }
+							{ time: '11:00 – 11:15', speaker: 'H. C. W. Price and T. S. Evans (Imperial College London, UK)', title: 'Understanding Main Path Analysis', abstract: { type: 'presentation', file: 'timothy-evans.pdf' } },
+							{ time: '11:15 – 11:30', speaker: 'Gaurav Kottari (Shiv Nadar University, India)', title: 'Structural Pathways and Directional Spillovers: A Network Framework for SDG Prioritisation', abstract: { type: 'presentation', file: 'gaurav-kottari.pdf' } },
+							{ time: '11:30 – 11:45', speaker: 'Monica Dhyani (Shiv Nadar Institute of Eminence, India)', title: 'User Taxonomy and Positional Dynamics in Online Innovation Networks: Evidence from Stack Overflow', abstract: { type: 'presentation', file: 'monica-dhyani.pdf' } },
+							{ time: '11:45 – 12:00', speaker: 'Peter Yen, Yifei Li, Siew Ann Cheong (NTU, Singapore)', title: 'Applying Transformers and Transfer Learning for Training and Predicting Topological Features of AI Citation Networks', abstract: { type: 'presentation', file: 'peter-yen.pdf' } },
+							{ time: '12:00 – 12:15', speaker: 'Yuxuan Zhang and Ling Feng (National University of Singapore, Singapore)', title: 'Disassortative Mixing in Decentralized Social Network Due to Reciprocal Links', abstract: { type: 'presentation', file: 'yuxuan-zhang.pdf' } },
+							{ time: '12:15 – 12:30', speaker: 'Nishu and Atul Mishra (BML Munjal University, India)', title: 'Predictive to Prescriptive Analytics for Employee Attrition in Complex Workplace Systems', abstract: { type: 'presentation', file: 'nishu.pdf' } }
 						]
 					},
 					{
 						name: 'Foundations of Networks and Complex Systems I',
 						location: 'SPMS-LT2',
 						talks: [
-							{ time: '11:00 – 11:15', speaker: 'Riccardo Muolo (RIKEN, Japan), Hiroya Nakao (Institute of Science Tokyo, Japan), Marco Coraggio (Scuola Meridionale Superiore, Italy)', title: 'Weak Higher-Order Interactions Enhance Synchronization' },
-							{ time: '11:15 – 11:30', speaker: 'Pik-Yin Lai (National Central University, Taiwan)', title: 'Reconstructing Connection Weights and Topology of Directed Networks from Noisy Node Dynamics' },
-							{ time: '11:30 – 11:45', speaker: 'Rong-Chih Chang and Pik-Yin Lai (National Central University, Taiwan)', title: 'Steady-state Response Theory in Noisy Network Dynamics' },
-							{ time: '11:45 – 12:00', speaker: 'Minsoo Yang and Byungjun Min (Chungbuk National University, Korea)', title: 'Biconnectivity in Directed Graphs' }
+							{ time: '11:00 – 11:15', speaker: 'Riccardo Muolo (RIKEN, Japan), Hiroya Nakao (Institute of Science Tokyo, Japan), Marco Coraggio (Scuola Meridionale Superiore, Italy)', title: 'Weak Higher-Order Interactions Enhance Synchronization', abstract: { type: 'presentation', file: 'riccardo-muolo.pdf' } },
+							{ time: '11:15 – 11:30', speaker: 'Pik-Yin Lai (National Central University, Taiwan)', title: 'Reconstructing Connection Weights and Topology of Directed Networks from Noisy Node Dynamics', abstract: { type: 'presentation', file: 'pik-yin-lai.pdf' } },
+							{ time: '11:30 – 11:45', speaker: 'Rong-Chih Chang and Pik-Yin Lai (National Central University, Taiwan)', title: 'Steady-state Response Theory in Noisy Network Dynamics', abstract: { type: 'presentation', file: 'rong-chih-chang.pdf' } },
+							{ time: '11:45 – 12:00', speaker: 'Minsoo Yang and Byungjun Min (Chungbuk National University, Korea)', title: 'Biconnectivity in Directed Graphs', abstract: { type: 'presentation', file: 'minsoo-yang.pdf' } }
 						]
 					},
 					{
 						name: 'Urban Complexity I',
 						location: 'SPMS-LT3',
 						talks: [
-							{ time: '11:00 – 11:15', speaker: 'Nikola Stupar (University of Belgrade, Serbia)', title: 'Temporal Structure and Multifractality of Mobility Networks During COVID-19: Empirical Analysis and Mechanistic Modeling' },
-							{ time: '11:15 – 11:30', speaker: 'Sehyeong Kang and Inho Hong (Chonnam National University, Korea)', title: 'Urban Features Shape Variations in Distance Deterrence within Metropolitan Mobility Networks' },
-							{ time: '11:30 – 11:45', speaker: 'Hideki Takayasu, Haruka K. Ito and Misako Takayasu (Institute of Science Tokyo, Japan)', title: 'Equivalent Electrical Circuit Networks Representing Human Flow in Big Cities' },
-							{ time: '11:45 – 12:00', speaker: 'Isabella Rangel (University of Southern California, USA)', title: 'Optimizing Ethiopia’s Crop Storage Infrastructure: A Geospatial and Network Science Approach' },
-							{ time: '12:00 – 12:15', speaker: 'Sebastian Felipe R. Bundoc, Paula Joy B. Martinez, Sebastian C. Ibanez (Center for AI Research, Philippines), Erika Fille T. Legara (Asian Institute of Management, Philippines)', title: 'Student Flow Modeling for School Decongestion via Stochastic Gravity Estimation and Constrained Spatial Allocation' }
+							{ time: '11:00 – 11:15', speaker: 'Nikola Stupar (University of Belgrade, Serbia)', title: 'Temporal Structure and Multifractality of Mobility Networks During COVID-19: Empirical Analysis and Mechanistic Modeling', abstract: { type: 'presentation', file: 'nikola-stupar.pdf' } },
+							{ time: '11:15 – 11:30', speaker: 'Sehyeong Kang and Inho Hong (Chonnam National University, Korea)', title: 'Urban Features Shape Variations in Distance Deterrence within Metropolitan Mobility Networks', abstract: { type: 'presentation', file: 'inho-hong.pdf' } },
+							{ time: '11:30 – 11:45', speaker: 'Hideki Takayasu, Haruka K. Ito and Misako Takayasu (Institute of Science Tokyo, Japan)', title: 'Equivalent Electrical Circuit Networks Representing Human Flow in Big Cities', abstract: { type: 'presentation', file: 'hideki-takayasu.pdf' } },
+							{ time: '11:45 – 12:00', speaker: 'Isabella Rangel (University of Southern California, USA)', title: 'Optimizing Ethiopia’s Crop Storage Infrastructure: A Geospatial and Network Science Approach', abstract: { type: 'presentation', file: 'isabella-rangel.pdf' } },
+							{ time: '12:00 – 12:15', speaker: 'Sebastian Felipe R. Bundoc, Paula Joy B. Martinez, Sebastian C. Ibanez (Center for AI Research, Philippines), Erika Fille T. Legara (Asian Institute of Management, Philippines)', title: 'Student Flow Modeling for School Decongestion via Stochastic Gravity Estimation and Constrained Spatial Allocation', abstract: { type: 'presentation', file: 'sebastian-felipe-bundoc.pdf' } }
 						]
 					},
 					{
@@ -347,32 +347,32 @@ export const dayDetails: DayDetail[] = [
 						name: 'Social, Cultural & Technological Complexity II',
 						location: 'SPMS-LT1',
 						talks: [
-							{ time: '16:00 – 16:15', speaker: 'Azhari, Sparisoma Viridi, Acep Purqon (ITB, Indonesia), Roni Muslim (Universitas Sumatera Utara, Indonesia)', title: 'Exploring Multi-Opinion Dynamics in q-Voter Models' },
-							{ time: '16:15 – 16:30', speaker: 'Ip Ho Yan Ian and Siew Ann Cheong (NTU, Singapore)', title: 'Mapping Public Opinion onto Political Axes Using Language Models' },
-							{ time: '16:30 – 16:45', speaker: 'Cynthia Siew (NUS, Singapore)', title: 'A Comparison of Associative Networks Between Genders: A Singapore English Case Study' },
-							{ time: '16:45 – 17:00', speaker: 'Alyssa April Dellow and Fatimah Abdul Razak (Universiti Kebangsaan Malaysia, Malaysia)', title: 'Quantifying Narratives: A Comparative Social Network Analysis of Upin & Ipin Across Series and Film' },
-							{ time: '17:00 – 17:15', speaker: 'Muhammad Abraar Abhirama and Siew Ann Cheong (NTU, Singapore)', title: 'Sentence-Level Information Analysis of Narratives' },
-							{ time: '17:15 – 17:30', speaker: 'Chee Hyun Park, Eun Lee (Pukyong National University, Korea)', title: 'International Postdocs and Academic Careers with Field-Specific Inequality and Institutional Prestige in South Korean Faculty Hiring' }
+							{ time: '16:00 – 16:15', speaker: 'Azhari, Sparisoma Viridi, Acep Purqon (ITB, Indonesia), Roni Muslim (Universitas Sumatera Utara, Indonesia)', title: 'Exploring Multi-Opinion Dynamics in q-Voter Models', abstract: { type: 'presentation', file: 'azhari.pdf' } },
+							{ time: '16:15 – 16:30', speaker: 'Ip Ho Yan Ian and Siew Ann Cheong (NTU, Singapore)', title: 'Mapping Public Opinion onto Political Axes Using Language Models', abstract: { type: 'presentation', file: 'ip-ho-yan-ian.pdf' } },
+							{ time: '16:30 – 16:45', speaker: 'Cynthia Siew (NUS, Singapore)', title: 'A Comparison of Associative Networks Between Genders: A Singapore English Case Study', abstract: { type: 'presentation', file: 'cynthia-siew.pdf' } },
+							{ time: '16:45 – 17:00', speaker: 'Alyssa April Dellow and Fatimah Abdul Razak (Universiti Kebangsaan Malaysia, Malaysia)', title: 'Quantifying Narratives: A Comparative Social Network Analysis of Upin & Ipin Across Series and Film', abstract: { type: 'presentation', file: 'alyssa-april-dellow.pdf' } },
+							{ time: '17:00 – 17:15', speaker: 'Muhammad Abraar Abhirama and Siew Ann Cheong (NTU, Singapore)', title: 'Sentence-Level Information Analysis of Narratives', abstract: { type: 'presentation', file: 'muhammad-abraar-abhirama.pdf' } },
+							{ time: '17:15 – 17:30', speaker: 'Chee Hyun Park, Eun Lee (Pukyong National University, Korea)', title: 'International Postdocs and Academic Careers with Field-Specific Inequality and Institutional Prestige in South Korean Faculty Hiring', abstract: { type: 'presentation', file: 'chee-hyun-park.pdf' } }
 						]
 					},
 					{
 						name: 'Foundations of Networks and Complex Systems II',
 						location: 'SPMS-LT2',
 						talks: [
-							{ time: '16:00 – 16:15', speaker: 'Peng Peng, Jiming Liu, and Liang Tian (Hong Kong Baptist University, Hong Kong)', title: 'Dynamics-Based Renormalization Group for Complex Networks' },
-							{ time: '16:15 – 16:30', speaker: 'Jian Wei Cheong, Andri Pradana, Lock Yue Chew (NTU, Singapore)', title: 'Maxwell’s Uncertain Demon: Achieving Nonclassical and Enhanced Refrigeration when Causality Blurs' },
-							{ time: '16:30 – 16:45', speaker: 'Yuhao Wang, Andri Pradana, Jian Wei Cheong, Lock Yue Chew (NTU, Singapore)', title: 'Enhancing Performance and Operational Regimes of Quantum Otto Refrigerator with Heat Bath Algorithmic Cooling' },
-							{ time: '16:45 – 17:00', speaker: 'Erik Hormann (James Cook University, Australia) and Renaud Lambiotte (University of Oxford, UK)', title: 'Coarse-graining Directed Networks with Ergodic Sets Preserving Diffusive Dynamics' }
+							{ time: '16:00 – 16:15', speaker: 'Peng Peng, Jiming Liu, and Liang Tian (Hong Kong Baptist University, Hong Kong)', title: 'Dynamics-Based Renormalization Group for Complex Networks', abstract: { type: 'presentation', file: 'peng-peng.pdf' } },
+							{ time: '16:15 – 16:30', speaker: 'Jian Wei Cheong, Andri Pradana, Lock Yue Chew (NTU, Singapore)', title: 'Maxwell’s Uncertain Demon: Achieving Nonclassical and Enhanced Refrigeration when Causality Blurs', abstract: { type: 'presentation', file: 'jian-wei-cheong.pdf' } },
+							{ time: '16:30 – 16:45', speaker: 'Yuhao Wang, Andri Pradana, Jian Wei Cheong, Lock Yue Chew (NTU, Singapore)', title: 'Enhancing Performance and Operational Regimes of Quantum Otto Refrigerator with Heat Bath Algorithmic Cooling', abstract: { type: 'presentation', file: 'yuhao-wang.pdf' } },
+							{ time: '16:45 – 17:00', speaker: 'Erik Hormann (James Cook University, Australia) and Renaud Lambiotte (University of Oxford, UK)', title: 'Coarse-graining Directed Networks with Ergodic Sets Preserving Diffusive Dynamics', abstract: { type: 'presentation', file: 'erik-hormann.pdf' } }
 						]
 					},
 					{
 						name: 'Urban Complexity II',
 						location: 'SPMS-LT3',
 						talks: [
-							{ time: '16:00 – 16:15', speaker: 'Gyeong Won Jin, Eun Lee (Pukyong National University, Korea), Mi Jin Lee (Pusan National University, Korea)', title: 'Percolation Theory-Based Analysis of Sloped Pedestrian Networks' },
-							{ time: '16:15 – 16:30', speaker: 'HyungIn Cho, Kwangsin John Ahn, and SeGi Yu (Hankuk University of Foreign Studies, Korea)', title: 'Urban Store Distribution Explored through Subway Network in Seoul' },
-							{ time: '16:30 – 16:45', speaker: 'Dake Wu and Ling Feng (NUS, Singapore)', title: 'Recovery Dynamics Influence in Urban Traffic Capacity and Resilience' },
-							{ time: '16:45 – 17:00', speaker: 'Ziming Cheng, Dake Wu, Ling Feng (NUS, Singapore)', title: 'Quantifying Traffic Resistance and Supply Constraints: A Dual-Fluid RECM Approach based on Chengdu Taxi GPS Data' }
+							{ time: '16:00 – 16:15', speaker: 'Gyeong Won Jin, Eun Lee (Pukyong National University, Korea), Mi Jin Lee (Pusan National University, Korea)', title: 'Percolation Theory-Based Analysis of Sloped Pedestrian Networks', abstract: { type: 'presentation', file: 'gyeong-won-jin.pdf' } },
+							{ time: '16:15 – 16:30', speaker: 'HyungIn Cho, Kwangsin John Ahn, and SeGi Yu (Hankuk University of Foreign Studies, Korea)', title: 'Urban Store Distribution Explored through Subway Network in Seoul', abstract: { type: 'presentation', file: 'segi-yu.pdf' } },
+							{ time: '16:30 – 16:45', speaker: 'Dake Wu and Ling Feng (NUS, Singapore)', title: 'Recovery Dynamics Influence in Urban Traffic Capacity and Resilience', abstract: { type: 'presentation', file: 'dake-wu.pdf' } },
+							{ time: '16:45 – 17:00', speaker: 'Ziming Cheng, Dake Wu, Ling Feng (NUS, Singapore)', title: 'Quantifying Traffic Resistance and Supply Constraints: A Dual-Fluid RECM Approach based on Chengdu Taxi GPS Data', abstract: { type: 'presentation', file: 'ziming-cheng.pdf' } }
 						]
 					},
 					{
@@ -420,20 +420,20 @@ export const dayDetails: DayDetail[] = [
 						name: 'Social, Cultural & Technological Complexity III',
 						location: 'SPMS-LT1',
 						talks: [
-							{ time: '11:00 – 11:15', speaker: 'Yukie Sano and Miyuki Murayama (University of Tsukuba, Japan)', title: 'Collective Memory Recall Dynamics on Wikipedia' },
-							{ time: '11:15 – 11:30', speaker: 'Eun Lee (Pukyong National University, Korea), Ovidia Stanoi, Kevin N. Ochsner (Columbia University, USA), Xie He, Peter J. Mucha (Dartmouth College, USA), Yoona Kang (Rutgers University, USA), Mia Jovanova (University of St Gallen, Switzerland), Amanda L. McGowan, David M. Lydon-Staley, Dani S. Bassett, Emily B. Falk (University of Pennsylvania, USA), Zachary M. Boyd (Brigham Young University, USA)', title: 'Functional and Structural Clustering of Social Relationship Layers Among College Students for Link Prediction with Applications to Perceived Drinking Networks' },
-							{ time: '11:30 – 11:45', speaker: 'Yeonji Seo, Mi Jin Lee, Seung-Woo Son (Hanyang University, Korea), Hang-Hyun Jo (Catholic University of Korea, Korea), Yohsuke Murase (RIKEN, Japan)', title: 'How Wikipedia Article Connections Influence Editing Patterns' },
-							{ time: '11:45 – 12:00', speaker: 'Yifei Li, Peter Yen, Siew Ann Cheong (NTU, Singapore)', title: 'Applying Transformer Models to Predict Topological Features of AI Citation Networks' },
-							{ time: '12:00 – 12:15', speaker: 'Parul Shukla, Manya Khanna, Rajesh Dey (Institute for Interdisciplinary Research, India), Priya Gupta, Anirban Chakraborti (Jawaharlal Nehru University, India), Soumyajyoti Biswas (SRM University, India)', title: 'Multi-Layer Semantic Network Modeling of AI Governance as a Complex Adaptive System' },
-							{ time: '12:15 – 12:30', speaker: 'Lesley F Manatan (World Vision International, Philippines)', title: 'Digital Accessibility in the Philippines: A Complex Systems Perspective' }
+							{ time: '11:00 – 11:15', speaker: 'Yukie Sano and Miyuki Murayama (University of Tsukuba, Japan)', title: 'Collective Memory Recall Dynamics on Wikipedia', abstract: { type: 'presentation', file: 'yukie-sano.pdf' } },
+							{ time: '11:15 – 11:30', speaker: 'Eun Lee (Pukyong National University, Korea), Ovidia Stanoi, Kevin N. Ochsner (Columbia University, USA), Xie He, Peter J. Mucha (Dartmouth College, USA), Yoona Kang (Rutgers University, USA), Mia Jovanova (University of St Gallen, Switzerland), Amanda L. McGowan, David M. Lydon-Staley, Dani S. Bassett, Emily B. Falk (University of Pennsylvania, USA), Zachary M. Boyd (Brigham Young University, USA)', title: 'Functional and Structural Clustering of Social Relationship Layers Among College Students for Link Prediction with Applications to Perceived Drinking Networks', abstract: { type: 'presentation', file: 'eun-lee.pdf' } },
+							{ time: '11:30 – 11:45', speaker: 'Yeonji Seo, Mi Jin Lee, Seung-Woo Son (Hanyang University, Korea), Hang-Hyun Jo (Catholic University of Korea, Korea), Yohsuke Murase (RIKEN, Japan)', title: 'How Wikipedia Article Connections Influence Editing Patterns', abstract: { type: 'presentation', file: 'yeonji-seo.pdf' } },
+							{ time: '11:45 – 12:00', speaker: 'Yifei Li, Peter Yen, Siew Ann Cheong (NTU, Singapore)', title: 'Applying Transformer Models to Predict Topological Features of AI Citation Networks', abstract: { type: 'presentation', file: 'yifei-li.pdf' } },
+							{ time: '12:00 – 12:15', speaker: 'Parul Shukla, Manya Khanna, Rajesh Dey (Institute for Interdisciplinary Research, India), Priya Gupta, Anirban Chakraborti (Jawaharlal Nehru University, India), Soumyajyoti Biswas (SRM University, India)', title: 'Multi-Layer Semantic Network Modeling of AI Governance as a Complex Adaptive System', abstract: { type: 'presentation', file: 'parul-shukla.pdf' } },
+							{ time: '12:15 – 12:30', speaker: 'Lesley F Manatan (World Vision International, Philippines)', title: 'Digital Accessibility in the Philippines: A Complex Systems Perspective', abstract: { type: 'presentation', file: 'lesley-manatan.pdf' } }
 						]
 					},
 					{
 						name: 'Computation and Information Processing',
 						location: 'SPMS-LT2',
 						talks: [
-							{ time: '11:00 – 11:15', speaker: 'Sidney Wong (University of Otago, New Zealand)', title: 'User Behaviour as a Predictor of Grammatical Similarity within Digital Networks' },
-							{ time: '11:15 – 11:30', speaker: 'Jose Marie Antonio Minoza (Center for AI Research, Philippines), Erika Fille T. Legara, Christopher P. Monterola (Asian Institute of Management, Philippines)', title: 'Modularity, not Integration, Underlies Universal Computation in Complex Systems' }
+							{ time: '11:00 – 11:15', speaker: 'Sidney Wong (University of Otago, New Zealand)', title: 'User Behaviour as a Predictor of Grammatical Similarity within Digital Networks', abstract: { type: 'presentation', file: 'sidney-wong.pdf' } },
+							{ time: '11:15 – 11:30', speaker: 'Jose Marie Antonio Minoza (Center for AI Research, Philippines), Erika Fille T. Legara, Christopher P. Monterola (Asian Institute of Management, Philippines)', title: 'Modularity, not Integration, Underlies Universal Computation in Complex Systems', abstract: { type: 'presentation', file: 'jose-marie-antonio-minoza.pdf' } }
 						]
 					}
 				]
