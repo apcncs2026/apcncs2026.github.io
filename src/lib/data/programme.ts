@@ -142,7 +142,7 @@ export const days: DayData[] = [
 			{ startMin: 270, endMin: 330, title: 'Lunch', type: 'break', timeLabel: '12:30 – 13:30' },
 			{ startMin: 330, endMin: 360, title: 'Parongama Sen', subtitle: 'Nonlinear Biased q-Voter Models: Steady States and Persistence Behavior', type: 'talk', timeLabel: '13:30 – 14:00' },
 			{ startMin: 360, endMin: 390, title: 'Fatimah Abdul Razak', subtitle: 'The Social Architecture of Stories: Mapping Connectivity as a Blueprint for Malaysian Resilience', type: 'talk', timeLabel: '14:00 – 14:30' },
-			{ startMin: 390, endMin: 420, title: 'Hsuan-Yi Chen', subtitle: 'The Statistical Mechanics of Weak Signals in Complex Systems', type: 'talk', timeLabel: '14:30 – 15:00' },
+			{ startMin: 390, endMin: 420, title: 'Hsuan-Yi Chen', subtitle: 'The Statistical Mechanics of Detecting Weak Molecular Signals in Small Complex Systems', type: 'talk', timeLabel: '14:30 – 15:00' },
 			{ startMin: 420, endMin: 450, title: 'Jose Fernando Mendes', subtitle: 'MDPI Entropy / Complexities', type: 'editor', timeLabel: '15:00 – 15:30' },
 			{ startMin: 450, endMin: 480, title: 'Coffee Break', type: 'break', timeLabel: '15:30 – 16:00' },
 			{ startMin: 480, endMin: 570, title: 'Parallel Session 4', type: 'parallel', timeLabel: '16:00 – 17:30' },

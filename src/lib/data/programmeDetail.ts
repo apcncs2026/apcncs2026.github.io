@@ -328,7 +328,7 @@ export const dayDetails: DayDetail[] = [
 				talks: [
 					{ time: '13:30 – 14:00', speaker: 'Parongama Sen (University of Calcutta, India)', title: 'Nonlinear Biased q-Voter Models: Steady States and Persistence Behavior', abstract: { type: 'invited', file: 'parongama-sen.docx' } },
 					{ time: '14:00 – 14:30', speaker: 'Fatimah Abdul Razak (Universiti Kebangsaan Malaysia, Malaysia)', title: 'The Social Architecture of Stories: Mapping Connectivity as a Blueprint for Malaysian Resilience', abstract: { type: 'invited', file: 'fatimah-abdul-razak.docx' } },
-					{ time: '14:30 – 15:00', speaker: 'Hsuan-Yi Chen (National Central University, Taiwan)', title: 'The Statistical Mechanics of Weak Signals in Complex Systems' },
+					{ time: '14:30 – 15:00', speaker: 'Hsuan-Yi Chen (National Central University, Taiwan)', title: 'The Statistical Mechanics of Detecting Weak Molecular Signals in Small Complex Systems' },
 					{
 						time: '15:00 – 15:30',
 						prefix: 'Meet the Editor Session',
