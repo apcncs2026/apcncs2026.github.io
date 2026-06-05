@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { getHeroBackgroundStyle } from '$lib/config/heroImages';
 	import Icon from '$lib/components/Icon.svelte';
-	import { dayDetails, abstractUrl, type DayDetail, type DayItem, type Talk } from '$lib/data/programmeDetail';
+	import { dayDetails, abstractUrl, type AbstractRef, type DayDetail, type DayItem, type Talk } from '$lib/data/programmeDetail';
 
 	interface Props {
 		day: DayDetail;
@@ -13,6 +13,9 @@
 	}
 	function isParallel(item: DayItem): item is Extract<DayItem, { kind: 'parallel' }> {
 		return item.kind === 'parallel';
+	}
+	function isLecture(item: DayItem): item is Extract<DayItem, { kind: 'lecture' }> {
+		return item.kind === 'lecture';
 	}
 	function isBlock(item: DayItem): item is Extract<DayItem, { kind: 'registration' | 'break' | 'note' }> {
 		return item.kind === 'registration' || item.kind === 'break' || item.kind === 'note';
@@ -28,10 +31,10 @@
 	<meta name="description" content="Detailed conference programme for {day.label}, {day.date}." />
 </svelte:head>
 
-{#snippet abstractLink(t: Talk)}
-	{#if t.abstract}
+{#snippet abstractLink(ref?: AbstractRef)}
+	{#if ref}
 		<a
-			href={abstractUrl(t.abstract)}
+			href={abstractUrl(ref)}
 			download
 			class="inline-flex items-center gap-1 mt-1 text-sm text-primary hover:underline"
 		>
@@ -136,7 +139,7 @@
 											{#if t.title}
 												<div class="text-base-content/80">{t.title}</div>
 											{/if}
-											{@render abstractLink(t)}
+											{@render abstractLink(t.abstract)}
 										{/if}
 									</div>
 								{/each}
@@ -181,13 +184,33 @@
 														{#if t.title}
 															<div class="text-base-content/80 leading-snug">{t.title}</div>
 														{/if}
-														{@render abstractLink(t)}
+														{@render abstractLink(t.abstract)}
 													</li>
 												{/each}
 											</ul>
 										{/if}
 									</div>
 								{/each}
+							</div>
+						</div>
+					</div>
+				{:else if isLecture(item)}
+					<!-- Summer-school lecture / remarks / panel -->
+					<div class="card bg-base-100 shadow-sm border border-base-300">
+						<div class="card-body p-0">
+							<div class="border-l-4 border-primary px-5 py-4">
+								<div class="font-mono text-xs text-base-content/60">{item.time}</div>
+								<h2 class="text-base font-bold text-primary mt-0.5">{item.label}</h2>
+								{#if item.speaker}
+									<div class="font-semibold mt-0.5">{item.speaker}</div>
+								{/if}
+								{#if item.title}
+									<div class="text-base-content/80">{item.title}</div>
+								{/if}
+								{#if item.note}
+									<div class="text-sm text-base-content/60 mt-0.5">{item.note}</div>
+								{/if}
+								{@render abstractLink(item.abstract)}
 							</div>
 						</div>
 					</div>
