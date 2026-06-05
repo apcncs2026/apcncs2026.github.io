@@ -8,7 +8,7 @@ export interface Panelist {
 
 // Where an abstract file lives. `type` maps to the static/abstract/<type>/ subfolder,
 // so this extends from invited talks to contributed presentations without changing the schema.
-export type AbstractType = 'invited' | 'presentation';
+export type AbstractType = 'invited' | 'presentation' | 'summer-school';
 
 export interface AbstractRef {
 	type: AbstractType;
@@ -40,6 +40,18 @@ export interface InvitedSession {
 	talks: Talk[];
 }
 
+// A single summer-school timeline entry (lecture, opening/closing remarks, or panel).
+// Rendered as a standalone card; breaks/registration use BlockItem instead.
+export interface Lecture {
+	kind: 'lecture';
+	time: string;
+	label: string; // "Lecture 1", "Opening Remarks", "Panel Discussion / Open Q&A", "Closing Remarks"
+	speaker?: string; // "Marton Karsai (Central European University, Austria)"
+	title?: string; // talk title; "TBC" allowed
+	note?: string; // supporting line, e.g. "Overview of summer school objectives"
+	abstract?: AbstractRef; // downloadable abstract, e.g. { type: 'summer-school', file: 'jose-fernando-mendes.pdf' }
+}
+
 export interface ParallelTrack {
 	name: string;
 	location: string;
@@ -62,10 +74,10 @@ export interface BlockItem {
 	location?: string;
 }
 
-export type DayItem = InvitedSession | ParallelSession | BlockItem;
+export type DayItem = InvitedSession | ParallelSession | BlockItem | Lecture;
 
 export interface DayDetail {
-	slug: '10-june' | '11-june' | '12-june';
+	slug: '9-june' | '10-june' | '11-june' | '12-june';
 	label: string; // weekday
 	shortLabel: string;
 	date: string; // "10 June 2026"
@@ -74,6 +86,36 @@ export interface DayDetail {
 }
 
 export const dayDetails: DayDetail[] = [
+	// =====================================================================
+	{
+		slug: '9-june',
+		label: 'Tuesday',
+		shortLabel: 'Tue',
+		date: '9 June 2026',
+		subtitle: 'Summer School',
+		items: [
+			{ kind: 'registration', time: '08:45 – 09:00', title: 'Registration & Welcome Coffee' },
+			{ kind: 'lecture', time: '09:00 – 09:10', label: 'Opening Remarks', note: 'Overview of summer school objectives' },
+			{ kind: 'lecture', time: '09:10 – 10:10', label: 'Lecture 1', speaker: 'Marton Karsai (Central European University, Austria)', title: 'TBC' },
+			{ kind: 'break', time: '10:10 – 10:30', title: 'Coffee Break' },
+			{ kind: 'lecture', time: '10:30 – 11:30', label: 'Lecture 2', speaker: 'Lock Yue Chew (NTU, Singapore)', title: 'Information Thermodynamics: Classical and Quantum Perspective' },
+			{ kind: 'lecture', time: '11:30 – 12:30', label: 'Lecture 3', speaker: 'Misako Takayasu (Institute of Science Tokyo, Japan)', title: 'Money-Flow Network among About 1 Million Business Firms in Japan' },
+			{ kind: 'break', time: '12:30 – 14:00', title: 'Lunch Break' },
+			{ kind: 'lecture', time: '14:00 – 15:00', label: 'Lecture 4', speaker: 'Anirban Chakraborti (Jawaharlal Nehru University, India)', title: 'Complex Systems Studies using Machine Learning' },
+			{ kind: 'break', time: '15:00 – 15:20', title: 'Coffee Break' },
+			{ kind: 'lecture', time: '15:20 – 16:20', label: 'Lecture 5', speaker: 'Academic Publication Workshop (APW)', title: 'Writing, Publishing Strategies, Peer Review Insights' },
+			{
+				kind: 'lecture',
+				time: '16:20 – 17:20',
+				label: 'Lecture 6',
+				speaker: 'Jose Fernando Mendes (University of Aveiro, Portugal)',
+				title: 'Navigating Through Complexity: From Emergence to Networks',
+				abstract: { type: 'summer-school', file: 'jose-fernando-mendes.pdf' }
+			},
+			{ kind: 'lecture', time: '17:20 – 17:40', label: 'Panel Discussion / Open Q&A', speaker: 'All summer-school speakers (if available)', note: 'Research directions, careers, and interdisciplinary work' },
+			{ kind: 'lecture', time: '17:40 – 17:45', label: 'Closing Remarks' }
+		]
+	},
 	// =====================================================================
 	{
 		slug: '10-june',

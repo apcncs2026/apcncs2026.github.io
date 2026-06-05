@@ -1,0 +1,332 @@
+%PDF-1.3
+%ºß¬à
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 4 0 R
+>>
+endobj
+4 0 obj
+<<
+/Length 3053
+>>
+stream
+0.5670000000000001 w
+0 G
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.42 0.447 0.502 rg
+62.3622047244094517 773.8585039370078675 Td
+(Asia-Pacific Summer School and Conference on Networks and Complex Systems) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.42 0.447 0.502 rg
+62.3622047244094517 757.7010236220472734 Td
+(Summer School  ·  9 June 2026) Tj
+ET
+0.12 0.25 0.69 RG
+1.7007874015748032 w
+62.3622047244094517 746.3624409448818824 m
+532.9177952755904926 746.3624409448818824 l
+S
+BT
+/F2 10 Tf
+11.5 TL
+0.118 0.251 0.686 rg
+62.3622047244094517 720.8506299212598378 Td
+(LECTURE 6) Tj
+ET
+BT
+/F2 17 Tf
+19.5499999999999972 TL
+0.122 0.161 0.216 rg
+62.3622047244094517 698.1734645669290558 Td
+(Navigating Through Complexity: From Emergence to) Tj
+T* (Networks) Tj
+ET
+BT
+/F1 12 Tf
+13.7999999999999989 TL
+0.118 0.251 0.686 rg
+62.3622047244094517 650.5514173228345953 Td
+(José Fernando Mendes) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.42 0.447 0.502 rg
+62.3622047244094517 635.8112598425195756 Td
+(University of Aveiro, Portugal) Tj
+ET
+BT
+/F2 11 Tf
+12.6499999999999986 TL
+0.122 0.161 0.216 rg
+62.3622047244094517 604.6301574803148924 Td
+(Abstract) Tj
+ET
+BT
+/F1 11 Tf
+17.0500000000000007 TL
+0.122 0.161 0.216 rg
+1.1987992125984119 Tw
+62.3622047244094517 586.2049606299211746 Td
+(Complex systems are ubiquitous in nature, technology, and society. From ecosystems and the) Tj
+0.3883989501312277 Tw
+0. -17.0500000000000007 Td
+(brain to social interactions, transportation infrastructures, and communication systems, collective) Tj
+0.3577809591982989 Tw
+0. -17.0500000000000007 Td
+(phenomena often emerge from the interactions of many simple components. Understanding how) Tj
+1.3265838885523851 Tw
+0. -17.0500000000000007 Td
+(such emergent behaviors arise remains one of the central challenges of modern science. This) Tj
+0.4303993250843624 Tw
+0. -17.0500000000000007 Td
+(introductory lecture will provide a broad overview of the science of complex systems through the) Tj
+2.7937992125984423 Tw
+0. -17.0500000000000007 Td
+(lens of complex networks. Starting from examples of collective behavior and emergence in) Tj
+0.9288915808600891 Tw
+0. -17.0500000000000007 Td
+(natural and social systems, we will introduce the fundamental concepts of network science and) Tj
+0.309632545931754 Tw
+0. -17.0500000000000007 Td
+(graph theory as a framework for representing and analyzing interacting systems. Basic structural) Tj
+0.8596325459317641 Tw
+0. -17.0500000000000007 Td
+(properties, dynamical processes on networks, and simple yet powerful results will be discussed) Tj
+0.9985590551181212 Tw
+0. -17.0500000000000007 Td
+(intuitively, requiring minimal mathematical background. The lecture will conclude with examples) Tj
+4.0917322834645784 Tw
+0. -17.0500000000000007 Td
+(of applications across diverse disciplines, illustrating how network-based approaches help) Tj
+3.4075590551181105 Tw
+0. -17.0500000000000007 Td
+(uncover common principles underlying complex phenomena and provide valuable tools for) Tj
+0 Tw
+0. -17.0500000000000007 Td
+(understanding real-world systems.) Tj
+ET
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R ]
+/Count 1
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/BaseFont /Courier
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+10 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+11 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+12 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+13 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Roman
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+14 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+15 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Italic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/BaseFont /Times-BoldItalic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+17 0 obj
+<<
+/Type /Font
+/BaseFont /ZapfDingbats
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+18 0 obj
+<<
+/Type /Font
+/BaseFont /Symbol
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F1 5 0 R
+/F2 6 0 R
+/F3 7 0 R
+/F4 8 0 R
+/F5 9 0 R
+/F6 10 0 R
+/F7 11 0 R
+/F8 12 0 R
+/F9 13 0 R
+/F10 14 0 R
+/F11 15 0 R
+/F12 16 0 R
+/F13 17 0 R
+/F14 18 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+19 0 obj
+<<
+/Producer (jsPDF 4.2.1)
+/CreationDate (D:20260605182953+08'00')
+>>
+endobj
+20 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/OpenAction [3 0 R /FitH null]
+/PageLayout /OneColumn
+>>
+endobj
+xref
+0 21
+0000000000 65535 f 
+0000003257 00000 n 
+0000005074 00000 n 
+0000000015 00000 n 
+0000000152 00000 n 
+0000003314 00000 n 
+0000003439 00000 n 
+0000003569 00000 n 
+0000003702 00000 n 
+0000003839 00000 n 
+0000003962 00000 n 
+0000004091 00000 n 
+0000004223 00000 n 
+0000004359 00000 n 
+0000004487 00000 n 
+0000004614 00000 n 
+0000004743 00000 n 
+0000004876 00000 n 
+0000004978 00000 n 
+0000005322 00000 n 
+0000005408 00000 n 
+trailer
+<<
+/Size 21
+/Root 20 0 R
+/Info 19 0 R
+/ID [ <E084641537088086C71DB139D7CDC070> <E084641537088086C71DB139D7CDC070> ]
+>>
+startxref
+5512
+%%EOF

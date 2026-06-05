@@ -95,13 +95,13 @@ export const days: DayData[] = [
 			{ startMin: 60, endMin: 70, title: 'Opening Remarks', type: 'ceremony', timeLabel: '09:00 – 09:10' },
 			{ startMin: 70, endMin: 130, title: 'Marton Karsai', subtitle: 'Lecture 1', type: 'lecture', timeLabel: '09:10 – 10:10' },
 			{ startMin: 130, endMin: 150, title: 'Coffee Break', type: 'break', timeLabel: '10:10 – 10:30' },
-			{ startMin: 150, endMin: 210, title: 'Chew Lock Yue', subtitle: 'Lecture 2', type: 'lecture', timeLabel: '10:30 – 11:30' },
+			{ startMin: 150, endMin: 210, title: 'Lock Yue Chew', subtitle: 'Information Thermodynamics: Classical and Quantum Perspective', type: 'lecture', timeLabel: '10:30 – 11:30' },
 			{ startMin: 210, endMin: 270, title: 'Misako Takayasu', subtitle: 'Money-flow network among about 1 million business firms in Japan', type: 'lecture', timeLabel: '11:30 – 12:30' },
 			{ startMin: 270, endMin: 360, title: 'Lunch Break', type: 'break', timeLabel: '12:30 – 14:00' },
 			{ startMin: 360, endMin: 420, title: 'Anirban Chakraborti', subtitle: 'Complex Systems Studies using Machine Learning', type: 'lecture', timeLabel: '14:00 – 15:00' },
-			{ startMin: 420, endMin: 480, title: 'Lecture 5', subtitle: 'Writing, Publishing Strategies, Peer Review Insights', type: 'lecture', timeLabel: '15:00 – 16:00' },
-			{ startMin: 480, endMin: 500, title: 'Coffee Break', type: 'break', timeLabel: '16:00 – 16:20' },
-			{ startMin: 500, endMin: 560, title: 'Jose Fernando Mendes', subtitle: 'Lecture 6', type: 'lecture', timeLabel: '16:20 – 17:20' },
+			{ startMin: 420, endMin: 440, title: 'Coffee Break', type: 'break', timeLabel: '15:00 – 15:20' },
+			{ startMin: 440, endMin: 500, title: 'Academic Publication Workshop', subtitle: 'Writing, Publishing Strategies, Peer Review Insights', type: 'lecture', timeLabel: '15:20 – 16:20' },
+			{ startMin: 500, endMin: 560, title: 'Jose Fernando Mendes', subtitle: 'Navigating Through Complexity: From Emergence to Networks', type: 'lecture', timeLabel: '16:20 – 17:20' },
 			{ startMin: 560, endMin: 585, title: 'Research Directions, Careers, and Interdisciplinary Work', subtitle: 'Panel Discussion + Closing Remarks', type: 'panel', timeLabel: '17:20 – 17:45' }
 		]
 	},
@@ -134,7 +134,7 @@ export const days: DayData[] = [
 		subtitle: 'Conference Day 2',
 		gridSessions: [
 			{ startMin: 0, endMin: 45, title: 'Registration', type: 'registration', timeLabel: '08:00 – 08:45' },
-			{ startMin: 45, endMin: 80, title: 'Ginestra Bianconi', type: 'talk', timeLabel: '08:45 – 09:20' },
+			{ startMin: 45, endMin: 80, title: 'Ginestra Bianconi', subtitle: 'Learning the Topology of Higher-Order Networks from Their Dynamics', type: 'talk', timeLabel: '08:45 – 09:20' },
 			{ startMin: 80, endMin: 125, title: 'Hawoong Jeong', subtitle: 'Understanding Complex Systems via Network, Data, AI', type: 'talk', timeLabel: '09:20 – 10:05' },
 			{ startMin: 125, endMin: 150, title: 'Forging International Collaborations', subtitle: 'Panel Discussion', type: 'panel', timeLabel: '10:05 – 10:30' },
 			{ startMin: 150, endMin: 180, title: 'Coffee Break', type: 'break', timeLabel: '10:30 – 11:00' },
