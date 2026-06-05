@@ -7,7 +7,7 @@
 	const keyDates = [
 		{ event: "Abstract Submission Deadline", date: "17 May 2026 (Sunday)" },
 		{ event: "Notification of Acceptance", date: "Submissions will be reviewed on a rolling basis, and notifications of acceptance will be sent starting from 1 May 2026." },
-		{ event: "Focus Session", date: "9-12 Jun 2026" },
+		{ event: "Focus Session", date: "Thursday, 11 June 2026 (afternoon)" },
 	];
 
 	const topics = [

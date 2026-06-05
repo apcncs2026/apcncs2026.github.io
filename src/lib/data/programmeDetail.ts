@@ -48,6 +48,7 @@ export interface Lecture {
 	label: string; // "Lecture 1", "Opening Remarks", "Panel Discussion / Open Q&A", "Closing Remarks"
 	speaker?: string; // "Marton Karsai (Central European University, Austria)"
 	title?: string; // talk title; "TBC" allowed
+	tutors?: string; // accompanying tutors, e.g. "S. Biswas, H.K. Pharasi and A. Chakraborti"
 	note?: string; // supporting line, e.g. "Overview of summer school objectives"
 	abstract?: AbstractRef; // downloadable abstract, e.g. { type: 'summer-school', file: 'jose-fernando-mendes.pdf' }
 }
@@ -62,7 +63,9 @@ export interface ParallelTrack {
 
 export interface ParallelSession {
 	kind: 'parallel';
-	number: number;
+	number?: number; // omitted for standalone special sessions (e.g. a focus session) — use `title`
+	title?: string; // header override; defaults to "Parallel Session {number}"
+	note?: string; // optional line under the header, e.g. a concurrency note
 	time: string;
 	tracks: ParallelTrack[];
 }
@@ -96,12 +99,12 @@ export const dayDetails: DayDetail[] = [
 		items: [
 			{ kind: 'registration', time: '08:45 – 09:00', title: 'Registration & Welcome Coffee' },
 			{ kind: 'lecture', time: '09:00 – 09:10', label: 'Opening Remarks', note: 'Overview of summer school objectives' },
-			{ kind: 'lecture', time: '09:10 – 10:10', label: 'Lecture 1', speaker: 'Marton Karsai (Central European University, Austria)', title: 'TBC' },
+			{ kind: 'lecture', time: '09:10 – 10:10', label: 'Lecture 1', speaker: 'Marton Karsai (Central European University, Austria)', title: 'Temporal Networks and Spreading Phenomena' },
 			{ kind: 'break', time: '10:10 – 10:30', title: 'Coffee Break' },
 			{ kind: 'lecture', time: '10:30 – 11:30', label: 'Lecture 2', speaker: 'Lock Yue Chew (NTU, Singapore)', title: 'Information Thermodynamics: Classical and Quantum Perspective' },
 			{ kind: 'lecture', time: '11:30 – 12:30', label: 'Lecture 3', speaker: 'Misako Takayasu (Institute of Science Tokyo, Japan)', title: 'Money-Flow Network among About 1 Million Business Firms in Japan' },
 			{ kind: 'break', time: '12:30 – 14:00', title: 'Lunch Break' },
-			{ kind: 'lecture', time: '14:00 – 15:00', label: 'Lecture 4', speaker: 'Anirban Chakraborti (Jawaharlal Nehru University, India)', title: 'Complex Systems Studies using Machine Learning' },
+			{ kind: 'lecture', time: '14:00 – 15:00', label: 'Lecture 4', speaker: 'Anirban Chakraborti (Jawaharlal Nehru University, India)', title: 'Complex Systems Studies using Machine Learning', tutors: 'S. Biswas, H.K. Pharasi and A. Chakraborti' },
 			{ kind: 'break', time: '15:00 – 15:20', title: 'Coffee Break' },
 			{ kind: 'lecture', time: '15:20 – 16:20', label: 'Lecture 5', speaker: 'Academic Publication Workshop (APW)', title: 'Writing, Publishing Strategies, Peer Review Insights' },
 			{
@@ -352,12 +355,6 @@ export const dayDetails: DayDetail[] = [
 							{ time: '11:45 – 12:00', speaker: 'Isabella Rangel (University of Southern California, USA)', title: 'Optimizing Ethiopia’s Crop Storage Infrastructure: A Geospatial and Network Science Approach', abstract: { type: 'presentation', file: 'isabella-rangel.pdf' } },
 							{ time: '12:00 – 12:15', speaker: 'Sebastian Felipe R. Bundoc, Paula Joy B. Martinez, Sebastian C. Ibanez (Center for AI Research, Philippines), Erika Fille T. Legara (Asian Institute of Management, Philippines)', title: 'Student Flow Modeling for School Decongestion via Stochastic Gravity Estimation and Constrained Spatial Allocation', abstract: { type: 'presentation', file: 'sebastian-felipe-bundoc.pdf' } }
 						]
-					},
-					{
-						name: 'Focus Session on Games on Complex Systems',
-						location: 'MAS Executive Classroom 1',
-						tba: true,
-						talks: []
 					}
 				]
 			},
@@ -376,6 +373,29 @@ export const dayDetails: DayDetail[] = [
 						prefix: 'Meet the Editor Session',
 						speaker: 'Jose Fernando Mendes',
 						title: 'Editor-in-Chief, MDPI Complexities and Section Editor, MDPI Entropy'
+					}
+				]
+			},
+			// Focus Session: Games on Complex Systems — runs concurrently with Invited Session 4.
+			// PENDING: invited speaker Prof. Wenwu Yu (Southeast University, China) awaits administrative
+			// approval; if confirmed he opens the session and Jie Zhao's talk is shortened. Held off until confirmed.
+			{
+				kind: 'parallel',
+				title: 'Focus Session: Games on Complex Systems',
+				note: 'Runs in parallel with Invited Session 4.',
+				time: '13:30 – 15:45',
+				tracks: [
+					{
+						name: 'Games on Complex Systems',
+						location: 'MAS Executive Classroom 1',
+						talks: [
+							{ time: '13:30 – 14:30', speaker: 'Jie Zhao', title: 'Visual Evolutionary Optimization through Strategic Interactions on Graph-Structured Combinatorial Problems (Invited)' },
+							{ time: '14:30 – 14:45', speaker: 'Kang Hao Cheong', title: 'Introduction to Parrondo’s Games' },
+							{ time: '14:45 – 15:00', speaker: 'Ee Hou Yong', title: 'Pareto Optimality and Evolutionary Trade-Offs in Nature' },
+							{ time: '15:00 – 15:15', speaker: 'Ankit Mishra', title: 'When Switching Beats Choice in Network Routing: A Parrondo’s Games Perspective (Invited)' },
+							{ time: '15:15 – 15:30', speaker: 'Nixie Sapphira Lesmana, Ling Feng, Kan Chen and Choy Heng Lai', title: 'Self-Organization to the Edge of Ergodicity Breaking in a Complex Adaptive System', abstract: { type: 'presentation', file: 'nixie-sapphira-lesmana.pdf' } },
+							{ time: '15:30 – 15:45', speaker: 'Xiang Zhang', title: 'Adversarial Graph Topology Game: Wasserstein Distributionally Robust Graph Learning' }
+						]
 					}
 				]
 			},
@@ -416,12 +436,6 @@ export const dayDetails: DayDetail[] = [
 							{ time: '16:30 – 16:45', speaker: 'Dake Wu and Ling Feng (NUS, Singapore)', title: 'Recovery Dynamics Influence in Urban Traffic Capacity and Resilience', abstract: { type: 'presentation', file: 'dake-wu.pdf' } },
 							{ time: '16:45 – 17:00', speaker: 'Ziming Cheng, Dake Wu, Ling Feng (NUS, Singapore)', title: 'Quantifying Traffic Resistance and Supply Constraints: A Dual-Fluid RECM Approach based on Chengdu Taxi GPS Data', abstract: { type: 'presentation', file: 'ziming-cheng.pdf' } }
 						]
-					},
-					{
-						name: 'Focus Session on Games on Complex Systems',
-						location: 'MAS Executive Classroom 1',
-						tba: true,
-						talks: []
 					}
 				]
 			}

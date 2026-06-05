@@ -93,7 +93,7 @@ export const days: DayData[] = [
 		gridSessions: [
 			{ startMin: 45, endMin: 60, title: 'Registration', type: 'registration', timeLabel: '08:45 – 09:00' },
 			{ startMin: 60, endMin: 70, title: 'Opening Remarks', type: 'ceremony', timeLabel: '09:00 – 09:10' },
-			{ startMin: 70, endMin: 130, title: 'Marton Karsai', subtitle: 'Lecture 1', type: 'lecture', timeLabel: '09:10 – 10:10' },
+			{ startMin: 70, endMin: 130, title: 'Marton Karsai', subtitle: 'Temporal Networks and Spreading Phenomena', type: 'lecture', timeLabel: '09:10 – 10:10' },
 			{ startMin: 130, endMin: 150, title: 'Coffee Break', type: 'break', timeLabel: '10:10 – 10:30' },
 			{ startMin: 150, endMin: 210, title: 'Lock Yue Chew', subtitle: 'Information Thermodynamics: Classical and Quantum Perspective', type: 'lecture', timeLabel: '10:30 – 11:30' },
 			{ startMin: 210, endMin: 270, title: 'Misako Takayasu', subtitle: 'Money-flow network among about 1 million business firms in Japan', type: 'lecture', timeLabel: '11:30 – 12:30' },

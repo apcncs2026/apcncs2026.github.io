@@ -152,9 +152,15 @@
 						<div class="card-body p-0">
 							<div class="bg-secondary text-secondary-content px-5 py-3 rounded-t-2xl">
 								<div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-									<h2 class="text-xl font-bold">Parallel Session {item.number}</h2>
+									<h2 class="text-xl font-bold">{item.title ?? `Parallel Session ${item.number}`}</h2>
 									<div class="text-sm font-mono opacity-90">{item.time}</div>
 								</div>
+								{#if item.note}
+									<div class="text-sm opacity-90 mt-1 flex items-center gap-1">
+										<Icon name="info" class_="w-4 h-4" />
+										{item.note}
+									</div>
+								{/if}
 							</div>
 							<div class="px-5 py-5 grid grid-cols-1 lg:grid-cols-2 gap-5">
 								{#each item.tracks as track}
@@ -206,6 +212,11 @@
 								{/if}
 								{#if item.title}
 									<div class="text-base-content/80">{item.title}</div>
+								{/if}
+								{#if item.tutors}
+									<div class="text-sm text-base-content/70 mt-1">
+										<span class="font-medium text-base-content/60">Tutors:</span> {item.tutors}
+									</div>
 								{/if}
 								{#if item.note}
 									<div class="text-sm text-base-content/60 mt-0.5">{item.note}</div>
