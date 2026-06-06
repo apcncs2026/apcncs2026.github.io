@@ -17,7 +17,16 @@ const config = {
 			fallback: undefined,
 			precompress: false,
 			strict: true
-		})
+		}),
+		prerender: {
+			// Crawl all pages, plus explicitly emit the build-time PDF endpoints.
+			entries: [
+				'*',
+				'/programme/booklet.pdf',
+				'/programme/at-a-glance-landscape.pdf',
+				'/programme/at-a-glance-portrait.pdf'
+			]
+		}
 	}
 };
 

@@ -29,10 +29,8 @@
 		return (realToVirtual(s.endMin) - realToVirtual(s.startMin)) * SCALE - GAP * 2;
 	}
 
-	async function handleDownloadPDF(portrait = false) {
-		const mod = await import('$lib/utils/programmePdf');
-		portrait ? mod.generateProgrammePDFPortrait() : mod.generateProgrammePDF();
-	}
+	// PDFs are prerendered to static files at build time (see the +server.ts routes
+	// under /programme), so these are plain download links — no client-side jsPDF.
 </script>
 
 <svelte:head>
@@ -69,16 +67,20 @@
 
 	<!-- PDF downloads -->
 	<section class="py-5 px-4 bg-base-200">
-		<div class="max-w-7xl mx-auto">
-			<div class="flex flex-wrap gap-x-4 gap-y-2 justify-center">
-				<button onclick={() => handleDownloadPDF(false)} class="btn btn-outline btn-lg gap-2 shrink-0">
+		<div class="max-w-7xl mx-auto flex flex-col items-center gap-3">
+			<a href="/programme/booklet.pdf" download="APCNCS-2026-Programme-Booklet.pdf" class="btn btn-primary btn-lg gap-2 shrink-0">
+				<Icon name="file-text" class_="w-5 h-5" />
+				Full Programme Booklet (PDF)
+			</a>
+			<div class="flex flex-wrap gap-x-4 gap-y-2 justify-center items-center">
+				<a href="/programme/at-a-glance-landscape.pdf" download="APCNCS-2026-Programme-Landscape.pdf" class="btn btn-outline btn-md gap-2 shrink-0">
 					<Icon name="file-down" class_="w-4 h-4" />
-					PDF (Landscape)
-				</button>
-				<button onclick={() => handleDownloadPDF(true)} class="btn btn-outline btn-lg gap-2 shrink-0">
+					Timetable (Landscape)
+				</a>
+				<a href="/programme/at-a-glance-portrait.pdf" download="APCNCS-2026-Programme-Portrait.pdf" class="btn btn-outline btn-md gap-2 shrink-0">
 					<Icon name="file-down" class_="w-4 h-4" />
-					PDF (Portrait)
-				</button>
+					Timetable (Portrait)
+				</a>
 			</div>
 		</div>
 	</section>
