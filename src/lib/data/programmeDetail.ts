@@ -203,11 +203,11 @@ export const dayDetails: DayDetail[] = [
 						location: 'MAS Executive Classroom 1',
 						chair: 'Lock Yue Chew (NTU, Singapore)',
 						talks: [
-							{ time: '11:00 – 11:30', speaker: 'Justin Dauwels (TU Delft, Netherlands)', title: 'When AI Becomes a Complex System: Agents, Emergence, and Real-World Applications (Invited)' },
-							{ time: '11:30 – 12:00', speaker: 'Thiparat Chotibut (Chulalongkorn University, Thailand)', title: 'Reinforcement Learning in Population Games: From Microscopic Chaos to Macroscopic Equilibrium (Invited)' },
+							{ time: '11:00 – 11:30', speaker: 'Justin Dauwels (TU Delft, Netherlands)', title: 'When AI Becomes a Complex System: Agents, Emergence, and Real-World Applications (Invited)', abstract: { type: 'invited', file: 'justin-dauwels.pdf' } },
+							{ time: '11:30 – 12:00', speaker: 'Thiparat Chotibut (Chulalongkorn University, Thailand)', title: 'Reinforcement Learning in Population Games: From Microscopic Chaos to Macroscopic Equilibrium (Invited)', abstract: { type: 'invited', file: 'thiparat-chotibut-population-games.pdf' } },
 							{ time: '12:00 – 12:15', speaker: 'Jaroonrak Omsap, Andri Pradana, Yew Soon Ong, and Lock Yue Chew (NTU, Singapore)', title: 'Deep Reinforcement Learning for Passenger Transfer Synchronization in a Bus Network', abstract: { type: 'presentation', file: 'jaroonrak-omsap.pdf' } },
 							{ time: '12:15 – 12:30', speaker: 'Zheng Tien Kang, Peter Tsung-Wen Yen, Kelin Xia, Siew Ann Cheong (NTU, Singapore)', title: 'Building a Time Series Vision Transformer with Small, High-Resolution Datasets', abstract: { type: 'presentation', file: 'kang-zheng-tien.pdf' } },
-							{ time: '12:30 – 12:45', speaker: 'Andri Pradana, Lock Yue Chew, and Bo Yang (NTU, Singapore)', title: 'Discovery of Bus Control Strategies with Reinforcement Learning to Optimize Commuter-Centric Objective' }
+							{ time: '12:30 – 12:45', speaker: 'Andri Pradana, Lock Yue Chew, and Bo Yang (NTU, Singapore)', title: 'Discovery of Bus Control Strategies with Reinforcement Learning to Optimize Commuter-Centric Objective', abstract: { type: 'presentation', file: 'andri-pradana.pdf' } }
 						]
 					}
 				]
@@ -275,11 +275,11 @@ export const dayDetails: DayDetail[] = [
 						location: 'MAS Executive Classroom 1',
 						chair: 'Ling Feng (Institute of High Performance Computing, A*STAR Singapore)',
 						talks: [
-							{ time: '16:00 – 16:30', speaker: 'Carlo Vittorio Cannistraci (Tsinghua University, China)', title: 'Brain-Inspired Sparse Network Science for Next Generation Efficient and Sustainable AI (Invited)' },
-							{ time: '16:30 – 17:00', speaker: 'Florian Rossmannek (NTU, Singapore)', title: 'State-Space Systems for Learning from Temporal Data (Invited)' },
+							{ time: '16:00 – 16:30', speaker: 'Carlo Vittorio Cannistraci (Tsinghua University, China)', title: 'Brain-Inspired Sparse Network Science for Next Generation Efficient and Sustainable AI (Invited)', abstract: { type: 'invited', file: 'carlo-vittorio-cannistraci.docx' } },
+							{ time: '16:30 – 17:00', speaker: 'Florian Rossmannek (NTU, Singapore)', title: 'State-Space Systems for Learning from Temporal Data (Invited)', abstract: { type: 'invited', file: 'florian-rossmannek.docx' } },
 							{ time: '17:00 – 17:15', speaker: 'Dishant Sisodia and Sarika Jalan (Indian Institute of Technology Indore, India)', title: 'Dynamical Analysis of a Reservoir Computer', abstract: { type: 'presentation', file: 'dishant-sisodia.pdf' } },
-							{ time: '17:15 – 17:30', speaker: 'Feixiang Ren and Ling Feng (National University of Singapore, Singapore)', title: 'Towards Critical Branching Mechanism in Recurrent Neural Networks' },
-							{ time: '17:30 – 17:45', speaker: 'Derek D. C. Chang, Graeme D. Berk, and Mile Gu (NTU, Singapore)', title: 'Complexity in Quantum Processes & Reservoir Computing' }
+							{ time: '17:15 – 17:30', speaker: 'Feixiang Ren and Ling Feng (National University of Singapore, Singapore)', title: 'Towards Critical Branching Mechanism in Recurrent Neural Networks', abstract: { type: 'presentation', file: 'feixiang-ren.pdf' } },
+							{ time: '17:30 – 17:45', speaker: 'Derek D. C. Chang, Graeme D. Berk, and Mile Gu (NTU, Singapore)', title: 'Complexity in Quantum Processes & Reservoir Computing', abstract: { type: 'presentation', file: 'derek-chang.docx' } }
 						]
 					}
 				]
