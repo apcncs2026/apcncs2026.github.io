@@ -133,6 +133,41 @@
 					Visitors can use the maps to explore the location of the main conference site (SPMS), the conference dinner site (Nanyang Lake Pavilion), and accommodation sites (NEC and dormitories).
 				</p>
 
+				<h2 class="text-3xl font-bold mt-12 mb-6">Getting between SPMS and Pioneer Hall</h2>
+				<p>
+					Students and postdocs hosted at <strong>Pioneer Hall</strong> can travel to and from the main conference venue at SPMS on the free NTU shuttle buses. The map below shows the relevant shuttle stops.
+				</p>
+
+				<figure class="my-6">
+					<img
+						src="/images/travel/pioneer-spms-shuttle-map.webp"
+						alt="Aerial NTU campus map showing the shuttle stops between Pioneer Hall and SPMS: the Hall 6, Hall 1 and Hall 7 stops and the SPMS stop"
+						class="rounded-lg shadow-md w-full"
+					/>
+				</figure>
+
+				<p>
+					<strong>From Pioneer Hall to SPMS:</strong> Board the <strong>NTU Blue Line</strong> shuttle bus from <strong>Hall 6 Stop</strong>, and drop off at the <strong>SPMS Stop</strong>. The NTU Red Line shuttle bus does not stop in front of SPMS, and also goes around a longer distance.
+				</p>
+
+				<p>
+					<strong>From SPMS to Pioneer Hall:</strong> Board the <strong>NTU Red Line</strong> shuttle bus from <strong>Hall 7 Stop</strong>, and drop off at the <strong>Hall 1 Stop</strong>. You can also board the NTU Blue Line shuttle bus from SPMS Stop, and drop off at the Hall 6 Stop, if you do not mind it going around a longer distance.
+				</p>
+
+				<h2 class="text-3xl font-bold mt-12 mb-6">Food near Pioneer Hall</h2>
+
+				<figure class="my-6">
+					<img
+						src="/images/travel/pioneer-hall-canteens-map.webp"
+						alt="Aerial NTU campus map showing food options near Pioneer Hall: the Pioneer Hall Canteen, Food Court 1 (Hall 1), Food Court 2 (Hall 2) and a Prime Supermarket"
+						class="rounded-lg shadow-md w-full"
+					/>
+				</figure>
+
+				<p>
+					The <strong>Pioneer Hall Canteen</strong> is a convenient place to take breakfast (3&ndash;4 SGD) before proceeding to the conference venue at SPMS, or for dinner (5&ndash;6 SGD) after coming back from the conference. There are two canteens within walking distance of Pioneer Hall: (1) <strong>Food Court 1 (Hall 1)</strong>, and (2) <strong>Food Court 2 (Hall 2)</strong>. There is also a <strong>Prime Supermarket</strong> next to Food Court 2. If you do not mind venturing further, you can board the NTU Red Line shuttle bus from the Hall 1 Stop, and drop off at the Hall 11 Stop, and cross the road to reach the North Hill Food Court. There are also an Indian restaurant and a hot pot restaurant in this dormitory complex. If you stay on the bus and drop off at the Nanyang Crescent Halls Stop, you will reach the Nanyang Crescent Food Court.
+				</p>
+
 				<div class="alert alert-info mt-10">
 					<Icon name="info" class_="stroke-current shrink-0 h-6 w-6" />
 					<span>Travel information has been reviewed by the organizing committee. Please refer back to this page closer to the conference for any updates.</span>
