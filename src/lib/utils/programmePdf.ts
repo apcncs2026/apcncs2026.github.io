@@ -1,4 +1,4 @@
-import jsPDF from 'jspdf';
+import { jsPDF } from 'jspdf';
 import { days, sessionTypeConfig, allSessionTypes, realToVirtual, GRID_VIRTUAL_END, type SessionType, type DayData } from '$lib/data/programme';
 
 type RGB = [number, number, number];
@@ -229,7 +229,7 @@ function drawFooter(doc: jsPDF, pageW: number, footerY: number) {
 
 // ==================== Landscape: 1 page, 4 columns ====================
 
-export function generateProgrammePDF() {
+export function buildProgrammeDoc(): jsPDF {
 	const doc = new jsPDF({ orientation: 'landscape', unit: 'mm', format: 'a4' });
 	const pageW = 297, pageH = 210, margin = 5;
 
@@ -267,12 +267,16 @@ export function generateProgrammePDF() {
 	doc.rect(margin, dayHeaderY, pageW - margin * 2, gridEndY - dayHeaderY);
 
 	drawFooter(doc, pageW, footerY + 1);
-	doc.save('APCNCS-2026-Programme.pdf');
+	return doc;
+}
+
+export function generateProgrammePDF() {
+	buildProgrammeDoc().save('APCNCS-2026-Programme.pdf');
 }
 
 // ==================== Portrait: 2 pages, 2 columns each ====================
 
-export function generateProgrammePDFPortrait() {
+export function buildProgrammePortraitDoc(): jsPDF {
 	const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
 	const pageW = 210, pageH = 297, margin = 8;
 	const dayPairs = [[days[0], days[1]], [days[2], days[3]]];
@@ -317,7 +321,11 @@ export function generateProgrammePDFPortrait() {
 		drawFooter(doc, pageW, footerY + 1);
 	}
 
-	doc.save('APCNCS-2026-Programme.pdf');
+	return doc;
+}
+
+export function generateProgrammePDFPortrait() {
+	buildProgrammePortraitDoc().save('APCNCS-2026-Programme.pdf');
 }
 
 function truncateText(doc: jsPDF, text: string, maxW: number): string {
