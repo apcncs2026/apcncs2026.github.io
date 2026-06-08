@@ -101,7 +101,7 @@ export const dayDetails: DayDetail[] = [
 			{ kind: 'lecture', time: '09:00 – 09:10', label: 'Opening Remarks', note: 'Overview of summer school objectives' },
 			{ kind: 'lecture', time: '09:10 – 10:10', label: 'Lecture 1', speaker: 'Marton Karsai (Central European University, Austria)', title: 'Temporal Networks and Spreading Phenomena' },
 			{ kind: 'break', time: '10:10 – 10:30', title: 'Coffee Break' },
-			{ kind: 'lecture', time: '10:30 – 11:30', label: 'Lecture 2', speaker: 'Lock Yue Chew (NTU, Singapore)', title: 'Information Thermodynamics: Classical and Quantum Perspective' },
+			{ kind: 'lecture', time: '10:30 – 11:30', label: 'Lecture 2', speaker: 'Lock Yue Chew (NTU, Singapore)', title: 'Information Thermodynamics: Classical and Quantum Perspective', abstract: { type: 'summer-school', file: 'lock-yue-chew.pdf' } },
 			{ kind: 'lecture', time: '11:30 – 12:30', label: 'Lecture 3', speaker: 'Misako Takayasu (Institute of Science Tokyo, Japan)', title: 'Money-Flow Network among About 1 Million Business Firms in Japan' },
 			{ kind: 'break', time: '12:30 – 14:00', title: 'Lunch Break' },
 			{ kind: 'lecture', time: '14:00 – 15:00', label: 'Lecture 4', speaker: 'Anirban Chakraborti (Jawaharlal Nehru University, India)', title: 'Complex Systems Studies using Machine Learning', tutors: 'S. Biswas, H.K. Pharasi and A. Chakraborti' },
