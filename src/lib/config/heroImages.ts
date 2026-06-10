@@ -1,4 +1,4 @@
-export type PageName = 'home' | 'international' | 'speakers' | 'organizers' | 'programme' | 'registration' | 'contact' | 'accommodation' | 'abstracts' | 'sponsors' | 'focus' | 'travel';
+export type PageName = 'home' | 'international' | 'speakers' | 'organizers' | 'programme' | 'registration' | 'contact' | 'accommodation' | 'abstracts' | 'sponsors' | 'focus' | 'travel' | 'gallery';
 
 export interface HeroImageConfig {
   basePath: string;
@@ -19,7 +19,8 @@ export const heroImages: HeroImageConfig = {
     abstracts: 'call-for-abstracts-ntu-research.webp',
     sponsors: 'sponsor.webp',
     focus: 'call-for-abstracts-ntu-research.webp',
-    travel: 'international.webp'
+    travel: 'international.webp',
+    gallery: 'home-ntu-arc.webp'
   }
 };
 

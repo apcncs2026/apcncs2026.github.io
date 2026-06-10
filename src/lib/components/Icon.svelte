@@ -23,7 +23,11 @@
 		MessageCircle,
 		Grid3X3,
 		ShoppingBag,
-		FileDown
+		FileDown,
+		Image,
+		X,
+		ChevronLeft,
+		ChevronRight
 	} from 'lucide-svelte';
 
 	export let name: string;
@@ -53,7 +57,11 @@
 		'message-circle': MessageCircle,
 		'grid': Grid3X3,
 		'shopping-bag': ShoppingBag,
-		'file-down': FileDown
+		'file-down': FileDown,
+		'image': Image,
+		'x': X,
+		'chevron-left': ChevronLeft,
+		'chevron-right': ChevronRight
 	};
 
 	$: IconComponent = icons[name];

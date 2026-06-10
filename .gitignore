@@ -40,4 +40,10 @@ static/images/profile/speaker/*
 static/images/sponsor/*
 !static/images/sponsor/*.webp
 
+# Conference photo originals (multi-GB DSLR/phone files from the SPMS Comms team).
+# Only the web-optimized WebP versions under static/gallery/ are committed; the
+# raw originals are kept out of git (they exceed the GitHub Pages 1 GB site limit).
+# Regenerate static/gallery/ from originals with: python scripts/process_gallery.py
+static/photos/
+
 design/
