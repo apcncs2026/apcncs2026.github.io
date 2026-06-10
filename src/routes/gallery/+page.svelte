@@ -69,7 +69,7 @@
 <svelte:window onkeydown={onKey} />
 
 <div class="min-h-screen">
-	<section class="hero hero-bg" style={getHeroBackgroundStyle('gallery')}>
+	<section class="hero hero-bg hero-page" style={getHeroBackgroundStyle('gallery')}>
 		<div class="hero-content text-center hero-content-overlay">
 			<div class="max-w-4xl">
 				<h1 class="text-4xl md:text-5xl font-bold hero-text mb-4">Photo Gallery</h1>
